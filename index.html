@@ -198,14 +198,18 @@
           </div>
           <button type="button" class="button" onclick="testExpert()">Antwort</button>
         </div>
+        <div id="progress">
+          <label>Anzahl: </label>
+          <label id="anzahl"></label>
+          <label>von</label>
+          <label id="fragen"></label>
+          <br>
+          <label>Richtig beantwortet: </label>
+          <label id="prozent">100%</label>
+        </div>
         <div id="clues">
           <button type="button" class="button" onclick="getClue()">Hinweis erhalten</button>
           <label for="clue" id="clue"></label>
-        </div>
-        <div id="progress">
-          <label for="anzahl" id="anzahl"></label>
-          <label>/</label>
-          <label for="fragen" id="fragen"></label>
         </div>
         <div id="helpButtons">
           <button type="button" class="button" onclick="skip()">Überspringen</button>
@@ -213,7 +217,7 @@
           <button type="button" class="button" onclick="solveAll()">Aufgeben</button>
         </div>
         <div id="gameButtons">
-          <button type="button" class="button" onclick="restart()">Neustarten</button>
+          <button type="button" class="button" onclick="restart()">Neustart</button>
           <button type="button" class="button" onclick="stopGame()">Zurück</button>
         </div>
       </div>
