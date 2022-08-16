@@ -360,6 +360,7 @@ function initMode() {
     }
   }
 
+  //Versteckt oder zeigt die jeweilige Frage (Bild für Flagge, Pokemon etc.)
   if (mode.name == 'umriss' || mode.name == 'flaggen') {
     $("#land").hide();
     $("#pokemonShadow").hide();
@@ -380,6 +381,8 @@ function initMode() {
 
 }
 
+//Wird ausgeführt, wenn im Array 'abfrage' keine Elemente mehr sind
+//Versteckt die Fragen und Antworten und ändert den Fragetext
 function winGame() {
   $('#answerWrite').hide();
   $('#answerPick').hide();
@@ -392,14 +395,19 @@ function winGame() {
   $("#question").text('Alle Fragen beantwortet. Starten Sie das Spiel neu oder versuchen Sie einen anderen Modus.');
 }
 
+//Wird ausgeführt, wenn das Spiel startet und bei richtiger Antwort
+//Setzt die Anzeige für richtige Antworten/Prozent und prüft ob noch Fragen über sind
 function nextLand() {
+  //Anzeige der beantworteten Fragen
   $("#anzahl").text(countLand);
+  //Prüft, ob schon Antworten gegeben wurden und setzt dann die Prozentanzeige
   if (countLand > 0) {
     $("#prozent").text(Math.floor((punkteGesamt / (countLand * 10)) * 1000) / 10 + '%');
   } else {
     $("#prozent").text('100%');
   }
 
+  //Wenn 'abfrage' leer ist, gibt es keine Fragen mehr sonst wähle nächstes Land
   if (abfrage.length > 0) {
     rand = Math.floor(Math.random() * abfrage.length);
     next = abfrage[rand];
@@ -409,9 +417,14 @@ function nextLand() {
   }
 }
 
+//Wird ausgeführt, wenn über die Übersicht auf ein Element gedrückt wird
 function pickLand(land) {
   let temp1 = land;
+  
+  //Falls temp1 in abfrage gefunden wird, gibt es den index wieder, sonst -1
   let temp2 = abfrage.indexOf(temp1);
+  
+  //Prüft, ob die Frage zu dem Element schon beantwortet wurde
   if (temp2 >= 0) {
     rand = temp2;
     next = temp1;
@@ -419,20 +432,25 @@ function pickLand(land) {
   }
 }
 
+//Wird ausgeführt um die Antwort für die Frage zu prüfen
 function testLand(x) {
+  //Prüft, ob das Geschriebene die Antwort ist, einige Länder/Hauptstädte haben Alternative Schreibweisen unter 'altname'
   if (x.toLowerCase() == quiz[next][mode.question].toLowerCase() || (quiz[next]['alt' + mode.question] && x.toLowerCase() == quiz[next]['alt' + mode.question].toLowerCase())) {
+    //Versuch, die doppelte Zählung zu fixen in Firefox/Chrome
     if (mode.config.configWriteA) {
       $("#antwort").autocomplete(
         "disable"
       );
     }
 
+    //Richtige Antwort wird aus dem Array entfernt
     abfrage.splice(rand, 1);
     countLand++;
     punkteGesamt += punkte;
 
-    console.log(punkteGesamt);
+    //console.log(punkteGesamt);
 
+    //Schatten für das Pokemon in der Übersicht entfernen und Antwort dazu schreiben
     if (mode.name == 'pokemon') {
       $("#" + quiz[next].name).css({ filter: 'brightness(1.0)' });
       $(".answer" + quiz[next].name).text(quiz[next][mode.question]);
@@ -440,10 +458,12 @@ function testLand(x) {
       $(".answer" + quiz[next].code).text(quiz[next][mode.question]);
     }
 
+    //Falls eine delayTime gesetzt ist, wird die Antwort kurz grün hinterlegt bzw. Schatten entfernt
     if (delayTime > 0) {
       $('#pokemonShadow').css({ filter: 'brightness(1.0)' });
       $("#antwort").attr("style", "background-color:lawngreen");
 
+      //Nach dem delay beides wieder rückgängig machen
       delay(delayTime).then(() => {
         $('#pokemonShadow').css({ filter: 'brightness(0.0)' });
         $("#antwort").attr("style", "background-color:white");
@@ -459,26 +479,33 @@ function testLand(x) {
   }
 }
 
+//Expertenmodus, Flagge aus der Übersicht auswählen
 function pickExpertF(code) {
   $('#modalFlagge').hide();
   $("#expertFlagge").attr("src", 'Flaggen/' + code + '.svg');
   $("#expertFlagge").val(code);
 }
 
+//Expertenmodus, Umriss aus der Übersicht auswählen
 function pickExpertU(kontinent, code) {
   $('#modalUmrisse').hide();
   $("#expertUmrisse").attr("src", 'Umrisse/' + kontinent + '/' + code + '.svg');
   $("#expertUmrisse").val(code);
 }
 
+//Wird ausgeführt, wenn im Expertenmodus auf Antwort gedrückt wird
+//Markiert die richtigen/falschen Angaben
 function testExpert() {
+  //Abfrage der eingegebenen Werten
   let a = $("#expertLand").val();
   let b = $("#expertHaupt").val();
   let c = $("#expertFlagge").val();
   let d = $("#expertUmrisse").val();
 
+  //Prüfen, ob das Land noch im Array ist
   let e = abfrage.indexOf(a);
 
+  //Richtige und falsche Angaben markieren durch Hintergrundfarbe
   let richtig = 0;
   if (e >= 0) {
     richtig++;
@@ -505,6 +532,7 @@ function testExpert() {
     $("#expertDivUmriss").attr("style", "background-color:red");
   }
 
+  //Bei vier Richtigen, wird das Land aus dem Array entfernt
   if (richtig == 4) {
     abfrage.splice(e, 1);
     countLand++;
@@ -519,7 +547,9 @@ function testExpert() {
   }
 }
 
+//Wird ausgeführt, um eine neue Frage anzuzeigen und die Felder zurückzusetzen
 function setLand() {
+  //Neue Punkte, Hinweise, Antwort gelöscht, Hintergrundfarben wieder Standard
   punkte = 10;
   clues = 1;
   $("#antwort").val('');
@@ -544,6 +574,7 @@ function setLand() {
     $("#optionD").attr("style", "");
   }
 
+  //Modus prüfen und die Frage/Flagge/Scahtten etc. anzeigen
   if (mode.name == 'flaggen') {
     $("#flagge").attr("src", "Flaggen/" + quiz[next].code + '.svg');
   } else if (mode.name == 'hauptstadt') {
@@ -556,10 +587,12 @@ function setLand() {
     $("#pokemonShadow").attr('src', 'Pokemon/' + quiz[next].generation + 'Generation/' + zeroId + '.png');
   }
 
+  //Falls mit Auswahlmöglichkeiten, dann zufällige Antworten aussuchen
   if (mode.config.configPick) {
     randomAnswers();
   }
 
+  //Falls autocomplete, dann die Funktion aktivieren (Versuch die Doppelzählung zu verhindern)
   if (mode.config.configWriteA) {
     $("#antwort").autocomplete(
       "enable"
@@ -567,6 +600,8 @@ function setLand() {
   }
 }
 
+//Wird ausgeführt durch den Knopf 'Lösen'
+//Ruft die Funktion zum Testen mit der richtigen Antwort auf, falls es noch Fragen gibt
 function solve() {
   punkte = 0;
   if (abfrage.length > 0) {
@@ -574,6 +609,8 @@ function solve() {
   }
 }
 
+//Wird ausgeführt durch den Knopf 'Aufgeben'
+//Setzt die delayTime auf 0 und ruft, solange es noch Fragen gibt, die solve() Funktion auf
 function solveAll() {
   delayTime = 0;
   while (abfrage.length > 0) {
@@ -581,34 +618,47 @@ function solveAll() {
   }
 }
 
+//Wird ausgeführt durch den Knopf 'Überspringen'
+//Wenn es noch Fragen gibt, wird die Funktion nextLand() aufegerufen, die eine zufällige Frage bestimmt
 function skip() {
   if (abfrage.length > 0) {
     nextLand();
   }
 }
 
+//Wird ausgeführt durch den Knopf 'Hinweis'
+//Wenn noch Fragen vorhanden, zeigt die Funktion den nächsten Buchstaben an
 function getClue() {
   if (abfrage.length > 0) {
     let temp = quiz[next][mode.question];
 
+    //Wenn das nächste Zeichen eine Leerstelle ist, wird das nächste Zeichen auch angezeigt
     if (temp.charAt(clues) == ' ') {
       clues++;
     }
 
+    //Antwort auf die Länge der clues kürzen
     $("#clue").text(temp.substring(0, clues));
+    
+    //Wenn die clues länger als die Antwort, dann löse die Frage
     if (clues > temp.length) {
       punkte = 0;
       solve();
     }
 
     clues++;
+    //Punkte halbieren für das Nutzen eines Hinweises
     punkte = Math.floor(10 / clues);
   }
 }
 
+//Wird ausgeführt, wenn eine Antwortmöglichkeit gewählt wird
 function pickAnswer(x) {
+  //Antwort prüfen
   let test = testLand($("#answer" + x).text());
-  //console.log(test);
+  
+  //Wenn die Antwort falsch ist, Punkte halbieren und Hintergrund rot
+  //Wenn die delayTime größer 0, dann die richtige Antwort grün markieren
   if (!test) {
     punkte = punkte / 2;
     //$("#prozent").text(((punkteGesamt + punkte) / ((countLand + 1 ) * 10)) * 100 + '%');
@@ -618,11 +668,14 @@ function pickAnswer(x) {
   }
 }
 
+//Wird ausgeführt, wenn Antwortmöglichkeiten angezeigt werden sollen
 function randomAnswers() {
   let picked = [];
 
+  //Richtige Antwort pushen
   picked.push(quiz[next][mode.question]);
 
+  //Gleiches Prinzip wie bei shuffle()
   let rightAnswer = autoAbfrage.indexOf(picked[0]);
   let i = autoAbfrage.length - 1;
 
@@ -642,14 +695,18 @@ function randomAnswers() {
     j--;
   }
 
+  //Antworten mischen
   shuffle(picked);
 
+  //Prüfen, ob Anworten vorhanden, dann Antwort anzeigen, sonst die Möglichkeit verstecken (bsp. als Thema nur Nordamerika)
   picked[0] != undefined ? $("#answerA").text(picked[0]) : $("#optionA").hide();
   picked[1] != undefined ? $("#answerB").text(picked[1]) : $("#optionB").hide();
   picked[2] != undefined ? $("#answerC").text(picked[2]) : $("#optionC").hide();
   picked[3] != undefined ? $("#answerD").text(picked[3]) : $("#optionD").hide();
 }
 
+//Fisher–Yates shuffle
+//Zufälliges Element wird an das Ende des Arrays gepackt und die Länge (m) um eins verringert
 function shuffle(array) {
   var m = array.length, t, i;
 
@@ -668,6 +725,7 @@ function shuffle(array) {
   return array;
 }
 
+//Funktion für die Verzögerung
 function delay(time) {
   return new Promise(resolve => setTimeout(resolve, time));
 }
