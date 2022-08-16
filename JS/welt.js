@@ -13,6 +13,22 @@ welt = [{
     "uno": true
   },
   {
+    "name": "Aichi",
+    "code": "jp-05",
+    "kontinent": "Asien",
+    "hauptstadt": "Akita",
+    "special": "Präfektur",
+    "uno": false
+  },
+  {
+    "name": "Akita",
+    "code": "jp-23",
+    "kontinent": "Asien",
+    "hauptstadt": "Nagoya",
+    "special": "Präfektur",
+    "uno": false
+  },
+  {
     "name": "Åland",
     "code": "ax",
     "kontinent": "Europa",
@@ -75,6 +91,14 @@ welt = [{
     "hauptstadt": "Saint John’s",
     "althauptstadt": "St Johns",
     "uno": true
+  },
+  {
+    "name": "Aomori",
+    "code": "jp-02",
+    "kontinent": "Asien",
+    "hauptstadt": "Aomori",
+    "special": "Präfektur",
+    "uno": false
   },
   {
     "name": "Äquatorialguinea",
@@ -320,6 +344,14 @@ welt = [{
     "uno": true
   },
   {
+    "name": "Chiba",
+    "code": "jp-12",
+    "kontinent": "Asien",
+    "hauptstadt": "Chiba",
+    "special": "Präfektur",
+    "uno": false
+  },
+  {
     "name": "Chile",
     "code": "cl",
     "kontinent": "Südamerika",
@@ -405,6 +437,14 @@ welt = [{
     "kontinent": "Südamerika",
     "hauptstadt": "Quito",
     "uno": true
+  },
+  {
+    "name": "Ehime",
+    "code": "jp-38",
+    "kontinent": "Asien",
+    "hauptstadt": "Matsuyama",
+    "special": "Präfektur",
+    "uno": false
   },
   {
     "name": "Elfenbeinküste",
@@ -499,6 +539,30 @@ welt = [{
     "uno": false
   },
   {
+    "name": "Fukui",
+    "code": "jp-18",
+    "kontinent": "Asien",
+    "hauptstadt": "Fukui",
+    "special": "Präfektur",
+    "uno": false
+  },
+  {
+    "name": "Fukuoka",
+    "code": "jp-40",
+    "kontinent": "Asien",
+    "hauptstadt": "Fukuoka",
+    "special": "Präfektur",
+    "uno": false
+  },
+  {
+    "name": "Fukushima",
+    "code": "jp-07",
+    "kontinent": "Asien",
+    "hauptstadt": "Fukushima",
+    "special": "Präfektur",
+    "uno": false
+  },
+  {
     "name": "Gabun",
     "code": "ga",
     "kontinent": "Afrika",
@@ -531,6 +595,14 @@ welt = [{
     "code": "gi",
     "kontinent": "Europa",
     "hauptstadt": "Gibraltar",
+    "uno": false
+  },
+  {
+    "name": "Gifu",
+    "code": "jp-21",
+    "kontinent": "Asien",
+    "hauptstadt": "Gifu",
+    "special": "Präfektur",
     "uno": false
   },
   {
@@ -604,6 +676,14 @@ welt = [{
     "uno": true
   },
   {
+    "name": "Gunma",
+    "code": "jp-10",
+    "kontinent": "Asien",
+    "hauptstadt": "Maebashi",
+    "special": "Präfektur",
+    "uno": false
+  },
+  {
     "name": "Guyana",
     "code": "gy",
     "kontinent": "Südamerika",
@@ -642,6 +722,23 @@ welt = [{
     "uno": false
   },
   {
+    "name": "Hiroshima",
+    "code": "jp-34",
+    "kontinent": "Asien",
+    "hauptstadt": "Hiroshima",
+    "special": "Präfektur",
+    "uno": false
+  },
+  {
+    "name": "Hokkaidō",
+    "altname": "Hokkaido",
+    "code": "jp-01",
+    "kontinent": "Asien",
+    "hauptstadt": "Sapporo",
+    "special": "Präfektur",
+    "uno": false
+  },
+  {
     "name": "Honduras",
     "code": "hn",
     "kontinent": "Mittelamerika",
@@ -653,6 +750,24 @@ welt = [{
     "code": "hk",
     "kontinent": "Asien",
     "hauptstadt": "",
+    "uno": false
+  },
+  {
+    "name": "Hyōgo",
+    "altname": "Hyogo",
+    "code": "jp-28",
+    "kontinent": "Asien",
+    "hauptstadt": "Kōbe",
+    "althauptstadt": "Kobe",
+    "special": "Präfektur",
+    "uno": false
+  },
+  {
+    "name": "Ibaraki",
+    "code": "jp-08",
+    "kontinent": "Asien",
+    "hauptstadt": "Mito",
+    "special": "Präfektur",
     "uno": false
   },
   {
@@ -668,6 +783,14 @@ welt = [{
     "kontinent": "Asien",
     "hauptstadt": "Jakarta",
     "uno": true
+  },
+  {
+    "name": "Ishikawa",
+    "code": "jp-17",
+    "kontinent": "Asien",
+    "hauptstadt": "Kanazawa",
+    "special": "Präfektur",
+    "uno": false
   },
   {
     "name": "Isle of Man",
@@ -719,6 +842,14 @@ welt = [{
     "uno": true
   },
   {
+    "name": "Iwate",
+    "code": "jp-03",
+    "kontinent": "Asien",
+    "hauptstadt": "Morioka",
+    "special": "Präfektur",
+    "uno": false
+  },
+  {
     "name": "Jamaika",
     "code": "jm",
     "kontinent": "Mittelamerika",
@@ -755,6 +886,22 @@ welt = [{
     "uno": true
   },
   {
+    "name": "Kagawa",
+    "code": "jp-37",
+    "kontinent": "Asien",
+    "hauptstadt": "Takamatsu",
+    "special": "Präfektur",
+    "uno": false
+  },
+  {
+    "name": "Kagoshima",
+    "code": "jp-46",
+    "kontinent": "Asien",
+    "hauptstadt": "Kagoshima",
+    "special": "Präfektur",
+    "uno": false
+  },
+  {
     "name": "Kaimaninseln",
     "code": "ky",
     "kontinent": "Mittelamerika",
@@ -781,6 +928,14 @@ welt = [{
     "kontinent": "Nordamerika",
     "hauptstadt": "Ottawa",
     "uno": true
+  },
+  {
+    "name": "Kanagawa",
+    "code": "jp-14",
+    "kontinent": "Asien",
+    "hauptstadt": "Yokohama",
+    "special": "Präfektur",
+    "uno": false
   },
   {
     "name": "Kap Verde",
@@ -826,6 +981,16 @@ welt = [{
     "uno": true
   },
   {
+    "name": "Kōchi",
+    "altname": "Kochi",
+    "code": "jp-39",
+    "kontinent": "Asien",
+    "hauptstadt": "Kōchi",
+    "althauptstadt": "Kochi",
+    "special": "Präfektur",
+    "uno": false
+  },
+  {
     "name": "Kokosinseln",
     "code": "cc",
     "kontinent": "Ozeanien",
@@ -868,11 +1033,29 @@ welt = [{
     "uno": true
   },
   {
+    "name": "Kumamoto",
+    "code": "jp-43",
+    "kontinent": "Asien",
+    "hauptstadt": "Kumamoto",
+    "special": "Präfektur",
+    "uno": false
+  },
+  {
     "name": "Kuwait",
     "code": "kw",
     "kontinent": "Asien",
     "hauptstadt": "Kuwaitstadt",
     "uno": true
+  },
+  {
+    "name": "Kyōto",
+    "altname": "Kyoto",
+    "code": "jp-26",
+    "kontinent": "Asien",
+    "hauptstadt": "Kyōto",
+    "althauptstadt": "Kyoto",
+    "special": "Präfektur",
+    "uno": false
   },
   {
     "name": "Laos",
@@ -1044,11 +1227,35 @@ welt = [{
     "uno": true
   },
   {
+    "name": "Mie",
+    "code": "jp-24",
+    "kontinent": "Asien",
+    "hauptstadt": "Tsu",
+    "special": "Präfektur",
+    "uno": false
+  },
+  {
     "name": "Mikronesien",
     "code": "fm",
     "kontinent": "Ozeanien",
     "hauptstadt": "Palikir",
     "uno": true
+  },
+  {
+    "name": "Miyagi",
+    "code": "jp-04",
+    "kontinent": "Asien",
+    "hauptstadt": "Sendai",
+    "special": "Präfektur",
+    "uno": false
+  },
+  {
+    "name": "Miyazaki",
+    "code": "jp-45",
+    "kontinent": "Asien",
+    "hauptstadt": "Miyazaki",
+    "special": "Präfektur",
+    "uno": false
   },
   {
     "name": "Moldawien",
@@ -1102,11 +1309,35 @@ welt = [{
     "uno": true
   },
   {
+    "name": "Nagano",
+    "code": "jp-20",
+    "kontinent": "Asien",
+    "hauptstadt": "Nagano",
+    "special": "Präfektur",
+    "uno": false
+  },
+  {
+    "name": "Nagasaki",
+    "code": "jp-42",
+    "kontinent": "Asien",
+    "hauptstadt": "Nagasaki",
+    "special": "Präfektur",
+    "uno": false
+  },
+  {
     "name": "Namibia",
     "code": "na",
     "kontinent": "Afrika",
     "hauptstadt": "Windhuk",
     "uno": true
+  },
+  {
+    "name": "Nara",
+    "code": "jp-29",
+    "kontinent": "Asien",
+    "hauptstadt": "Nara",
+    "special": "Präfektur",
+    "uno": false
   },
   {
     "name": "Nauru",
@@ -1173,6 +1404,14 @@ welt = [{
     "uno": true
   },
   {
+    "name": "Niigata",
+    "code": "jp-15",
+    "kontinent": "Asien",
+    "hauptstadt": "Niigata",
+    "special": "Präfektur",
+    "uno": false
+  },
+  {
     "name": "Niue",
     "code": "nu",
     "kontinent": "Ozeanien",
@@ -1223,11 +1462,45 @@ welt = [{
     "uno": true
   },
   {
+    "name": "Ōita",
+    "altname": "Oita",
+    "code": "jp-44",
+    "kontinent": "Asien",
+    "hauptstadt": "Ōita",
+    "althauptstadt": "Oita",
+    "special": "Präfektur",
+    "uno": false
+  },
+  {
+    "name": "Okayama",
+    "code": "jp-33",
+    "kontinent": "Asien",
+    "hauptstadt": "Okayama",
+    "special": "Präfektur",
+    "uno": false
+  },
+  {
+    "name": "Okinawa",
+    "code": "jp-47",
+    "kontinent": "Asien",
+    "hauptstadt": "Naha",
+    "special": "Präfektur",
+    "uno": false
+  },
+  {
     "name": "Oman",
     "code": "om",
     "kontinent": "Asien",
     "hauptstadt": "Maskat",
     "uno": true
+  },
+  {
+    "name": "Osaka",
+    "code": "jp-27",
+    "kontinent": "Asien",
+    "hauptstadt": "Osaka",
+    "special": "Präfektur",
+    "uno": false
   },
   {
     "name": "Österreich",
@@ -1397,6 +1670,22 @@ welt = [{
     "uno": false
   },
   {
+    "name": "Saga",
+    "code": "jp-41",
+    "kontinent": "Asien",
+    "hauptstadt": "Saga",
+    "special": "Präfektur",
+    "uno": false
+  },
+  {
+    "name": "Saitama",
+    "code": "jp-11",
+    "kontinent": "Asien",
+    "hauptstadt": "Saitama",
+    "special": "Präfektur",
+    "uno": false
+  },
+  {
     "name": "Salomonen",
     "code": "sb",
     "kontinent": "Ozeanien",
@@ -1495,6 +1784,31 @@ welt = [{
     "kontinent": "Afrika",
     "hauptstadt": "Victoria",
     "uno": true
+  },
+  {
+    "name": "Shiga",
+    "code": "jp-25",
+    "kontinent": "Asien",
+    "hauptstadt": "Ōtsu",
+    "althauptstadt": "Otsu",
+    "special": "Präfektur",
+    "uno": false
+  },
+  {
+    "name": "Shimane",
+    "code": "jp-32",
+    "kontinent": "Asien",
+    "hauptstadt": "Matsue",
+    "special": "Präfektur",
+    "uno": false
+  },
+  {
+    "name": "Shizuoka",
+    "code": "jp-22",
+    "kontinent": "Asien",
+    "hauptstadt": "Shizuoka",
+    "special": "Präfektur",
+    "uno": false
   },
   {
     "name": "Sierra Leone",
@@ -1692,6 +2006,14 @@ welt = [{
     "uno": false
   },
   {
+    "name": "Tochigi",
+    "code": "jp-09",
+    "kontinent": "Asien",
+    "hauptstadt": "Utsunomiya",
+    "special": "Präfektur",
+    "uno": false
+  },
+  {
     "name": "Togo",
     "code": "tg",
     "kontinent": "Afrika",
@@ -1708,12 +2030,44 @@ welt = [{
     "uno": false
   },
   {
+    "name": "Tokio",
+    "code": "jp-13",
+    "kontinent": "Asien",
+    "hauptstadt": "Tokio",
+    "special": "Präfektur",
+    "uno": false
+  },
+  {
+    "name": "Tokushima",
+    "code": "jp-36",
+    "kontinent": "Asien",
+    "hauptstadt": "Tokushima",
+    "special": "Präfektur",
+    "uno": false
+  },
+  {
     "name": "Tonga",
     "code": "to",
     "kontinent": "Ozeanien",
     "hauptstadt": "Nuku'alofa",
     "althauptstadt": "Nukualofa",
     "uno": true
+  },
+  {
+    "name": "Tottori",
+    "code": "jp-31",
+    "kontinent": "Asien",
+    "hauptstadt": "Tottori",
+    "special": "Präfektur",
+    "uno": false
+  },
+  {
+    "name": "Toyama",
+    "code": "jp-16",
+    "kontinent": "Asien",
+    "hauptstadt": "Toyama",
+    "special": "Präfektur",
+    "uno": false
   },
   {
     "name": "Trinidad und Tobago",
@@ -1861,6 +2215,14 @@ welt = [{
     "uno": true
   },
   {
+    "name": "Wakayama",
+    "code": "jp-30",
+    "kontinent": "Asien",
+    "hauptstadt": "Wakayama",
+    "special": "Präfektur",
+    "uno": false
+  },
+  {
     "name": "Wallis und Futuna",
     "code": "wf",
     "kontinent": "Ozeanien",
@@ -1881,6 +2243,31 @@ welt = [{
     "hauptstadt": "El Aaiún",
     "althauptstadt": "Ajun",
     "uno": true
+  },
+  {
+    "name": "Yamagata",
+    "code": "jp-06",
+    "kontinent": "Asien",
+    "hauptstadt": "Yamagata",
+    "special": "Präfektur",
+    "uno": false
+  },
+  {
+    "name": "Yamaguchi",
+    "code": "jp-35",
+    "kontinent": "Asien",
+    "hauptstadt": "Yamaguchi",
+    "special": "Präfektur",
+    "uno": false
+  },
+  {
+    "name": "Yamanashi",
+    "code": "jp-19",
+    "kontinent": "Asien",
+    "hauptstadt": "Kōfu",
+    "althauptstadt": "Kofu",
+    "special": "Präfektur",
+    "uno": false
   },
   {
     "name": "Zentralafrikanische Republik",
