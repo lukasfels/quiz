@@ -29,10 +29,26 @@ welt = [{
     "uno": false
   },
   {
+    "name": "Alabama",
+    "code": "us-al",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Montgomery",
+    "special": "Bundesstaat",
+    "uno": false
+  },
+  {
     "name": "Åland",
     "code": "ax",
     "kontinent": "Europa",
     "hauptstadt": "Mariehamn",
+    "uno": false
+  },
+  {
+    "name": "Alaska",
+    "code": "us-ak",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Juneau",
+    "special": "Bundesstaat",
     "uno": false
   },
   {
@@ -113,6 +129,22 @@ welt = [{
     "kontinent": "Südamerika",
     "hauptstadt": "Buenos Aires",
     "uno": true
+  },
+  {
+    "name": "Arizona",
+    "code": "us-az",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Phoenix",
+    "special": "Bundesstaat",
+    "uno": false
+  },
+  {
+    "name": "Arkansas",
+    "code": "us-ar",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Little Rock",
+    "special": "Bundesstaat",
+    "uno": false
   },
   {
     "name": "Armenien",
@@ -366,6 +398,22 @@ welt = [{
     "uno": true
   },
   {
+    "name": "Colorado",
+    "code": "us-co",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Denver",
+    "special": "Bundesstaat",
+    "uno": false
+  },
+  {
+    "name": "Connecticut",
+    "code": "us-ct",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Hartford",
+    "special": "Bundesstaat",
+    "uno": false
+  },
+  {
     "name": "Cookinseln",
     "code": "ck",
     "kontinent": "Ozeanien",
@@ -394,6 +442,14 @@ welt = [{
     "kontinent": "Europa",
     "hauptstadt": "Kopenhagen",
     "uno": true
+  },
+  {
+    "name": "Delaware",
+    "code": "us-de",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Dover",
+    "special": "Bundesstaat",
+    "uno": false
   },
   {
     "name": "Demokratische Republik Kongo",
@@ -511,6 +567,14 @@ welt = [{
     "uno": true
   },
   {
+    "name": "Florida",
+    "code": "us-fl",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Tallahassee",
+    "special": "Bundesstaat",
+    "uno": false
+  },
+  {
     "name": "Frankreich",
     "code": "fr",
     "kontinent": "Europa",
@@ -575,6 +639,14 @@ welt = [{
     "kontinent": "Afrika",
     "hauptstadt": "Banjul",
     "uno": true
+  },
+  {
+    "name": "Georgia",
+    "code": "us-ga",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Atlanta",
+    "special": "Bundesstaat",
+    "uno": false
   },
   {
     "name": "Georgien",
@@ -707,6 +779,14 @@ welt = [{
     "uno": false
   },
   {
+    "name": "Hawaii",
+    "code": "us-hi",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Honolulu",
+    "special": "Bundesstaat",
+    "uno": false
+  },
+  {
     "name": "Heard und McDonaldinseln",
     "code": "hm",
     "kontinent": "",
@@ -771,6 +851,30 @@ welt = [{
     "uno": false
   },
   {
+    "name": "Idaho",
+    "code": "us-id",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Boise",
+    "special": "Bundesstaat",
+    "uno": false
+  },
+  {
+    "name": "Illinois",
+    "code": "us-il",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Springfield",
+    "special": "Bundesstaat",
+    "uno": false
+  },
+  {
+    "name": "Indiana",
+    "code": "us-in",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Indianapolis",
+    "special": "Bundesstaat",
+    "uno": false
+  },
+  {
     "name": "Indien",
     "code": "in",
     "kontinent": "Asien",
@@ -783,6 +887,14 @@ welt = [{
     "kontinent": "Asien",
     "hauptstadt": "Jakarta",
     "uno": true
+  },
+  {
+    "name": "Iowa",
+    "code": "us-ia",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Des Moines",
+    "special": "Bundesstaat",
+    "uno": false
   },
   {
     "name": "Ishikawa",
@@ -909,6 +1021,14 @@ welt = [{
     "uno": false
   },
   {
+    "name": "Kalifornien",
+    "code": "us-ca",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Sacramento",
+    "special": "Bundesstaat",
+    "uno": false
+  },
+  {
     "name": "Kambodscha",
     "code": "kh",
     "kontinent": "Asien",
@@ -935,6 +1055,14 @@ welt = [{
     "kontinent": "Asien",
     "hauptstadt": "Yokohama",
     "special": "Präfektur",
+    "uno": false
+  },
+  {
+    "name": "Kansas",
+    "code": "us-ks",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Topeka",
+    "special": "Bundesstaat",
     "uno": false
   },
   {
@@ -965,6 +1093,14 @@ welt = [{
     "kontinent": "Afrika",
     "hauptstadt": "Nairobi",
     "uno": true
+  },
+  {
+    "name": "Kentucky",
+    "code": "us-ky",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Frankfort",
+    "special": "Bundesstaat",
+    "uno": false
   },
   {
     "name": "Kirgisistan",
@@ -1114,6 +1250,14 @@ welt = [{
     "uno": true
   },
   {
+    "name": "Louisiana",
+    "code": "us-la",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Baton Rouge",
+    "special": "Bundesstaat",
+    "uno": false
+  },
+  {
     "name": "Luxemburg",
     "code": "lu",
     "kontinent": "Europa",
@@ -1133,6 +1277,14 @@ welt = [{
     "kontinent": "Afrika",
     "hauptstadt": "Antananarivo",
     "uno": true
+  },
+  {
+    "name": "Maine",
+    "code": "us-me",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Augusta",
+    "special": "Bundesstaat",
+    "uno": false
   },
   {
     "name": "Malawi",
@@ -1191,6 +1343,22 @@ welt = [{
     "uno": false
   },
   {
+    "name": "Maryland",
+    "code": "us-md",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Annapolis",
+    "special": "Bundesstaat",
+    "uno": false
+  },
+  {
+    "name": "Massachusetts",
+    "code": "us-ma",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Boston",
+    "special": "Bundesstaat",
+    "uno": false
+  },
+  {
     "name": "Mauretanien",
     "code": "mr",
     "kontinent": "Afrika",
@@ -1227,6 +1395,14 @@ welt = [{
     "uno": true
   },
   {
+    "name": "Michigan",
+    "code": "us-mi",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Lansing",
+    "special": "Bundesstaat",
+    "uno": false
+  },
+  {
     "name": "Mie",
     "code": "jp-24",
     "kontinent": "Asien",
@@ -1240,6 +1416,30 @@ welt = [{
     "kontinent": "Ozeanien",
     "hauptstadt": "Palikir",
     "uno": true
+  },
+  {
+    "name": "Minnesota",
+    "code": "us-mn",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Saint Paul",
+    "special": "Bundesstaat",
+    "uno": false
+  },
+  {
+    "name": "Mississippi",
+    "code": "us-ms",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Jackson",
+    "special": "Bundesstaat",
+    "uno": false
+  },
+  {
+    "name": "Missouri",
+    "code": "us-mo",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Jefferson City",
+    "special": "Bundesstaat",
+    "uno": false
   },
   {
     "name": "Miyagi",
@@ -1279,6 +1479,14 @@ welt = [{
     "hauptstadt": "Ulaanbaatar",
     "althauptstadt": "Ulan Bator",
     "uno": true
+  },
+  {
+    "name": "Montana",
+    "code": "us-mt",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Helena",
+    "special": "Bundesstaat",
+    "uno": false
   },
   {
     "name": "Montenegro",
@@ -1347,6 +1555,14 @@ welt = [{
     "uno": true
   },
   {
+    "name": "Nebraska",
+    "code": "us-ne",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Lincoln",
+    "special": "Bundesstaat",
+    "uno": false
+  },
+  {
     "name": "Nepal",
     "code": "np",
     "kontinent": "Asien",
@@ -1366,6 +1582,46 @@ welt = [{
     "kontinent": "Ozeanien",
     "hauptstadt": "Wellington",
     "uno": true
+  },
+  {
+    "name": "Nevada",
+    "code": "us-nv",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Carson City",
+    "special": "Bundesstaat",
+    "uno": false
+  },
+  {
+    "name": "New Hampshire",
+    "code": "us-nh",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Concord",
+    "special": "Bundesstaat",
+    "uno": false
+  },
+  {
+    "name": "New Jersey",
+    "code": "us-nj",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Trenton",
+    "special": "Bundesstaat",
+    "uno": false
+  },
+  {
+    "name": "New Mexico",
+    "code": "us-nm",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Santa Fe",
+    "special": "Bundesstaat",
+    "uno": false
+  },
+  {
+    "name": "New York",
+    "code": "us-ny",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Albany",
+    "special": "Bundesstaat",
+    "uno": false
   },
   {
     "name": "Nicaragua",
@@ -1455,11 +1711,35 @@ welt = [{
     "uno": false
   },
   {
+    "name": "North Carolina",
+    "code": "us-nc",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Raleigh",
+    "special": "Bundesstaat",
+    "uno": false
+  },
+  {
+    "name": "North Dakota",
+    "code": "us-nd",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Bismarck",
+    "special": "Bundesstaat",
+    "uno": false
+  },
+  {
     "name": "Norwegen",
     "code": "no",
     "kontinent": "Europa",
     "hauptstadt": "Oslo",
     "uno": true
+  },
+  {
+    "name": "Ohio",
+    "code": "us-oh",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Columbus",
+    "special": "Bundesstaat",
+    "uno": false
   },
   {
     "name": "Ōita",
@@ -1488,11 +1768,27 @@ welt = [{
     "uno": false
   },
   {
+    "name": "Oklahoma",
+    "code": "us-ok",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Oklahoma City",
+    "special": "Bundesstaat",
+    "uno": false
+  },
+  {
     "name": "Oman",
     "code": "om",
     "kontinent": "Asien",
     "hauptstadt": "Maskat",
     "uno": true
+  },
+  {
+    "name": "Oregon",
+    "code": "us-or",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Salem",
+    "special": "Bundesstaat",
+    "uno": false
   },
   {
     "name": "Osaka",
@@ -1560,6 +1856,14 @@ welt = [{
     "uno": true
   },
   {
+    "name": "Pennsylvania",
+    "code": "us-pa",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Harrisburg",
+    "special": "Bundesstaat",
+    "uno": false
+  },
+  {
     "name": "Peru",
     "code": "pe",
     "kontinent": "Südamerika",
@@ -1622,6 +1926,14 @@ welt = [{
     "kontinent": "Europa",
     "hauptstadt": "Mainz",
     "special": "Bundesland",
+    "uno": false
+  },
+  {
+    "name": "Rhode Island",
+    "code": "us-ri",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Providence",
+    "special": "Bundesstaat",
     "uno": false
   },
   {
@@ -1860,6 +2172,22 @@ welt = [{
     "uno": true
   },
   {
+    "name": "South Carolina",
+    "code": "us-sc",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Columbia",
+    "special": "Bundesstaat",
+    "uno": false
+  },
+  {
+    "name": "South Dakota",
+    "code": "us-sd",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Pierre",
+    "special": "Bundesstaat",
+    "uno": false
+  },
+  {
     "name": "Spanien",
     "code": "es",
     "kontinent": "Europa",
@@ -1989,6 +2317,22 @@ welt = [{
     "kontinent": "Afrika",
     "hauptstadt": "Dodoma",
     "uno": true
+  },
+  {
+    "name": "Tennessee",
+    "code": "us-tn",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Nashville",
+    "special": "Bundesstaat",
+    "uno": false
+  },
+  {
+    "name": "Texas",
+    "code": "us-tx",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Austin",
+    "special": "Bundesstaat",
+    "uno": false
   },
   {
     "name": "Thailand",
@@ -2170,6 +2514,14 @@ welt = [{
     "uno": true
   },
   {
+    "name": "Utah",
+    "code": "us-ut",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Salt Lake City",
+    "special": "Bundesstaat",
+    "uno": false
+  },
+  {
     "name": "Vanuatu",
     "code": "vu",
     "kontinent": "Ozeanien",
@@ -2208,11 +2560,27 @@ welt = [{
     "uno": true
   },
   {
+    "name": "Vermont",
+    "code": "us-vt",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Montpelier",
+    "special": "Bundesstaat",
+    "uno": false
+  },
+  {
     "name": "Vietnam",
     "code": "vn",
     "kontinent": "Asien",
     "hauptstadt": "Hanoi",
     "uno": true
+  },
+  {
+    "name": "Virginia",
+    "code": "us-va",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Richmond",
+    "special": "Bundesstaat",
+    "uno": false
   },
   {
     "name": "Wakayama",
@@ -2230,6 +2598,14 @@ welt = [{
     "uno": false
   },
   {
+    "name": "Washington",
+    "code": "us-wa",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Olympia",
+    "special": "Bundesstaat",
+    "uno": false
+  },
+  {
     "name": "Weihnachtsinsel",
     "code": "cx",
     "kontinent": "Ozeanien",
@@ -2243,6 +2619,30 @@ welt = [{
     "hauptstadt": "El Aaiún",
     "althauptstadt": "Ajun",
     "uno": true
+  },
+  {
+    "name": "West Virginia",
+    "code": "us-wv",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Charleston",
+    "special": "Bundesstaat",
+    "uno": false
+  },
+  {
+    "name": "Wisconsin",
+    "code": "us-wi",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Madison",
+    "special": "Bundesstaat",
+    "uno": false
+  },
+  {
+    "name": "Wyoming",
+    "code": "us-wy",
+    "kontinent": "Nordamerika",
+    "hauptstadt": "Cheyenne",
+    "special": "Bundesstaat",
+    "uno": false
   },
   {
     "name": "Yamagata",
