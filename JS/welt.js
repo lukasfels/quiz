@@ -16,7 +16,7 @@ welt = [{
     "name": "Aichi",
     "code": "jp-05",
     "kontinent": "Asien",
-    "hauptstadt": "Akita",
+    "hauptstadt": "Nagoya",
     "special": "Präfektur",
     "uno": false
   },
@@ -24,7 +24,7 @@ welt = [{
     "name": "Akita",
     "code": "jp-23",
     "kontinent": "Asien",
-    "hauptstadt": "Nagoya",
+    "hauptstadt": "Akita",
     "special": "Präfektur",
     "uno": false
   },
