@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="JS/main.js"></script>
+  <script name="welt" src="JS/welt.js"></script>
+  <script name="pokemon" src="JS/pokemon.js"></script>
+  <script src="JS/jquery-3.6.0.min.js"></script>
+  <script src="JS/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="stylesheet" href="CSS/jquery-ui.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body onload="init()">
+  <div id="startPage">
+    <h1>Wähle dein Quiz</h1>
+
+    <form class="form-control" action="javascript:startGame()">
+      <div id="checkMode">
+        <h3>Modus</h3>
+        <label>
+          <input type="radio" id="hauptstadt" class="radioMode" name="modus" value="hauptstadt">
+          Hauptstädte
+        </label>
+        <label>
+          <input type="radio" id="umriss" class="radioMode" name="modus" value="umriss">
+          Umrisse
+        </label>
+        <label>
+          <input type="radio" id="flaggen" class="radioMode" name="modus" value="flaggen">
+          Flaggen
+        </label>
+        <h3 class="padTop">Spezial - Modus</h3>
+        <label>
+          <input type="radio" id="expert" class="radioMode" name="modus" value="expert">
+          Expert
+        </label>
+        <label>
+          <input type="radio" id="pokemon" class="radioMode" name="modus" value="pokemon">
+          Pokemon
+        </label>
+      </div>
+      <div id="checkLand">
+        <h3>Kontinente</h3>
+        <label>
+          <input type="checkbox" id="europa" name="land" value="europa">
+          Europa (45)
+        </label>
+        <label>
+          <input type="checkbox" id="asien" name="land" value="asien">
+          Asien (48)
+        </label>
+        <label>
+          <input type="checkbox" id="afrika" name="land" value="afrika">
+          Afrika (55)
+        </label>
+        <label>
+          <input type="checkbox" id="nordamerika" name="land" value="nordamerika">
+          Nordamerika (2)
+        </label>
+        <label>
+          <input type="checkbox" id="mittelamerika" name="land" value="mittelamerika">
+          Mittelamerika (21)
+        </label>
+        <label>
+          <input type="checkbox" id="südamerika" name="land" value="südamerika">
+          Südamerika (12)
+        </label>
+        <label>
+          <input type="checkbox" id="ozeanien" name="land" value="ozeanien">
+          Ozeanien (14)
+        </label>
+        <h3 class="padTop">Spezial - Themen</h3>
+        <label>
+          <input type="checkbox" id="bundesland" name="land" value="bundesland">
+          Bundesländer (16)
+        </label>
+        <label>
+          <input type="checkbox" id="präfektur" name="land" value="präfektur">
+          Jap. Präfekturen (47)
+        </label>
+        <label>
+          <input type="checkbox" id="bundesstaat" name="land" value="bundesstaat">
+          US Bundesstaaten (50)
+        </label>
+      </div>
+      <div id="checkGens">
+        <h3>Generationen wählen</h3>
+        <label>
+          <input type="checkbox" id="gen1" name="generations" value="gen1">
+          Gen. I (151)
+        </label>
+        <label>
+          <input type="checkbox" id="gen2" name="generations" value="gen2">
+          Gen. II (100)
+        </label>
+        <label>
+          <input type="checkbox" id="gen3" name="generations" value="gen3">
+          Gen. III (135)
+        </label>
+        <label>
+          <input type="checkbox" id="gen4" name="generations" value="gen4">
+          Gen. IV (107)
+        </label>
+        <label>
+          <input type="checkbox" id="gen5" name="generations" value="gen5">
+          Gen. V (156)
+        </label>
+        <label>
+          <input type="checkbox" id="gen6" name="generations" value="gen6">
+          Gen. VI (72)
+        </label>
+        <label>
+          <input type="checkbox" id="gen7" name="generations" value="gen7">
+          Gen. VII (88)
+        </label>
+        <label>
+          <input type="checkbox" id="gen8" name="generations" value="gen8">
+          Gen. VIII (108)
+        </label>
+      </div>
+      <br><br>
+      <input name="reset" class="button" type="reset" value="Zurücksetzen" />
+      <input name="submit" class="button" type="submit" value="Starte Spiel" />
+    </form>
+    <br>
+    <form>
+      <div id="checkOptions">
+        <h3>Optionen</h3>
+        <label>
+          <input type="range" min="0" max="1" class="slider" id="configOV" name="config" value="0">
+          <span id="configOVLabel">Keine Übersicht</span>
+        </label><br>
+        <label>
+          <input type="range" min="0" max="3" class="slider" id="configAnswer" name="config" value="2">
+          <span id="configAnswerLabel">Antworten vorgeben</span>
+        </label><br>
+        <label>
+          <input type="range" min="0" max="1" class="slider" id="configDelay" name="config" value="0">
+          <span id="configDelayLabel">Antwort nicht zeigen</span>
+        </label>
+      </div>
+    </form>
+  </div>
+
+  <div id="quizPage" style="display:none">
+    <h1 id="quizHeader"></h1>
+    <div id="content">
+      <div id="overview"></div>
+      <div id="gamearea">
+        <div id="questionDiv">
+          <h3 id="question"></h3>
+          <p id="land"></p>
+          <img id="flagge" class="flagMax" src="" alt="">
+          <img id="pokemonShadow" class="pokemonShadow" src="" alt="">
+        </div>
+        <div id="answerWrite">
+          <label>Antwort: </label>
+          <input id="antwort" type="text" name="antwort" value="">
+        </div>
+        <div id="answerPick">
+          <div class="answerPickOption" id="optionA" onclick="pickAnswer('A')">
+            <label>A</label>
+            <p id="answerA">Land A</p>
+          </div>
+          <div class="answerPickOption" id="optionB" onclick="pickAnswer('B')">
+            <label>B</label>
+            <p id="answerB">Land B</p>
+          </div>
+          <div class="answerPickOption" id="optionC" onclick="pickAnswer('C')">
+            <label>C</label>
+            <p id="answerC">Land C</p>
+          </div>
+          <div class="answerPickOption" id="optionD" onclick="pickAnswer('D')">
+            <label>D</label>
+            <p id="answerD">Land D</p>
+          </div>
+        </div>
+        <div id="answerExpert">
+          <div id="expertDivLand" class="paddingAll">
+            <label>Land</label>
+            <br>
+            <input type="text" name="expertLand" id="expertLand" value="">
+          </div>
+          <div id="expertDivHaupt" class="paddingAll">
+            <label>Hauptstadt</label>
+            <br>
+            <input type="text" name="expertHaupt" id="expertHaupt" value="">
+          </div>
+          <div id="expertDivFlagge" class="expertDiv50 paddingAll">
+            <label>Flagge</label>
+            <button type="button" class="button" onclick="$('#modalFlagge').show()">Wählen</button>
+            <br><br>
+            <img name="expertFlagge" id="expertFlagge" class="flagMax" src="">
+          </div>
+          <div id="expertDivUmriss" class="expertDiv50 paddingAll">
+            <label>Umriss</label>
+            <button type="button" class="button" onclick="$('#modalUmrisse').show()">Wählen</button>
+            <br><br>
+            <img name="expertUmrisse" id="expertUmrisse" class="flagMax" src="">
+          </div>
+          <button type="button" class="button" onclick="testExpert()">Antwort</button>
+        </div>
+        <div id="progress">
+          <label>Anzahl: </label>
+          <label id="anzahl"></label>
+          <label>von</label>
+          <label id="fragen"></label>
+          <br>
+          <label>Richtig beantwortet: </label>
+          <label id="prozent">100%</label>
+        </div>
+        <div id="clues">
+          <button type="button" class="button" onclick="getClue()">Hinweis erhalten</button>
+          <label for="clue" id="clue"></label>
+        </div>
+        <div id="helpButtons">
+          <button type="button" class="button" onclick="skip()">Überspringen</button>
+          <button type="button" class="button" onclick="solve()">Lösen</button>
+          <button type="button" class="button" onclick="solveAll()">Aufgeben</button>
+        </div>
+        <div id="gameButtons">
+          <button type="button" class="button" onclick="restart()">Neustart</button>
+          <button type="button" class="button" onclick="stopGame()">Zurück</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modalFlagge">
+    <div class="modal-content" id="mcFlagge">
+    </div>
+  </div>
+
+  <div class="modal" id="modalUmrisse">
+    <div class="modal-content" id="mcUmrisse">
+    </div>
+  </div>
+
+</body>
+
+</html>
