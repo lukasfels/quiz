@@ -4,6 +4,7 @@ const modi = ["Flaggen", "Hauptstädte", "Umrisse", "Expert", "Pokemon"]
 
 <template>
     <h1>Wähle einen Modus</h1>
+    <br>
     <ul class="modi">
         <a v-for="modus in modi" :href="modus">
             <li class="modus">{{ modus }}</li>
