@@ -8,11 +8,14 @@ const router = createRouter({
       path: "/",
       name: "home",
       component: Main,
+      props: true,
     },
     {
-      path: "/Flaggen",
-      name: "flaggen",
-      component: () => import("../views/FlaggenView.vue"),
+      path: "/modus",
+      name: "modus",
+      component: () => import("../views/ModusView.vue"),
+      params: { test: 1 },
+      props: true,
     },
   ],
 });
