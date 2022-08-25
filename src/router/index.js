@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Main from "../views/MainView.vue"
+//import Modus from "../views/ModusView.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -11,13 +12,13 @@ const router = createRouter({
       props: true,
     },
     {
-      path: "/modus",
+      path: "/modus/:item",
       name: "modus",
       component: () => import("../views/ModusView.vue"),
-      params: { test: 1 },
-      props: true,
+      //component: Modus,
+      props: true
     },
   ],
 });
 
-export default router;
+export default router

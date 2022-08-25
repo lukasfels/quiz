@@ -2,6 +2,14 @@
 import kontinente from "../components/FilterKontinent.vue"
 import special from "../components/FilterSpecial.vue"
 import pokemon from "../components/FilterPokemon.vue"
+import { useRoute } from "vue-router";
+
+const props = defineProps({ item: String })
+
+const route = useRoute();
+console.log(route.fullPath)
+console.log(props.item)
+console.log(route.params)
 
 function starteSpiel() {
     console.log("Starte Spiel")
