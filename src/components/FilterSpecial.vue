@@ -18,7 +18,7 @@ welt.forEach(function (x) {
     <h2>Spezial</h2>
     <form class="formSpecial">
         <label v-for="q, k in special">
-            <input type="checkbox" name="land" :value="k">{{ k }} {{ q }}
+            <input type="checkbox" name="special" :value="k">{{ k }} {{ q }}
         </label>
     </form>
 </template>

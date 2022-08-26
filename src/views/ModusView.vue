@@ -11,8 +11,11 @@ console.log(route.fullPath)
 console.log(props.item)
 console.log(route.params)
 
+const checkedKontinent = []
+
 function starteSpiel() {
     console.log("Starte Spiel")
+    console.log(checkedKontinent)
 }
 </script>
 
