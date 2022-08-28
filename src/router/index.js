@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Main from "../views/MainView.vue"
-//import Modus from "../views/ModusView.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -9,14 +8,16 @@ const router = createRouter({
       path: "/",
       name: "home",
       component: Main,
-      props: true,
     },
     {
-      path: "/modus/:item",
+      path: "/modus",
       name: "modus",
       component: () => import("../views/ModusView.vue"),
-      //component: Modus,
-      props: true
+    },
+    {
+      path: "/quiz",
+      name: "quiz",
+      component: () => import("../views/QuizView.vue"),
     },
   ],
 });

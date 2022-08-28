@@ -1,13 +1,17 @@
 <script setup>
-import { useRouter } from 'vue-router';
+import { useRouter } from 'vue-router'
+import { useQuizStore } from '@/stores/quizStore'
 
+//Array mit allen Modi
 const modi = ["Flaggen", "Hauptstädte", "Umrisse", "Expert", "Pokemon"]
 
 const router = useRouter()
+const store = useQuizStore()
 
+//Ruft den ModusView auf und übergibt den Modus als Parameter
 function goMode(x) {
-    console.log(x)
-    router.push({ name: "modus", query: { name: x }, params: { item: 'Bitte'} })
+    store.modus = x
+    router.push({ name: "modus" })
 }
 </script>
 
