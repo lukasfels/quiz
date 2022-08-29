@@ -1,10 +1,9 @@
 <script setup>
 import { useQuizStore } from '@/stores/quizStore'
-import { computed } from '@vue/reactivity';
-import { watch, ref } from 'vue'
+import { computed } from '@vue/reactivity'
+import AnswerInput from '../AnswerInput.vue'
 
 const store = useQuizStore()
-console.log(store.next)
 const next = computed(() => './src/assets/Flaggen/' + store.next.code + '.svg')
 </script>
 
@@ -12,6 +11,7 @@ const next = computed(() => './src/assets/Flaggen/' + store.next.code + '.svg')
     <h1>Flaggenquiz</h1>
     <h3>Zu welchem Land gehört diese Flagge: </h3>
     <img id="flagge" class="flagMax" :src="next">
+    <AnswerInput></AnswerInput>
 </template>
 
 <style>

@@ -13,5 +13,5 @@ export const useQuizStore = defineStore('quizStore', () => {
             next.value = x[rand.value];
         }
     }
-    return { modus, auswahl, fragen, next, nextLand }
+    return { modus, auswahl, fragen, next, rand, nextLand }
 })
