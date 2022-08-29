@@ -340,7 +340,7 @@ function initMode() {
       node.setAttribute('onclick', "pickExpertF('" + land.code + "')");
 
       const inode = document.createElement("img");
-      inode.setAttribute('src', 'Flaggen/' + land.code + '.svg')
+      inode.setAttribute('src', 'src/assets/Flaggen/' + land.code + '.svg')
       inode.setAttribute('class', 'modalImg');
 
       node.appendChild(inode);
@@ -351,7 +351,7 @@ function initMode() {
       node2.setAttribute('onclick', "pickExpertU('" + land.kontinent + "','" + land.code + "')");
 
       const inode2 = document.createElement("img");
-      inode2.setAttribute('src', 'Umrisse/' + land.kontinent + '/' + land.code + '.svg')
+      inode2.setAttribute('src', 'src/assets/Umrisse/' + land.kontinent + '/' + land.code + '.svg')
       inode2.setAttribute('class', 'modalImg');
 
       node2.appendChild(inode2);
@@ -482,14 +482,14 @@ function testLand(x) {
 //Expertenmodus, Flagge aus der Übersicht auswählen
 function pickExpertF(code) {
   $('#modalFlagge').hide();
-  $("#expertFlagge").attr("src", 'Flaggen/' + code + '.svg');
+  $("#expertFlagge").attr("src", 'src/assets/Flaggen/' + code + '.svg');
   $("#expertFlagge").val(code);
 }
 
 //Expertenmodus, Umriss aus der Übersicht auswählen
 function pickExpertU(kontinent, code) {
   $('#modalUmrisse').hide();
-  $("#expertUmrisse").attr("src", 'Umrisse/' + kontinent + '/' + code + '.svg');
+  $("#expertUmrisse").attr("src", 'src/assets/Umrisse/' + kontinent + '/' + code + '.svg');
   $("#expertUmrisse").val(code);
 }
 
@@ -576,15 +576,15 @@ function setLand() {
 
   //Modus prüfen und die Frage/Flagge/Scahtten etc. anzeigen
   if (mode.name == 'flaggen') {
-    $("#flagge").attr("src", "Flaggen/" + quiz[next].code + '.svg');
+    $("#flagge").attr("src", "src/assets/Flaggen/" + quiz[next].code + '.svg');
   } else if (mode.name == 'hauptstadt') {
     $("#land").text(quiz[next].name);
     //$("#flagge").attr("src", "Flaggen/" + quiz[next].code + '.svg');
   } else if (mode.name == 'umriss') {
-    $("#flagge").attr('src', 'Umrisse/' + quiz[next].kontinent + '/' + quiz[next].code + '.svg');
+    $("#flagge").attr('src', 'src/assets/Umrisse/' + quiz[next].kontinent + '/' + quiz[next].code + '.svg');
   } else if (mode.name == 'pokemon') {
     let zeroId = ('000' + quiz[next].id).slice(-3);
-    $("#pokemonShadow").attr('src', 'Pokemon/' + quiz[next].generation + 'Generation/' + zeroId + '.png');
+    $("#pokemonShadow").attr('src', 'src/assets/Pokemon/' + quiz[next].generation + 'Generation/' + zeroId + '.png');
   }
 
   //Falls mit Auswahlmöglichkeiten, dann zufällige Antworten aussuchen

@@ -12,9 +12,6 @@ if (store.auswahl.length == 0) {
     router.push({ name: "modus" })
 }
 
-//Array, das die zu beantwortenden Objekte beinhaltet
-var filterFragen = []
-
 //Funktion für die Weltdaten
 function filterWelt(x) {
     if ((x.uno && store.auswahl.includes(x.kontinent))
@@ -29,15 +26,15 @@ function winGame() {
 
 //Filter der Daten nach Auswahl
 if (store.modus == "Pokemon") {
-    filterFragen = pokemon.filter(x => store.auswahl.includes(x.generation))
+    store.fragen = pokemon.filter(x => store.auswahl.includes(x.generation))
 } else {
-    filterFragen = welt.filter(filterWelt)
+    store.fragen = welt.filter(filterWelt)
 }
 
-store.nextLand(filterFragen)
+store.nextLand(store.fragen)
 </script>
 
 <template>
-    <button @click="store.nextLand(filterFragen)">Next</button>
+    <button @click="store.nextLand(store.fragen)">Next</button>
     <quiz.flaggen v-if="store.modus == 'Flaggen'"></quiz.flaggen>
 </template>
