@@ -1,25 +1,25 @@
 <script setup>
-import { ref } from "vue"
+import { watch } from 'vue'
 import { useQuizStore } from '@/stores/quizStore'
 import pickSingle from './AnswerPickSingle.vue'
-import { computed } from "@vue/reactivity";
+import { reactive } from "@vue/reactivity";
 
 const store = useQuizStore()
-const input = ref('')
-const shufflePick = computed(() => {
-    return picked
-})
+const picked = reactive([])
+var arr = store.fragen.map(erstellArray)
+
+watch(
+    () => store.next.name,
+    () => { randomAnswers() }
+)
 
 function erstellArray(obj) {
     return obj.name
 }
 
-var arr = store.fragen.map(erstellArray)
-var picked = []
-
 //Wird ausgeführt, wenn Antwortmöglichkeiten angezeigt werden sollen
 function randomAnswers() {
-    picked = []
+    picked.length = 0
 
     //Richtige Antwort pushen
     picked.push(store.next.name)
@@ -44,9 +44,7 @@ function randomAnswers() {
     }
 
     //Antworten mischen
-    shuffle(picked);
-
-    console.log(picked)
+    shuffle(picked)
 }
 
 //Fisher–Yates shuffle
@@ -73,10 +71,13 @@ randomAnswers()
     
 <template>
     <div class="answerPick">
-        <pickSingle v-for="i in shufflePick" :answer="i"></pickSingle>
+        <pickSingle v-for="i in picked" :key="i" :answer="i"></pickSingle>
     </div>
-    <button @click="randomAnswers">Next</button>
 </template>
     
 <style>
+.answerPick {
+    float: left;
+    width: 100%;
+}
 </style>
