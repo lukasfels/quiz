@@ -22,16 +22,16 @@ function toggleHide() {
         <div class="optionTab" :class="{ hide: hide }">
             <h3>Optionen</h3>
             <label>
-                <p>{{  overview[store.configOV] }}</p>
-                <input type="range" min="0" max="1" v-model="store.configOV">
+                <p>{{  overview[store.intConfigOV] }}</p>
+                <input type="range" min="0" max="1" v-model="store.intConfigOV">
             </label><br>
             <label>
-                <p>{{  answer[store.configAnswer] }}</p>
-                <input type="range" min="0" max="2" v-model="store.configAnswer">
+                <p>{{  answer[store.intConfigAnswer] }}</p>
+                <input type="range" min="0" max="2" v-model="store.intConfigAnswer">
             </label><br>
             <label>
-                <p>{{  delay[store.configDelay] }}</p>
-                <input type="range" min="0" max="1" v-model="store.configDelay">
+                <p>{{  delay[store.intConfigDelay] }}</p>
+                <input type="range" min="0" max="1" v-model="store.intConfigDelay">
             </label>
             <br>
             <button @click="toggleHide">Speichern</button>

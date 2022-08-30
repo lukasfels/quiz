@@ -5,15 +5,15 @@ import AnswerInput from '../AnswerInput.vue'
 import AnswerPick from '../AnswerPick.vue'
 
 const store = useQuizStore()
-const next = computed(() => './src/assets/Flaggen/' + store.next.code + '.svg')
+const nextURL = computed(() => './src/assets/Flaggen/' + store.objNext.code + '.svg')
 </script>
 
 <template>
     <h1>Flaggenquiz</h1>
     <h3>Zu welchem Land gehört diese Flagge: </h3>
-    <img id="flagge" class="flagMax" :src="next">
-    <AnswerInput v-if="store.configAnswer != 2"></AnswerInput>
-    <AnswerPick v-if="store.configAnswer == 2"></AnswerPick>
+    <img id="flagge" class="flagMax" :src="nextURL">
+    <AnswerInput v-if="store.intConfigAnswer != 2"></AnswerInput>
+    <AnswerPick v-if="store.intConfigAnswer == 2"></AnswerPick>
 </template>
 
 <style>

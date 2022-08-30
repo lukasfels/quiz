@@ -1,5 +1,5 @@
-import flaggen from "./QuizFlaggen.vue"
+import flags from "./QuizFlags.vue"
 
 export default {
-    flaggen
+    flags
 }

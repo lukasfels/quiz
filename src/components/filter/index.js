@@ -1,7 +1,7 @@
-import kontinente from "./FilterKontinent.vue"
+import continents from "./FilterContinent.vue"
 import special from "./FilterSpecial.vue"
 import pokemon from "./FilterPokemon.vue"
 
 export default {
-    kontinente, special, pokemon
+    continents, special, pokemon
 }

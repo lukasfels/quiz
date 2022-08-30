@@ -5,29 +5,29 @@ import { useQuizStore } from '@/stores/quizStore'
 defineProps(['answer'])
 
 const store = useQuizStore()
-const wrongAnswer = ref(false)
+const boolAnswer = ref(false)
 
 watch(
-    () => store.next.name,
-    () => { wrongAnswer.value = false }
+    () => store.objNext.name,
+    () => { boolAnswer.value = false }
 )
 
-//Wird ausgeführt um die Antwort für die Frage zu prüfen
-function testeAntwort(x) {
+//Wird ausgeführt um die Antwort zu prüfen
+function checkAnswer(x) {
     //Prüft, ob das Geschriebene die Antwort ist, einige Länder/Hauptstädte haben Alternative Schreibweisen unter 'altname'
-    if (x.toLowerCase() == store.next.name.toLowerCase()) {
+    if (x.toLowerCase() == store.objNext.name.toLowerCase()) {
         //Richtige Antwort wird aus dem Array entfernt
-        store.fragen.splice(store.rand, 1)
+        store.objQuestions.splice(store.intRandom, 1)
 
-        store.nextLand(store.fragen)
+        store.nextQuestion(store.objQuestions)
     } else {
-        wrongAnswer.value = true
+        boolAnswer.value = true
     }
 }
 </script>
 
 <template>
-    <div class="answerPickOption" :class="{ wrong: wrongAnswer }" @click="testeAntwort(answer)">
+    <div class="answerPickOption" :class="{ wrong: boolAnswer }" @click="checkAnswer(answer)">
         <p>{{  answer  }}</p>
     </div>
 </template>

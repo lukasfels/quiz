@@ -10,9 +10,9 @@ const router = createRouter({
       component: Main,
     },
     {
-      path: "/modus",
-      name: "modus",
-      component: () => import("../views/ModusView.vue"),
+      path: "/mode",
+      name: "mode",
+      component: () => import("../views/ModeView.vue"),
     },
     {
       path: "/quiz",

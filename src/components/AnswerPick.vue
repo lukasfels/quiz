@@ -5,11 +5,11 @@ import pickSingle from './AnswerPickSingle.vue'
 import { reactive } from "@vue/reactivity";
 
 const store = useQuizStore()
-const picked = reactive([])
-var arr = store.fragen.map(erstellArray)
+const arrPicked = reactive([])
+var arrAnswers = store.objQuestions.map(erstellArray)
 
 watch(
-    () => store.next.name,
+    () => store.objNext.name,
     () => { randomAnswers() }
 )
 
@@ -19,32 +19,32 @@ function erstellArray(obj) {
 
 //Wird ausgeführt, wenn Antwortmöglichkeiten angezeigt werden sollen
 function randomAnswers() {
-    picked.length = 0
+    arrPicked.length = 0
 
     //Richtige Antwort pushen
-    picked.push(store.next.name)
+    arrPicked.push(store.objNext.name)
 
-    let rightAnswer = arr.indexOf(picked[0])
-    let i = arr.length - 1
+    let rightAnswer = arrAnswers.indexOf(arrPicked[0])
+    let i = arrAnswers.length - 1
 
-    let temp = arr[i]
-    arr[i] = arr[rightAnswer]
-    arr[rightAnswer] = temp
+    let temp = arrAnswers[i]
+    arrAnswers[i] = arrAnswers[rightAnswer]
+    arrAnswers[rightAnswer] = temp
 
     let j = 3
     while (j > 0 && i > 0) {
         let r = Math.floor(Math.random() * i)
-        picked.push(arr[r])
+        arrPicked.push(arrAnswers[r])
         i--
 
-        let temp = arr[i]
-        arr[i] = arr[r]
-        arr[r] = temp
+        let temp = arrAnswers[i]
+        arrAnswers[i] = arrAnswers[r]
+        arrAnswers[r] = temp
         j--
     }
 
     //Antworten mischen
-    shuffle(picked)
+    shuffle(arrPicked)
 }
 
 //Fisher–Yates shuffle
@@ -71,7 +71,7 @@ randomAnswers()
     
 <template>
     <div class="answerPick">
-        <pickSingle v-for="i in picked" :key="i" :answer="i"></pickSingle>
+        <pickSingle v-for="i in arrPicked" :key="i" :answer="i"></pickSingle>
     </div>
 </template>
     

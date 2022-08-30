@@ -2,19 +2,19 @@ import { defineStore } from 'pinia'
 import { ref } from "vue"
 
 export const useQuizStore = defineStore('quizStore', () => {
-    const modus = ""
-    const auswahl = ref([])
-    const fragen = ref({})
-    const next = ref({})
-    const rand = ref(0)
-    const configOV = ref(0)
-    const configAnswer = ref(2)
-    const configDelay = ref(0)
-    function nextLand(x) {
+    const strMode = ""
+    const arrSelection = ref([])
+    const objQuestions = ref({})
+    const objNext = ref({})
+    const intRandom = ref(0)
+    const intConfigOV = ref(0)
+    const intConfigAnswer = ref(2)
+    const intConfigDelay = ref(0)
+    function nextQuestion(x) {
         if (x.length > 0) {
-            rand.value = Math.floor(Math.random() * x.length);
-            next.value = x[rand.value];
+            intRandom.value = Math.floor(Math.random() * x.length);
+            objNext.value = x[intRandom.value];
         }
     }
-    return { modus, auswahl, fragen, next, rand, configOV, configAnswer, configDelay, nextLand }
+    return { strMode, arrSelection, objQuestions, objNext, intRandom, intConfigOV, intConfigAnswer, intConfigDelay, nextQuestion }
 })

@@ -1,4 +1,4 @@
-export const welt = [{
+export const world = [{
     "name": "Afghanistan",
     "code": "af",
     "kontinent": "Asien",

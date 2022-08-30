@@ -1,21 +1,22 @@
 <script setup>
 import quiz from '@/components/quiz'
 import { useQuizStore } from '@/stores/quizStore'
-import { welt } from "@/assets/welt.js"
+import { world } from "@/assets/world.js"
 import { pokemon } from "@/assets/pokemon.js"
+import ConfigView from './ConfigView.vue'
 import router from '../router'
 
 const store = useQuizStore()
 
 //Wenn die Seite neugeladen wird oder die Auswahl leer ist
-if (store.auswahl.length == 0) {
-    router.push({ name: "modus" })
+if (store.arrSelection.length == 0) {
+    router.push({ name: "mode" })
 }
 
-//Funktion für die Weltdaten
-function filterWelt(x) {
-    if ((x.uno && store.auswahl.includes(x.kontinent))
-        || (x.special && store.auswahl.includes(x.special))) {
+//Filter Funktion für die Weltdaten
+function filterWorld(x) {
+    if ((x.uno && store.arrSelection.includes(x.kontinent))
+        || (x.special && store.arrSelection.includes(x.special))) {
         return true
     }
 }
@@ -25,16 +26,17 @@ function winGame() {
 }
 
 //Filter der Daten nach Auswahl
-if (store.modus == "Pokemon") {
-    store.fragen = pokemon.filter(x => store.auswahl.includes(x.generation))
+if (store.strMode == "Pokemon") {
+    store.objQuestions = pokemon.filter(x => store.arrSelection.includes(x.generation))
 } else {
-    store.fragen = welt.filter(filterWelt)
+    store.objQuestions = world.filter(filterWorld)
 }
 
-store.nextLand(store.fragen)
+store.nextQuestion(store.objQuestions)
 </script>
 
 <template>
-    <button @click="store.nextLand(store.fragen)">Next</button>
-    <quiz.flaggen v-if="store.modus == 'Flaggen'"></quiz.flaggen>
+    <ConfigView></ConfigView>
+    <quiz.flags v-if="store.strMode == 'Flaggen'"></quiz.flags>
+    <button @click="store.nextQuestion(store.objQuestions)">Skip</button>
 </template>

@@ -1,7 +1,6 @@
 <script setup>
 import filter from "@/components/filter"
 import { useRouter } from "vue-router";
-import { ref } from "vue"
 import { useQuizStore } from '@/stores/quizStore'
 import ConfigView from './ConfigView.vue'
 
@@ -9,30 +8,30 @@ const store = useQuizStore()
 const router = useRouter()
 
 //
-if (store.modus == "") {
+if (store.strMode == "") {
     router.push({ name: "home" })
 }
 
 //Auswahl zurücksetzen
-store.auswahl = []
+store.arrSelection = []
 
 //Prüft welche Checkboxen angezeigt werden sollen
-var check = "welt"
-if (store.modus == "Pokemon") {
+var check = "world"
+if (store.strMode == "Pokemon") {
     check = "pokemon"
 }
 
 //Funtkion für Button 'Starten'
-function starteSpiel() {
+function startGame() {
     router.push({ name: "quiz" })
 }
 </script>
 
 <template>
     <h1>Wähle die Themen</h1>
-    <filter.kontinente v-if="check == 'welt'"></filter.kontinente>
-    <filter.special v-if="check == 'welt'"></filter.special>
+    <filter.continents v-if="check == 'world'"></filter.continents>
+    <filter.special v-if="check == 'world'"></filter.special>
     <filter.pokemon v-if="check == 'pokemon'"></filter.pokemon>
-    <button @click="starteSpiel">Starten</button>
+    <button @click="startGame">Starten</button>
     <ConfigView></ConfigView>
 </template>

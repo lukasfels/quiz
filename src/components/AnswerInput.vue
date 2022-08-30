@@ -4,48 +4,59 @@ import { useQuizStore } from '@/stores/quizStore'
 import { computed } from "@vue/reactivity";
 
 const store = useQuizStore()
-const input = ref('')
-var autocomplete = []
+const strInput = ref('')
+var arrAutocomplete = []
 
 //Wird ausgeführt um die Antwort für die Frage zu prüfen
-function testeAntwort(x) {
-    input.value = x
+function checkAnswer(x) {
+    strInput.value = x
     //Prüft, ob das Geschriebene die Antwort ist, einige Länder/Hauptstädte haben Alternative Schreibweisen unter 'altname'
-    if (x.toLowerCase() == store.next.name.toLowerCase()) {
+    if (x.toLowerCase() == store.objNext.name.toLowerCase()) {
         //Input löschen für nächste Frage
-        input.value = ""
+        strInput.value = ""
 
         //Richtige Antwort wird aus dem Array entfernt
-        store.fragen.splice(store.rand, 1)
+        store.objQuestions.splice(store.intRandom, 1)
 
-        store.nextLand(store.fragen)
+        //Nächste Frage laden
+        store.nextQuestion(store.objQuestions)
     }
 }
 
-function erstellAutocomplete(obj) {
+//Gibt das Attribut zurück, das abgefragt wird
+function getAttribute(obj) {
     return obj.name
 }
 
-function filterAuto(obj) {
-    if (input.value.length >= 3) {
-        return obj.toLowerCase().includes(input.value)
+//Funktion die prüft, ob das einegebene Wort zu einer Antwort passt
+function filterAutocomplete(obj) {
+    if (strInput.value.length >= 3) {
+        return obj.toLowerCase().includes(strInput.value)
     } else {
         return false
     }
 }
 
-autocomplete = store.fragen.map(erstellAutocomplete)
-const filterAutocomplete = computed(() => {
-    return autocomplete.filter(filterAuto)
+//Erstellt ein Array mit dem Attribut, das abgefragt wird
+arrAutocomplete = store.objQuestions.map(getAttribute)
+
+//Erstellt eine Referenz zum gefilterten 'arrAutocomplete'
+const arrFiltered = computed(() => {
+    if(store.intConfigAnswer == 1){
+        return arrAutocomplete.filter(filterAutocomplete)
+    }
+    else {
+        return false
+    }
 })
 </script>
 
 <template>
     <div class="answerInput">
         <p>Antwort:</p>
-        <input type="text" class="answerInput" v-model="input" @input="testeAntwort($event.target.value)">
-        <div class="autocomplete" v-if="filterAutocomplete.length > 0">
-            <div v-for="item in filterAutocomplete" @click="testeAntwort(item)">{{ item }}</div>
+        <input type="text" class="answerInput" v-model="strInput" @input="checkAnswer($event.target.value)">
+        <div class="autocomplete" v-if="arrFiltered.length > 0">
+            <div v-for="item in arrFiltered" @click="checkAnswer(item)">{{ item }}</div>
         </div>
     </div>
 </template>

@@ -19,7 +19,7 @@ pokemon.forEach(function (x) {
     <h2>Generationen</h2>
     <form class="formPokemon">
         <label v-for="value, key in generation">
-            <input type="checkbox" :value="parseInt(key)" v-model="store.auswahl">Generation {{ key }} {{ value }}
+            <input type="checkbox" :value="parseInt(key)" v-model="store.arrSelection">Generation {{ key }} {{ value }}
         </label>
     </form>
 </template>

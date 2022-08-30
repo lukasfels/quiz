@@ -1,12 +1,12 @@
 <script setup>
-import { welt } from "@/assets/welt.js"
+import { world } from "@/assets/world.js"
 import { useQuizStore } from '@/stores/quizStore'
 
 const store = useQuizStore()
 
 //Erstellt ein Objekt mit allen Spezialthemen plus die Anzahl
 const special = {};
-welt.forEach(function (x) {
+world.forEach(function (x) {
     if (x.special) {
         if (special[x.special]) {
             special[x.special]++;
@@ -21,7 +21,7 @@ welt.forEach(function (x) {
     <h2>Spezial</h2>
     <form class="formSpecial">
         <label v-for="q, k in special">
-            <input type="checkbox" :value="k" v-model="store.auswahl">{{ k }} {{ q }}
+            <input type="checkbox" :value="k" v-model="store.arrSelection">{{ k }} {{ q }}
         </label>
     </form>
 </template>
