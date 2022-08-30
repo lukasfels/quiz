@@ -1,6 +1,7 @@
 <script setup>
 import { useRouter } from 'vue-router'
 import { useQuizStore } from '@/stores/quizStore'
+import ConfigView from './ConfigView.vue'
 
 //Array mit allen Modi
 const modi = ["Flaggen", "Hauptstädte", "Umrisse", "Expert", "Pokemon"]
@@ -23,6 +24,7 @@ function goMode(x) {
             <li class="modus">{{ modus }}</li>
         </a>
     </ul>
+    <ConfigView></ConfigView>
 </template>
 
 <style>

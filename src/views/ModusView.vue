@@ -3,6 +3,7 @@ import filter from "@/components/filter"
 import { useRouter } from "vue-router";
 import { ref } from "vue"
 import { useQuizStore } from '@/stores/quizStore'
+import ConfigView from './ConfigView.vue'
 
 const store = useQuizStore()
 const router = useRouter()
@@ -33,4 +34,5 @@ function starteSpiel() {
     <filter.special v-if="check == 'welt'"></filter.special>
     <filter.pokemon v-if="check == 'pokemon'"></filter.pokemon>
     <button @click="starteSpiel">Starten</button>
+    <ConfigView></ConfigView>
 </template>

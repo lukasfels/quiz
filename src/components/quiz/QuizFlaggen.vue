@@ -12,8 +12,8 @@ const next = computed(() => './src/assets/Flaggen/' + store.next.code + '.svg')
     <h1>Flaggenquiz</h1>
     <h3>Zu welchem Land gehört diese Flagge: </h3>
     <img id="flagge" class="flagMax" :src="next">
-    <AnswerInput></AnswerInput>
-    <AnswerPick></AnswerPick>
+    <AnswerInput v-if="store.configAnswer != 2"></AnswerInput>
+    <AnswerPick v-if="store.configAnswer == 2"></AnswerPick>
 </template>
 
 <style>
