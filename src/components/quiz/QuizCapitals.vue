@@ -5,17 +5,17 @@ import AnswerInput from '../AnswerInput.vue'
 import AnswerPick from '../AnswerPick.vue'
 
 const store = useQuizStore()
-const nextURL = computed(() => "./src/assets/Flaggen/" + store.objNext.code + ".svg")
+const nextCapital = computed(() => store.objNext.name)
 </script>
-
+    
 <template>
-    <h1>Flaggenquiz</h1>
-    <h3>Zu welchem Land gehört diese Flagge: </h3>
-    <img class="flagMax" :src="nextURL">
-    <AnswerInput v-if="store.intConfigAnswer != 2"></AnswerInput>
-    <AnswerPick v-if="store.intConfigAnswer == 2"></AnswerPick>
+    <h1>Hauptstadtquiz</h1>
+    <h3>Wie heißt die Hauptstadt von: </h3>
+    <p>{{  nextCapital  }}</p>
+    <AnswerInput v-if="store.intConfigAnswer != 2" attr="capital"></AnswerInput>
+    <AnswerPick v-if="store.intConfigAnswer == 2" attr="capital"></AnswerPick>
 </template>
-
+    
 <style>
 .flagMax {
     border: 1px solid black;

@@ -3,6 +3,13 @@ import { ref } from "vue"
 import { useQuizStore } from '@/stores/quizStore'
 import { computed } from "@vue/reactivity";
 
+const props = defineProps({
+    attr: {
+        type: String,
+        default: 'name'
+    }
+})
+
 const store = useQuizStore()
 const strInput = ref('')
 var arrAutocomplete = []
@@ -11,7 +18,7 @@ var arrAutocomplete = []
 function checkAnswer(x) {
     strInput.value = x
     //Prüft, ob das Geschriebene die Antwort ist, einige Länder/Hauptstädte haben Alternative Schreibweisen unter 'altname'
-    if (x.toLowerCase() == store.objNext.name.toLowerCase()) {
+    if (x.toLowerCase() == store.objNext[props.attr].toLowerCase()) {
         //Input löschen für nächste Frage
         strInput.value = ""
 

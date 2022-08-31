@@ -5,6 +5,7 @@ import { world } from "@/assets/world.js"
 import { pokemon } from "@/assets/pokemon.js"
 import ConfigView from './ConfigView.vue'
 import router from '../router'
+import { ref } from 'vue'
 
 const store = useQuizStore()
 
@@ -15,7 +16,7 @@ if (store.arrSelection.length == 0) {
 
 //Filter Funktion für die Weltdaten
 function filterWorld(x) {
-    if ((x.uno && store.arrSelection.includes(x.kontinent))
+    if ((x.uno && store.arrSelection.includes(x.continent))
         || (x.special && store.arrSelection.includes(x.special))) {
         return true
     }
@@ -26,7 +27,7 @@ function winGame() {
 }
 
 //Filter der Daten nach Auswahl
-if (store.strMode == "Pokemon") {
+if (store.strMode == "pokemon") {
     store.objQuestions = pokemon.filter(x => store.arrSelection.includes(x.generation))
 } else {
     store.objQuestions = world.filter(filterWorld)
@@ -37,6 +38,6 @@ store.nextQuestion(store.objQuestions)
 
 <template>
     <ConfigView></ConfigView>
-    <quiz.flags v-if="store.strMode == 'Flaggen'"></quiz.flags>
+    <component :is="quiz[store.strMode]"></component>
     <button @click="store.nextQuestion(store.objQuestions)">Skip</button>
 </template>

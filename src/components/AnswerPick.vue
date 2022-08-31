@@ -4,17 +4,24 @@ import { useQuizStore } from '@/stores/quizStore'
 import pickSingle from './AnswerPickSingle.vue'
 import { reactive } from "@vue/reactivity";
 
+const props = defineProps({
+    attr: {
+        type: String,
+        default: 'name'
+    }
+})
+
 const store = useQuizStore()
 const arrPicked = reactive([])
-var arrAnswers = store.objQuestions.map(erstellArray)
+var arrAnswers = store.objQuestions.map(getAttribute)
 
 watch(
     () => store.objNext.name,
     () => { randomAnswers() }
 )
 
-function erstellArray(obj) {
-    return obj.name
+function getAttribute(obj) {
+    return obj[props.attr]
 }
 
 //Wird ausgeführt, wenn Antwortmöglichkeiten angezeigt werden sollen
@@ -22,7 +29,7 @@ function randomAnswers() {
     arrPicked.length = 0
 
     //Richtige Antwort pushen
-    arrPicked.push(store.objNext.name)
+    arrPicked.push(store.objNext[props.attr])
 
     let rightAnswer = arrAnswers.indexOf(arrPicked[0])
     let i = arrAnswers.length - 1
@@ -71,7 +78,7 @@ randomAnswers()
     
 <template>
     <div class="answerPick">
-        <pickSingle v-for="i in arrPicked" :key="i" :answer="i"></pickSingle>
+        <pickSingle v-for="i in arrPicked" :key="i" :answer="i" :attr="attr"></pickSingle>
     </div>
 </template>
     

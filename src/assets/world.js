@@ -1,453 +1,453 @@
 export const world = [{
     "name": "Afghanistan",
     "code": "af",
-    "kontinent": "Asien",
-    "hauptstadt": "Kabul",
+    "continent": "Asien",
+    "capital": "Kabul",
     "uno": true
   },
   {
     "name": "Ägypten",
     "code": "eg",
-    "kontinent": "Afrika",
-    "hauptstadt": "Kairo",
+    "continent": "Afrika",
+    "capital": "Kairo",
     "uno": true
   },
   {
     "name": "Aichi",
     "code": "jp-05",
-    "kontinent": "Asien",
-    "hauptstadt": "Nagoya",
+    "continent": "Asien",
+    "capital": "Nagoya",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Akita",
     "code": "jp-23",
-    "kontinent": "Asien",
-    "hauptstadt": "Akita",
+    "continent": "Asien",
+    "capital": "Akita",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Alabama",
     "code": "us-al",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Montgomery",
+    "continent": "Nordamerika",
+    "capital": "Montgomery",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Åland",
     "code": "ax",
-    "kontinent": "Europa",
-    "hauptstadt": "Mariehamn",
+    "continent": "Europa",
+    "capital": "Mariehamn",
     "uno": false
   },
   {
     "name": "Alaska",
     "code": "us-ak",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Juneau",
+    "continent": "Nordamerika",
+    "capital": "Juneau",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Albanien",
     "code": "al",
-    "kontinent": "Europa",
-    "hauptstadt": "Tirana",
+    "continent": "Europa",
+    "capital": "Tirana",
     "uno": true
   },
   {
     "name": "Algerien",
     "code": "dz",
-    "kontinent": "Afrika",
-    "hauptstadt": "Algier",
+    "continent": "Afrika",
+    "capital": "Algier",
     "uno": true
   },
   {
     "name": "Amerikanisch-Samoa",
     "code": "as",
-    "kontinent": "Ozeanien",
-    "hauptstadt": "Pago Pago",
+    "continent": "Ozeanien",
+    "capital": "Pago Pago",
     "uno": false
   },
   {
     "name": "Amerikanische Jungferninseln",
     "code": "vi",
-    "kontinent": "Ozeanien",
-    "hauptstadt": "Charlotte Amalie",
+    "continent": "Ozeanien",
+    "capital": "Charlotte Amalie",
     "uno": false
   },
   {
     "name": "Andorra",
     "code": "ad",
-    "kontinent": "Europa",
-    "hauptstadt": "Andorra la Vella",
+    "continent": "Europa",
+    "capital": "Andorra la Vella",
     "uno": true
   },
   {
     "name": "Angola",
     "code": "ao",
-    "kontinent": "Afrika",
-    "hauptstadt": "Luanda",
+    "continent": "Afrika",
+    "capital": "Luanda",
     "uno": true
   },
   {
     "name": "Anguilla",
     "code": "ai",
-    "kontinent": "Mittelamerika",
-    "hauptstadt": "The Valley",
+    "continent": "Mittelamerika",
+    "capital": "The Valley",
     "uno": false
   },
   {
     "name": "Antigua und Barbuda",
     "code": "ag",
-    "kontinent": "Mittelamerika",
-    "hauptstadt": "Saint John’s",
-    "althauptstadt": "St Johns",
+    "continent": "Mittelamerika",
+    "capital": "Saint John’s",
+    "altcapital": "St Johns",
     "uno": true
   },
   {
     "name": "Aomori",
     "code": "jp-02",
-    "kontinent": "Asien",
-    "hauptstadt": "Aomori",
+    "continent": "Asien",
+    "capital": "Aomori",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Äquatorialguinea",
     "code": "gq",
-    "kontinent": "Afrika",
-    "hauptstadt": "Malabo",
+    "continent": "Afrika",
+    "capital": "Malabo",
     "uno": true
   },
   {
     "name": "Argentinien",
     "code": "ar",
-    "kontinent": "Südamerika",
-    "hauptstadt": "Buenos Aires",
+    "continent": "Südamerika",
+    "capital": "Buenos Aires",
     "uno": true
   },
   {
     "name": "Arizona",
     "code": "us-az",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Phoenix",
+    "continent": "Nordamerika",
+    "capital": "Phoenix",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Arkansas",
     "code": "us-ar",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Little Rock",
+    "continent": "Nordamerika",
+    "capital": "Little Rock",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Armenien",
     "code": "am",
-    "kontinent": "Asien",
-    "hauptstadt": "Jerewan",
+    "continent": "Asien",
+    "capital": "Jerewan",
     "uno": true
   },
   {
     "name": "Aruba",
     "code": "aw",
-    "kontinent": "Südamerika",
-    "hauptstadt": "Oranjestad",
+    "continent": "Südamerika",
+    "capital": "Oranjestad",
     "uno": false
   },
   {
     "name": "Aserbaidschan",
     "code": "az",
-    "kontinent": "Asien",
-    "hauptstadt": "Baku",
+    "continent": "Asien",
+    "capital": "Baku",
     "uno": true
   },
   {
     "name": "Äthiopien",
     "code": "et",
-    "kontinent": "Afrika",
-    "hauptstadt": "Addis Adeba",
+    "continent": "Afrika",
+    "capital": "Addis Adeba",
     "uno": true
   },
   {
     "name": "Australien",
     "code": "au",
-    "kontinent": "Ozeanien",
-    "hauptstadt": "Canberra",
+    "continent": "Ozeanien",
+    "capital": "Canberra",
     "uno": true
   },
   {
     "name": "Baden-Württemberg",
     "code": "de-bw",
-    "kontinent": "Europa",
-    "hauptstadt": "Stuttgart",
+    "continent": "Europa",
+    "capital": "Stuttgart",
     "special": "Bundesland",
     "uno": false
   },
   {
     "name": "Bahamas",
     "code": "bs",
-    "kontinent": "Mittelamerika",
-    "hauptstadt": "Nassau",
+    "continent": "Mittelamerika",
+    "capital": "Nassau",
     "uno": true
   },
   {
     "name": "Bahrain",
     "code": "bh",
-    "kontinent": "Asien",
-    "hauptstadt": "Manama",
+    "continent": "Asien",
+    "capital": "Manama",
     "uno": true
   },
   {
     "name": "Bangladesch",
     "code": "bd",
-    "kontinent": "Asien",
-    "hauptstadt": "Dhaka",
+    "continent": "Asien",
+    "capital": "Dhaka",
     "uno": true
   },
   {
     "name": "Barbados",
     "code": "bb",
-    "kontinent": "Mittelamerika",
-    "hauptstadt": "Bridgetown",
+    "continent": "Mittelamerika",
+    "capital": "Bridgetown",
     "uno": true
   },
   {
     "name": "Bayern",
     "code": "de-by",
-    "kontinent": "Europa",
-    "hauptstadt": "München",
+    "continent": "Europa",
+    "capital": "München",
     "special": "Bundesland",
     "uno": false
   },
   {
     "name": "Belarus",
     "code": "by",
-    "kontinent": "Europa",
-    "hauptstadt": "Minsk",
+    "continent": "Europa",
+    "capital": "Minsk",
     "uno": true
   },
   {
     "name": "Belgien",
     "code": "be",
-    "kontinent": "Europa",
-    "hauptstadt": "Brüssel",
+    "continent": "Europa",
+    "capital": "Brüssel",
     "uno": true
   },
   {
     "name": "Belize",
     "code": "bz",
-    "kontinent": "Mittelamerika",
-    "hauptstadt": "Belmopan",
+    "continent": "Mittelamerika",
+    "capital": "Belmopan",
     "uno": true
   },
   {
     "name": "Benin",
     "code": "bj",
-    "kontinent": "Afrika",
-    "hauptstadt": "Porto-Novo",
-    "althauptstadt": "Porto Novo",
+    "continent": "Afrika",
+    "capital": "Porto-Novo",
+    "altcapital": "Porto Novo",
     "uno": true
   },
   {
     "name": "Berlin",
     "code": "de-be",
-    "kontinent": "Europa",
-    "hauptstadt": "Berlin",
+    "continent": "Europa",
+    "capital": "Berlin",
     "special": "Bundesland",
     "uno": false
   },
   {
     "name": "Bermuda",
     "code": "bm",
-    "kontinent": "Mittelamerika",
-    "hauptstadt": "Hamilton",
+    "continent": "Mittelamerika",
+    "capital": "Hamilton",
     "uno": false
   },
   {
     "name": "Bhutan",
     "code": "bt",
-    "kontinent": "Asien",
-    "hauptstadt": "Thimphu",
+    "continent": "Asien",
+    "capital": "Thimphu",
     "uno": true
   },
   {
     "name": "Bolivien",
     "code": "bo",
-    "kontinent": "Südamerika",
-    "hauptstadt": "Sucre",
+    "continent": "Südamerika",
+    "capital": "Sucre",
     "uno": true
   },
   {
     "name": "Bonaire, Saba, Sint Eustatius",
     "code": "bq",
-    "kontinent": "",
-    "hauptstadt": "",
+    "continent": "",
+    "capital": "",
     "uno": false
   },
   {
     "name": "Bosnien und Herzegowina",
     "code": "ba",
-    "kontinent": "Europa",
-    "hauptstadt": "Sarajevo",
+    "continent": "Europa",
+    "capital": "Sarajevo",
     "uno": true
   },
   {
     "name": "Botswana",
     "code": "bw",
-    "kontinent": "Afrika",
-    "hauptstadt": "Gaborone",
+    "continent": "Afrika",
+    "capital": "Gaborone",
     "uno": true
   },
   {
     "name": "Bouvetinsel",
     "code": "bv",
-    "kontinent": "",
-    "hauptstadt": ""
+    "continent": "",
+    "capital": ""
   },
   {
     "name": "Brandenburg",
     "code": "de-bb",
-    "kontinent": "Europa",
-    "hauptstadt": "Potsdam",
+    "continent": "Europa",
+    "capital": "Potsdam",
     "special": "Bundesland",
     "uno": false
   },
   {
     "name": "Brasilien",
     "code": "br",
-    "kontinent": "Südamerika",
-    "hauptstadt": "Brasilia",
+    "continent": "Südamerika",
+    "capital": "Brasilia",
     "uno": true
   },
   {
     "name": "Bremen",
     "code": "de-hb",
-    "kontinent": "Europa",
-    "hauptstadt": "Bremen",
+    "continent": "Europa",
+    "capital": "Bremen",
     "special": "Bundesland",
     "uno": false
   },
   {
     "name": "Britische Jungferninseln",
     "code": "vg",
-    "kontinent": "Mittelamerika",
-    "hauptstadt": "Road Town",
+    "continent": "Mittelamerika",
+    "capital": "Road Town",
     "uno": false
   },
   {
     "name": "Britisches Territorium im Indischen Ozean",
     "code": "io",
-    "kontinent": "",
-    "hauptstadt": "",
+    "continent": "",
+    "capital": "",
     "uno": false
   },
   {
     "name": "Brunei",
     "code": "bn",
-    "kontinent": "Asien",
-    "hauptstadt": "Bandar Seri Begawan",
+    "continent": "Asien",
+    "capital": "Bandar Seri Begawan",
     "uno": true
   },
   {
     "name": "Bulgarien",
     "code": "bg",
-    "kontinent": "Europa",
-    "hauptstadt": "Sofia",
+    "continent": "Europa",
+    "capital": "Sofia",
     "uno": true
   },
   {
     "name": "Burkina Faso",
     "code": "bf",
-    "kontinent": "Afrika",
-    "hauptstadt": "Ouagadougou",
+    "continent": "Afrika",
+    "capital": "Ouagadougou",
     "uno": true
   },
   {
     "name": "Burundi",
     "code": "bi",
-    "kontinent": "Afrika",
-    "hauptstadt": "Gitega",
+    "continent": "Afrika",
+    "capital": "Gitega",
     "uno": true
   },
   {
     "name": "Chiba",
     "code": "jp-12",
-    "kontinent": "Asien",
-    "hauptstadt": "Chiba",
+    "continent": "Asien",
+    "capital": "Chiba",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Chile",
     "code": "cl",
-    "kontinent": "Südamerika",
-    "hauptstadt": "Santiago de Chile",
+    "continent": "Südamerika",
+    "capital": "Santiago de Chile",
     "uno": true
   },
   {
     "name": "China",
     "code": "cn",
-    "kontinent": "Asien",
-    "hauptstadt": "Peking",
+    "continent": "Asien",
+    "capital": "Peking",
     "uno": true
   },
   {
     "name": "Colorado",
     "code": "us-co",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Denver",
+    "continent": "Nordamerika",
+    "capital": "Denver",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Connecticut",
     "code": "us-ct",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Hartford",
+    "continent": "Nordamerika",
+    "capital": "Hartford",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Cookinseln",
     "code": "ck",
-    "kontinent": "Ozeanien",
-    "hauptstadt": "Avarua",
+    "continent": "Ozeanien",
+    "capital": "Avarua",
     "uno": false
   },
   {
     "name": "Costa Rica",
     "code": "cr",
-    "kontinent": "Mittelamerika",
-    "hauptstadt": "San José",
-    "althauptstadt": "San Jose",
+    "continent": "Mittelamerika",
+    "capital": "San José",
+    "altcapital": "San Jose",
     "uno": true
   },
   {
     "name": "Curaçao",
     "altname": "Curacao",
     "code": "cw",
-    "kontinent": "",
-    "hauptstadt": "",
+    "continent": "",
+    "capital": "",
     "uno": false
   },
   {
     "name": "Dänemark",
     "code": "dk",
-    "kontinent": "Europa",
-    "hauptstadt": "Kopenhagen",
+    "continent": "Europa",
+    "capital": "Kopenhagen",
     "uno": true
   },
   {
     "name": "Delaware",
     "code": "us-de",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Dover",
+    "continent": "Nordamerika",
+    "capital": "Dover",
     "special": "Bundesstaat",
     "uno": false
   },
@@ -455,357 +455,357 @@ export const world = [{
     "name": "Demokratische Republik Kongo",
     "altname": "DR Kongo",
     "code": "cd",
-    "kontinent": "Afrika",
-    "hauptstadt": "Kinshasa",
+    "continent": "Afrika",
+    "capital": "Kinshasa",
     "uno": true
   },
   {
     "name": "Deutschland",
     "code": "de",
-    "kontinent": "Europa",
-    "hauptstadt": "Berlin",
+    "continent": "Europa",
+    "capital": "Berlin",
     "uno": true
   },
   {
     "name": "Dominica",
     "code": "dm",
-    "kontinent": "Mittelamerika",
-    "hauptstadt": "Roseau",
+    "continent": "Mittelamerika",
+    "capital": "Roseau",
     "uno": true
   },
   {
     "name": "Dominikanische Republik",
     "code": "do",
-    "kontinent": "Mittelamerika",
-    "hauptstadt": "Santo Domingo",
+    "continent": "Mittelamerika",
+    "capital": "Santo Domingo",
     "uno": true
   },
   {
     "name": "Dschibuti",
     "code": "dj",
-    "kontinent": "Afrika",
-    "hauptstadt": "Dschibuti",
+    "continent": "Afrika",
+    "capital": "Dschibuti",
     "uno": true
   },
   {
     "name": "Ecuador",
     "code": "ec",
-    "kontinent": "Südamerika",
-    "hauptstadt": "Quito",
+    "continent": "Südamerika",
+    "capital": "Quito",
     "uno": true
   },
   {
     "name": "Ehime",
     "code": "jp-38",
-    "kontinent": "Asien",
-    "hauptstadt": "Matsuyama",
+    "continent": "Asien",
+    "capital": "Matsuyama",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Elfenbeinküste",
     "code": "ci",
-    "kontinent": "Afrika",
-    "hauptstadt": "Yamoussoukro",
+    "continent": "Afrika",
+    "capital": "Yamoussoukro",
     "uno": true
   },
   {
     "name": "El Salvador",
     "code": "sv",
-    "kontinent": "Mittelamerika",
-    "hauptstadt": "San Salvador",
+    "continent": "Mittelamerika",
+    "capital": "San Salvador",
     "uno": true
   },
   {
     "name": "Eritrea",
     "code": "er",
-    "kontinent": "Afrika",
-    "hauptstadt": "Asmara",
+    "continent": "Afrika",
+    "capital": "Asmara",
     "uno": true
   },
   {
     "name": "Estland",
     "code": "ee",
-    "kontinent": "Europa",
-    "hauptstadt": "Tallinn",
+    "continent": "Europa",
+    "capital": "Tallinn",
     "uno": true
   },
   {
     "name": "Eswatini",
     "code": "sz",
-    "kontinent": "Afrika",
-    "hauptstadt": "Mbabane",
+    "continent": "Afrika",
+    "capital": "Mbabane",
     "uno": true
   },
   {
     "name": "Falklandinseln",
     "code": "fk",
-    "kontinent": "Südamerika",
-    "hauptstadt": "Stanley",
+    "continent": "Südamerika",
+    "capital": "Stanley",
     "uno": false
   },
   {
     "name": "Färöer",
     "code": "fo",
-    "kontinent": "Europa",
-    "hauptstadt": "Tórshavn",
-    "althauptstadt": "Torshavn",
+    "continent": "Europa",
+    "capital": "Tórshavn",
+    "altcapital": "Torshavn",
     "uno": false
   },
   {
     "name": "Fidschi",
     "code": "fj",
-    "kontinent": "Ozeanien",
-    "hauptstadt": "Suva",
+    "continent": "Ozeanien",
+    "capital": "Suva",
     "uno": true
   },
   {
     "name": "Finnland",
     "code": "fi",
-    "kontinent": "Europa",
-    "hauptstadt": "Helsinki",
+    "continent": "Europa",
+    "capital": "Helsinki",
     "uno": true
   },
   {
     "name": "Florida",
     "code": "us-fl",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Tallahassee",
+    "continent": "Nordamerika",
+    "capital": "Tallahassee",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Frankreich",
     "code": "fr",
-    "kontinent": "Europa",
-    "hauptstadt": "Paris",
+    "continent": "Europa",
+    "capital": "Paris",
     "uno": true
   },
   {
     "name": "Französisch-Guayana",
     "code": "gf",
-    "kontinent": "Südamerika",
-    "hauptstadt": "Cayenne",
+    "continent": "Südamerika",
+    "capital": "Cayenne",
     "uno": false
   },
   {
     "name": "Französisch-Polynesien",
     "code": "pf",
-    "kontinent": "Ozeanien",
-    "hauptstadt": "Papeete",
+    "continent": "Ozeanien",
+    "capital": "Papeete",
     "uno": false
   },
   {
     "name": "Französische Süd- und Antarktisgebiete",
     "code": "tf",
-    "kontinent": "",
-    "hauptstadt": "",
+    "continent": "",
+    "capital": "",
     "uno": false
   },
   {
     "name": "Fukui",
     "code": "jp-18",
-    "kontinent": "Asien",
-    "hauptstadt": "Fukui",
+    "continent": "Asien",
+    "capital": "Fukui",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Fukuoka",
     "code": "jp-40",
-    "kontinent": "Asien",
-    "hauptstadt": "Fukuoka",
+    "continent": "Asien",
+    "capital": "Fukuoka",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Fukushima",
     "code": "jp-07",
-    "kontinent": "Asien",
-    "hauptstadt": "Fukushima",
+    "continent": "Asien",
+    "capital": "Fukushima",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Gabun",
     "code": "ga",
-    "kontinent": "Afrika",
-    "hauptstadt": "Libreville",
+    "continent": "Afrika",
+    "capital": "Libreville",
     "uno": true
   },
   {
     "name": "Gambia",
     "code": "gm",
-    "kontinent": "Afrika",
-    "hauptstadt": "Banjul",
+    "continent": "Afrika",
+    "capital": "Banjul",
     "uno": true
   },
   {
     "name": "Georgia",
     "code": "us-ga",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Atlanta",
+    "continent": "Nordamerika",
+    "capital": "Atlanta",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Georgien",
     "code": "ge",
-    "kontinent": "Asien",
-    "hauptstadt": "Tiflis",
+    "continent": "Asien",
+    "capital": "Tiflis",
     "uno": true
   },
   {
     "name": "Ghana",
     "code": "gh",
-    "kontinent": "Afrika",
-    "hauptstadt": "Accra",
+    "continent": "Afrika",
+    "capital": "Accra",
     "uno": true
   },
   {
     "name": "Gibraltar",
     "code": "gi",
-    "kontinent": "Europa",
-    "hauptstadt": "Gibraltar",
+    "continent": "Europa",
+    "capital": "Gibraltar",
     "uno": false
   },
   {
     "name": "Gifu",
     "code": "jp-21",
-    "kontinent": "Asien",
-    "hauptstadt": "Gifu",
+    "continent": "Asien",
+    "capital": "Gifu",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Grenada",
     "code": "gd",
-    "kontinent": "Mittelamerika",
-    "hauptstadt": "Sankt Georges",
+    "continent": "Mittelamerika",
+    "capital": "Sankt Georges",
     "uno": true
   },
   {
     "name": "Griechenland",
     "code": "gr",
-    "kontinent": "Europa",
-    "hauptstadt": "Athen",
+    "continent": "Europa",
+    "capital": "Athen",
     "uno": true
   },
   {
     "name": "Großbritannien",
     "code": "gb",
-    "kontinent": "Europa",
-    "hauptstadt": "London",
+    "continent": "Europa",
+    "capital": "London",
     "uno": true
   },
   {
     "name": "Grönland",
     "code": "gl",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Nuuk",
+    "continent": "Nordamerika",
+    "capital": "Nuuk",
     "uno": false
   },
   {
     "name": "Guadeloupe",
     "code": "gp",
-    "kontinent": "Mittelamerika",
-    "hauptstadt": "Basse-Terre",
+    "continent": "Mittelamerika",
+    "capital": "Basse-Terre",
     "uno": false
   },
   {
     "name": "Guam",
     "code": "gu",
-    "kontinent": "Ozeanien",
-    "hauptstadt": "Hagatna",
+    "continent": "Ozeanien",
+    "capital": "Hagatna",
     "uno": false
   },
   {
     "name": "Guatemala",
     "code": "gt",
-    "kontinent": "Mittelamerika",
-    "hauptstadt": "Guatemalastadt",
+    "continent": "Mittelamerika",
+    "capital": "Guatemalastadt",
     "uno": true
   },
   {
     "name": "Guernsey",
     "code": "gg",
-    "kontinent": "Europa",
-    "hauptstadt": "Sankt Peter Port",
+    "continent": "Europa",
+    "capital": "Sankt Peter Port",
     "uno": false
   },
   {
     "name": "Guinea",
     "code": "gn",
-    "kontinent": "Afrika",
-    "hauptstadt": "Conakry",
+    "continent": "Afrika",
+    "capital": "Conakry",
     "uno": true
   },
   {
     "name": "Guinea-Bissau",
     "code": "gw",
-    "kontinent": "Afrika",
-    "hauptstadt": "Bissau",
+    "continent": "Afrika",
+    "capital": "Bissau",
     "uno": true
   },
   {
     "name": "Gunma",
     "code": "jp-10",
-    "kontinent": "Asien",
-    "hauptstadt": "Maebashi",
+    "continent": "Asien",
+    "capital": "Maebashi",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Guyana",
     "code": "gy",
-    "kontinent": "Südamerika",
-    "hauptstadt": "Georgetown",
+    "continent": "Südamerika",
+    "capital": "Georgetown",
     "uno": true
   },
   {
     "name": "Haiti",
     "code": "ht",
-    "kontinent": "Mittelamerika",
-    "hauptstadt": "Port-au-Prince",
-    "althauptstadt": "Port au Prince",
+    "continent": "Mittelamerika",
+    "capital": "Port-au-Prince",
+    "altcapital": "Port au Prince",
     "uno": true
   },
   {
     "name": "Hamburg",
     "code": "de-hh",
-    "kontinent": "Europa",
-    "hauptstadt": "Hamburg",
+    "continent": "Europa",
+    "capital": "Hamburg",
     "special": "Bundesland",
     "uno": false
   },
   {
     "name": "Hawaii",
     "code": "us-hi",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Honolulu",
+    "continent": "Nordamerika",
+    "capital": "Honolulu",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Heard und McDonaldinseln",
     "code": "hm",
-    "kontinent": "",
-    "hauptstadt": "",
+    "continent": "",
+    "capital": "",
     "uno": false
   },
   {
     "name": "Hessen",
     "code": "de-he",
-    "kontinent": "Europa",
-    "hauptstadt": "Wiesbaden",
+    "continent": "Europa",
+    "capital": "Wiesbaden",
     "special": "Bundesland",
     "uno": false
   },
   {
     "name": "Hiroshima",
     "code": "jp-34",
-    "kontinent": "Asien",
-    "hauptstadt": "Hiroshima",
+    "continent": "Asien",
+    "capital": "Hiroshima",
     "special": "Präfektur",
     "uno": false
   },
@@ -813,931 +813,931 @@ export const world = [{
     "name": "Hokkaidō",
     "altname": "Hokkaido",
     "code": "jp-01",
-    "kontinent": "Asien",
-    "hauptstadt": "Sapporo",
+    "continent": "Asien",
+    "capital": "Sapporo",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Honduras",
     "code": "hn",
-    "kontinent": "Mittelamerika",
-    "hauptstadt": "Tegucigalpa",
+    "continent": "Mittelamerika",
+    "capital": "Tegucigalpa",
     "uno": true
   },
   {
     "name": "Hongkong",
     "code": "hk",
-    "kontinent": "Asien",
-    "hauptstadt": "",
+    "continent": "Asien",
+    "capital": "",
     "uno": false
   },
   {
     "name": "Hyōgo",
     "altname": "Hyogo",
     "code": "jp-28",
-    "kontinent": "Asien",
-    "hauptstadt": "Kōbe",
-    "althauptstadt": "Kobe",
+    "continent": "Asien",
+    "capital": "Kōbe",
+    "altcapital": "Kobe",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Ibaraki",
     "code": "jp-08",
-    "kontinent": "Asien",
-    "hauptstadt": "Mito",
+    "continent": "Asien",
+    "capital": "Mito",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Idaho",
     "code": "us-id",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Boise",
+    "continent": "Nordamerika",
+    "capital": "Boise",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Illinois",
     "code": "us-il",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Springfield",
+    "continent": "Nordamerika",
+    "capital": "Springfield",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Indiana",
     "code": "us-in",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Indianapolis",
+    "continent": "Nordamerika",
+    "capital": "Indianapolis",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Indien",
     "code": "in",
-    "kontinent": "Asien",
-    "hauptstadt": "Neu Delhi",
+    "continent": "Asien",
+    "capital": "Neu Delhi",
     "uno": true
   },
   {
     "name": "Indonesien",
     "code": "id",
-    "kontinent": "Asien",
-    "hauptstadt": "Jakarta",
+    "continent": "Asien",
+    "capital": "Jakarta",
     "uno": true
   },
   {
     "name": "Iowa",
     "code": "us-ia",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Des Moines",
+    "continent": "Nordamerika",
+    "capital": "Des Moines",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Ishikawa",
     "code": "jp-17",
-    "kontinent": "Asien",
-    "hauptstadt": "Kanazawa",
+    "continent": "Asien",
+    "capital": "Kanazawa",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Isle of Man",
     "code": "im",
-    "kontinent": "Europa",
-    "hauptstadt": "Douglas",
+    "continent": "Europa",
+    "capital": "Douglas",
     "uno": false
   },
   {
     "name": "Irak",
     "code": "iq",
-    "kontinent": "Asien",
-    "hauptstadt": "Bagdad",
+    "continent": "Asien",
+    "capital": "Bagdad",
     "uno": true
   },
   {
     "name": "Iran",
     "code": "ir",
-    "kontinent": "Asien",
-    "hauptstadt": "Teheran",
+    "continent": "Asien",
+    "capital": "Teheran",
     "uno": true
   },
   {
     "name": "Irland",
     "code": "ie",
-    "kontinent": "Europa",
-    "hauptstadt": "Dublin",
+    "continent": "Europa",
+    "capital": "Dublin",
     "uno": true
   },
   {
     "name": "Island",
     "code": "is",
-    "kontinent": "Europa",
-    "hauptstadt": "Reykjavik",
+    "continent": "Europa",
+    "capital": "Reykjavik",
     "uno": true
   },
   {
     "name": "Israel",
     "code": "il",
-    "kontinent": "Asien",
-    "hauptstadt": "Jerusalem",
+    "continent": "Asien",
+    "capital": "Jerusalem",
     "uno": true
   },
   {
     "name": "Italien",
     "code": "it",
-    "kontinent": "Europa",
-    "hauptstadt": "Rom",
+    "continent": "Europa",
+    "capital": "Rom",
     "uno": true
   },
   {
     "name": "Iwate",
     "code": "jp-03",
-    "kontinent": "Asien",
-    "hauptstadt": "Morioka",
+    "continent": "Asien",
+    "capital": "Morioka",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Jamaika",
     "code": "jm",
-    "kontinent": "Mittelamerika",
-    "hauptstadt": "Kingston",
+    "continent": "Mittelamerika",
+    "capital": "Kingston",
     "uno": true
   },
   {
     "name": "Japan",
     "code": "jp",
-    "kontinent": "Asien",
-    "hauptstadt": "Tokio",
+    "continent": "Asien",
+    "capital": "Tokio",
     "uno": true
   },
   {
     "name": "Jemen",
     "code": "ye",
-    "kontinent": "Asien",
-    "hauptstadt": "Sanaa",
+    "continent": "Asien",
+    "capital": "Sanaa",
     "uno": true
   },
   {
     "name": "Jersey",
     "code": "je",
-    "kontinent": "Europa",
-    "hauptstadt": "Saint Helier",
-    "althauptstadt": "St Helier",
+    "continent": "Europa",
+    "capital": "Saint Helier",
+    "altcapital": "St Helier",
     "uno": false
   },
   {
     "name": "Jordanien",
     "code": "jo",
-    "kontinent": "Asien",
-    "hauptstadt": "Amman",
+    "continent": "Asien",
+    "capital": "Amman",
     "uno": true
   },
   {
     "name": "Kagawa",
     "code": "jp-37",
-    "kontinent": "Asien",
-    "hauptstadt": "Takamatsu",
+    "continent": "Asien",
+    "capital": "Takamatsu",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Kagoshima",
     "code": "jp-46",
-    "kontinent": "Asien",
-    "hauptstadt": "Kagoshima",
+    "continent": "Asien",
+    "capital": "Kagoshima",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Kaimaninseln",
     "code": "ky",
-    "kontinent": "Mittelamerika",
-    "hauptstadt": "George Town",
+    "continent": "Mittelamerika",
+    "capital": "George Town",
     "uno": false
   },
   {
     "name": "Kalifornien",
     "code": "us-ca",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Sacramento",
+    "continent": "Nordamerika",
+    "capital": "Sacramento",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Kambodscha",
     "code": "kh",
-    "kontinent": "Asien",
-    "hauptstadt": "Phnom Penh",
+    "continent": "Asien",
+    "capital": "Phnom Penh",
     "uno": true
   },
   {
     "name": "Kamerun",
     "code": "cm",
-    "kontinent": "Afrika",
-    "hauptstadt": "Jaunde",
+    "continent": "Afrika",
+    "capital": "Jaunde",
     "uno": true
   },
   {
     "name": "Kanada",
     "code": "ca",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Ottawa",
+    "continent": "Nordamerika",
+    "capital": "Ottawa",
     "uno": true
   },
   {
     "name": "Kanagawa",
     "code": "jp-14",
-    "kontinent": "Asien",
-    "hauptstadt": "Yokohama",
+    "continent": "Asien",
+    "capital": "Yokohama",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Kansas",
     "code": "us-ks",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Topeka",
+    "continent": "Nordamerika",
+    "capital": "Topeka",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Kap Verde",
     "code": "cv",
-    "kontinent": "Afrika",
-    "hauptstadt": "Praia",
+    "continent": "Afrika",
+    "capital": "Praia",
     "uno": true
   },
   {
     "name": "Kasachstan",
     "code": "kz",
-    "kontinent": "Asien",
-    "hauptstadt": "Nur-Sultan",
-    "althauptstadt": "Nursultan",
+    "continent": "Asien",
+    "capital": "Nur-Sultan",
+    "altcapital": "Nursultan",
     "uno": true
   },
   {
     "name": "Katar",
     "code": "qa",
-    "kontinent": "Asien",
-    "hauptstadt": "Doha",
+    "continent": "Asien",
+    "capital": "Doha",
     "uno": true
   },
   {
     "name": "Kenia",
     "code": "ke",
-    "kontinent": "Afrika",
-    "hauptstadt": "Nairobi",
+    "continent": "Afrika",
+    "capital": "Nairobi",
     "uno": true
   },
   {
     "name": "Kentucky",
     "code": "us-ky",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Frankfort",
+    "continent": "Nordamerika",
+    "capital": "Frankfort",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Kirgisistan",
     "code": "kg",
-    "kontinent": "Asien",
-    "hauptstadt": "Bischkek",
+    "continent": "Asien",
+    "capital": "Bischkek",
     "uno": true
   },
   {
     "name": "Kiribati",
     "code": "ki",
-    "kontinent": "Ozeanien",
-    "hauptstadt": "South Tarawa",
+    "continent": "Ozeanien",
+    "capital": "South Tarawa",
     "uno": true
   },
   {
     "name": "Kōchi",
     "altname": "Kochi",
     "code": "jp-39",
-    "kontinent": "Asien",
-    "hauptstadt": "Kōchi",
-    "althauptstadt": "Kochi",
+    "continent": "Asien",
+    "capital": "Kōchi",
+    "altcapital": "Kochi",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Kokosinseln",
     "code": "cc",
-    "kontinent": "Ozeanien",
-    "hauptstadt": "West Island",
+    "continent": "Ozeanien",
+    "capital": "West Island",
     "uno": false
   },
   {
     "name": "Kolumbien",
     "code": "co",
-    "kontinent": "Südamerika",
-    "hauptstadt": "Bogota",
+    "continent": "Südamerika",
+    "capital": "Bogota",
     "uno": true
   },
   {
     "name": "Komoren",
     "code": "km",
-    "kontinent": "Afrika",
-    "hauptstadt": "Moroni",
+    "continent": "Afrika",
+    "capital": "Moroni",
     "uno": true
   },
   {
     "name": "Kosovo",
     "code": "xk",
-    "kontinent": "Europa",
-    "hauptstadt": "Pristina",
+    "continent": "Europa",
+    "capital": "Pristina",
     "uno": true
   },
   {
     "name": "Kroatien",
     "code": "hr",
-    "kontinent": "Europa",
-    "hauptstadt": "Zagreb",
+    "continent": "Europa",
+    "capital": "Zagreb",
     "uno": true
   },
   {
     "name": "Kuba",
     "code": "cu",
-    "kontinent": "Mittelamerika",
-    "hauptstadt": "Havanna",
+    "continent": "Mittelamerika",
+    "capital": "Havanna",
     "uno": true
   },
   {
     "name": "Kumamoto",
     "code": "jp-43",
-    "kontinent": "Asien",
-    "hauptstadt": "Kumamoto",
+    "continent": "Asien",
+    "capital": "Kumamoto",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Kuwait",
     "code": "kw",
-    "kontinent": "Asien",
-    "hauptstadt": "Kuwaitstadt",
+    "continent": "Asien",
+    "capital": "Kuwaitstadt",
     "uno": true
   },
   {
     "name": "Kyōto",
     "altname": "Kyoto",
     "code": "jp-26",
-    "kontinent": "Asien",
-    "hauptstadt": "Kyōto",
-    "althauptstadt": "Kyoto",
+    "continent": "Asien",
+    "capital": "Kyōto",
+    "altcapital": "Kyoto",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Laos",
     "code": "la",
-    "kontinent": "Asien",
-    "hauptstadt": "Vientiane",
+    "continent": "Asien",
+    "capital": "Vientiane",
     "uno": true
   },
   {
     "name": "Lesotho",
     "code": "ls",
-    "kontinent": "Afrika",
-    "hauptstadt": "Maseru",
+    "continent": "Afrika",
+    "capital": "Maseru",
     "uno": true
   },
   {
     "name": "Lettland",
     "code": "lv",
-    "kontinent": "Europa",
-    "hauptstadt": "Riga",
+    "continent": "Europa",
+    "capital": "Riga",
     "uno": true
   },
   {
     "name": "Libanon",
     "code": "lb",
-    "kontinent": "Asien",
-    "hauptstadt": "Beirut",
+    "continent": "Asien",
+    "capital": "Beirut",
     "uno": true
   },
   {
     "name": "Liberia",
     "code": "lr",
-    "kontinent": "Afrika",
-    "hauptstadt": "Monrovia",
+    "continent": "Afrika",
+    "capital": "Monrovia",
     "uno": true
   },
   {
     "name": "Libyen",
     "code": "ly",
-    "kontinent": "Afrika",
-    "hauptstadt": "Tripolis",
+    "continent": "Afrika",
+    "capital": "Tripolis",
     "uno": true
   },
   {
     "name": "Liechtenstein",
     "code": "li",
-    "kontinent": "Europa",
-    "hauptstadt": "Vaduz",
+    "continent": "Europa",
+    "capital": "Vaduz",
     "uno": true
   },
   {
     "name": "Litauen",
     "code": "lt",
-    "kontinent": "Europa",
-    "hauptstadt": "Vilnius",
+    "continent": "Europa",
+    "capital": "Vilnius",
     "uno": true
   },
   {
     "name": "Louisiana",
     "code": "us-la",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Baton Rouge",
+    "continent": "Nordamerika",
+    "capital": "Baton Rouge",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Luxemburg",
     "code": "lu",
-    "kontinent": "Europa",
-    "hauptstadt": "Luxemburg",
+    "continent": "Europa",
+    "capital": "Luxemburg",
     "uno": true
   },
   {
     "name": "Macau",
     "code": "mo",
-    "kontinent": "",
-    "hauptstadt": "",
+    "continent": "",
+    "capital": "",
     "uno": false
   },
   {
     "name": "Madagaskar",
     "code": "mg",
-    "kontinent": "Afrika",
-    "hauptstadt": "Antananarivo",
+    "continent": "Afrika",
+    "capital": "Antananarivo",
     "uno": true
   },
   {
     "name": "Maine",
     "code": "us-me",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Augusta",
+    "continent": "Nordamerika",
+    "capital": "Augusta",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Malawi",
     "code": "mw",
-    "kontinent": "Afrika",
-    "hauptstadt": "Lilongwe",
+    "continent": "Afrika",
+    "capital": "Lilongwe",
     "uno": true
   },
   {
     "name": "Malaysia",
     "code": "my",
-    "kontinent": "Asien",
-    "hauptstadt": "Kuala Lumpur",
+    "continent": "Asien",
+    "capital": "Kuala Lumpur",
     "uno": true
   },
   {
     "name": "Malediven",
     "code": "mv",
-    "kontinent": "Asien",
-    "hauptstadt": "Male",
+    "continent": "Asien",
+    "capital": "Male",
     "uno": true
   },
   {
     "name": "Mali",
     "code": "ml",
-    "kontinent": "Afrika",
-    "hauptstadt": "Bamako",
+    "continent": "Afrika",
+    "capital": "Bamako",
     "uno": true
   },
   {
     "name": "Malta",
     "code": "mt",
-    "kontinent": "Europa",
-    "hauptstadt": "Valletta",
+    "continent": "Europa",
+    "capital": "Valletta",
     "uno": true
   },
   {
     "name": "Marokko",
     "code": "ma",
-    "kontinent": "Afrika",
-    "hauptstadt": "Rabat",
+    "continent": "Afrika",
+    "capital": "Rabat",
     "uno": true
   },
   {
     "name": "Marshallinseln",
     "code": "mh",
-    "kontinent": "Ozeanien",
-    "hauptstadt": "Majuro",
+    "continent": "Ozeanien",
+    "capital": "Majuro",
     "uno": true
   },
   {
     "name": "Martinique",
     "code": "mq",
-    "kontinent": "Mittelamerika",
-    "hauptstadt": "Fort-de-France",
+    "continent": "Mittelamerika",
+    "capital": "Fort-de-France",
     "uno": false
   },
   {
     "name": "Maryland",
     "code": "us-md",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Annapolis",
+    "continent": "Nordamerika",
+    "capital": "Annapolis",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Massachusetts",
     "code": "us-ma",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Boston",
+    "continent": "Nordamerika",
+    "capital": "Boston",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Mauretanien",
     "code": "mr",
-    "kontinent": "Afrika",
-    "hauptstadt": "Nouakchott",
+    "continent": "Afrika",
+    "capital": "Nouakchott",
     "uno": true
   },
   {
     "name": "Mauritius",
     "code": "mu",
-    "kontinent": "Afrika",
-    "hauptstadt": "Port Louis",
+    "continent": "Afrika",
+    "capital": "Port Louis",
     "uno": true
   },
   {
     "name": "Mayotte",
     "code": "yt",
-    "kontinent": "Afrika",
-    "hauptstadt": "Mamoudzou",
+    "continent": "Afrika",
+    "capital": "Mamoudzou",
     "uno": false
   },
   {
     "name": "Mecklenburg-Vorpommern",
     "code": "de-mv",
-    "kontinent": "Europa",
-    "hauptstadt": "Schwerin",
+    "continent": "Europa",
+    "capital": "Schwerin",
     "special": "Bundesland",
     "uno": false
   },
   {
     "name": "Mexiko",
     "code": "mx",
-    "kontinent": "Mittelamerika",
-    "hauptstadt": "Mexikostadt",
+    "continent": "Mittelamerika",
+    "capital": "Mexikostadt",
     "uno": true
   },
   {
     "name": "Michigan",
     "code": "us-mi",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Lansing",
+    "continent": "Nordamerika",
+    "capital": "Lansing",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Mie",
     "code": "jp-24",
-    "kontinent": "Asien",
-    "hauptstadt": "Tsu",
+    "continent": "Asien",
+    "capital": "Tsu",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Mikronesien",
     "code": "fm",
-    "kontinent": "Ozeanien",
-    "hauptstadt": "Palikir",
+    "continent": "Ozeanien",
+    "capital": "Palikir",
     "uno": true
   },
   {
     "name": "Minnesota",
     "code": "us-mn",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Saint Paul",
+    "continent": "Nordamerika",
+    "capital": "Saint Paul",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Mississippi",
     "code": "us-ms",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Jackson",
+    "continent": "Nordamerika",
+    "capital": "Jackson",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Missouri",
     "code": "us-mo",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Jefferson City",
+    "continent": "Nordamerika",
+    "capital": "Jefferson City",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Miyagi",
     "code": "jp-04",
-    "kontinent": "Asien",
-    "hauptstadt": "Sendai",
+    "continent": "Asien",
+    "capital": "Sendai",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Miyazaki",
     "code": "jp-45",
-    "kontinent": "Asien",
-    "hauptstadt": "Miyazaki",
+    "continent": "Asien",
+    "capital": "Miyazaki",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Moldawien",
     "code": "md",
-    "kontinent": "Europa",
-    "hauptstadt": "Chișinău",
-    "althauptstadt": "Chisinau",
+    "continent": "Europa",
+    "capital": "Chișinău",
+    "altcapital": "Chisinau",
     "uno": true
   },
   {
     "name": "Monaco",
     "code": "mc",
-    "kontinent": "Europa",
-    "hauptstadt": "Monaco",
+    "continent": "Europa",
+    "capital": "Monaco",
     "uno": true
   },
   {
     "name": "Mongolei",
     "code": "mn",
-    "kontinent": "Asien",
-    "hauptstadt": "Ulaanbaatar",
-    "althauptstadt": "Ulan Bator",
+    "continent": "Asien",
+    "capital": "Ulaanbaatar",
+    "altcapital": "Ulan Bator",
     "uno": true
   },
   {
     "name": "Montana",
     "code": "us-mt",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Helena",
+    "continent": "Nordamerika",
+    "capital": "Helena",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Montenegro",
     "code": "me",
-    "kontinent": "Europa",
-    "hauptstadt": "Podgorica",
+    "continent": "Europa",
+    "capital": "Podgorica",
     "uno": true
   },
   {
     "name": "Montserrat",
     "code": "ms",
-    "kontinent": "Mittelamerika",
-    "hauptstadt": "Brades",
+    "continent": "Mittelamerika",
+    "capital": "Brades",
     "uno": false
   },
   {
     "name": "Mosambik",
     "code": "mz",
-    "kontinent": "Afrika",
-    "hauptstadt": "Maputo",
+    "continent": "Afrika",
+    "capital": "Maputo",
     "uno": true
   },
   {
     "name": "Myanmar",
     "code": "mm",
-    "kontinent": "Asien",
-    "hauptstadt": "Naypyidaw",
+    "continent": "Asien",
+    "capital": "Naypyidaw",
     "uno": true
   },
   {
     "name": "Nagano",
     "code": "jp-20",
-    "kontinent": "Asien",
-    "hauptstadt": "Nagano",
+    "continent": "Asien",
+    "capital": "Nagano",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Nagasaki",
     "code": "jp-42",
-    "kontinent": "Asien",
-    "hauptstadt": "Nagasaki",
+    "continent": "Asien",
+    "capital": "Nagasaki",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Namibia",
     "code": "na",
-    "kontinent": "Afrika",
-    "hauptstadt": "Windhuk",
+    "continent": "Afrika",
+    "capital": "Windhuk",
     "uno": true
   },
   {
     "name": "Nara",
     "code": "jp-29",
-    "kontinent": "Asien",
-    "hauptstadt": "Nara",
+    "continent": "Asien",
+    "capital": "Nara",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Nauru",
     "code": "nr",
-    "kontinent": "Ozeanien",
-    "hauptstadt": "Yaren",
+    "continent": "Ozeanien",
+    "capital": "Yaren",
     "uno": true
   },
   {
     "name": "Nebraska",
     "code": "us-ne",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Lincoln",
+    "continent": "Nordamerika",
+    "capital": "Lincoln",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Nepal",
     "code": "np",
-    "kontinent": "Asien",
-    "hauptstadt": "Kathmandu",
+    "continent": "Asien",
+    "capital": "Kathmandu",
     "uno": true
   },
   {
     "name": "Neukaledonien",
     "code": "nc",
-    "kontinent": "Ozeanien",
-    "hauptstadt": "Noumea",
+    "continent": "Ozeanien",
+    "capital": "Noumea",
     "uno": false
   },
   {
     "name": "Neuseeland",
     "code": "nz",
-    "kontinent": "Ozeanien",
-    "hauptstadt": "Wellington",
+    "continent": "Ozeanien",
+    "capital": "Wellington",
     "uno": true
   },
   {
     "name": "Nevada",
     "code": "us-nv",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Carson City",
+    "continent": "Nordamerika",
+    "capital": "Carson City",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "New Hampshire",
     "code": "us-nh",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Concord",
+    "continent": "Nordamerika",
+    "capital": "Concord",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "New Jersey",
     "code": "us-nj",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Trenton",
+    "continent": "Nordamerika",
+    "capital": "Trenton",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "New Mexico",
     "code": "us-nm",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Santa Fe",
+    "continent": "Nordamerika",
+    "capital": "Santa Fe",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "New York",
     "code": "us-ny",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Albany",
+    "continent": "Nordamerika",
+    "capital": "Albany",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Nicaragua",
     "code": "ni",
-    "kontinent": "Mittelamerika",
-    "hauptstadt": "Managua",
+    "continent": "Mittelamerika",
+    "capital": "Managua",
     "uno": true
   },
   {
     "name": "Niederlande",
     "code": "nl",
-    "kontinent": "Europa",
-    "hauptstadt": "Amsterdam",
+    "continent": "Europa",
+    "capital": "Amsterdam",
     "uno": true
   },
   {
     "name": "Niedersachsen",
     "code": "de-ni",
-    "kontinent": "Europa",
-    "hauptstadt": "Hannover",
+    "continent": "Europa",
+    "capital": "Hannover",
     "special": "Bundesland",
     "uno": false
   },
   {
     "name": "Niger",
     "code": "ne",
-    "kontinent": "Afrika",
-    "hauptstadt": "Niamey",
+    "continent": "Afrika",
+    "capital": "Niamey",
     "uno": true
   },
   {
     "name": "Nigeria",
     "code": "ng",
-    "kontinent": "Afrika",
-    "hauptstadt": "Abuja",
+    "continent": "Afrika",
+    "capital": "Abuja",
     "uno": true
   },
   {
     "name": "Niigata",
     "code": "jp-15",
-    "kontinent": "Asien",
-    "hauptstadt": "Niigata",
+    "continent": "Asien",
+    "capital": "Niigata",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Niue",
     "code": "nu",
-    "kontinent": "Ozeanien",
-    "hauptstadt": "Alofi",
+    "continent": "Ozeanien",
+    "capital": "Alofi",
     "uno": false
   },
   {
     "name": "Nordkorea",
     "code": "kp",
-    "kontinent": "Asien",
-    "hauptstadt": "Pjöngjang",
+    "continent": "Asien",
+    "capital": "Pjöngjang",
     "uno": true
   },
   {
     "name": "Nördliche Marianen",
     "code": "mp",
-    "kontinent": "",
-    "hauptstadt": "",
+    "continent": "",
+    "capital": "",
     "uno": false
   },
   {
     "name": "Nordmazedonien",
     "code": "mk",
-    "kontinent": "Europa",
-    "hauptstadt": "Skopje",
+    "continent": "Europa",
+    "capital": "Skopje",
     "uno": true
   },
   {
     "name": "Nordrhein-Westfalen",
     "code": "de-nw",
-    "kontinent": "Europa",
-    "hauptstadt": "Düsseldorf",
+    "continent": "Europa",
+    "capital": "Düsseldorf",
     "special": "Bundesland",
     "uno": false
   },
   {
     "name": "Norfolkinsel",
     "code": "nf",
-    "kontinent": "",
-    "hauptstadt": "",
+    "continent": "",
+    "capital": "",
     "uno": false
   },
   {
     "name": "North Carolina",
     "code": "us-nc",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Raleigh",
+    "continent": "Nordamerika",
+    "capital": "Raleigh",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "North Dakota",
     "code": "us-nd",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Bismarck",
+    "continent": "Nordamerika",
+    "capital": "Bismarck",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Norwegen",
     "code": "no",
-    "kontinent": "Europa",
-    "hauptstadt": "Oslo",
+    "continent": "Europa",
+    "capital": "Oslo",
     "uno": true
   },
   {
     "name": "Ohio",
     "code": "us-oh",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Columbus",
+    "continent": "Nordamerika",
+    "capital": "Columbus",
     "special": "Bundesstaat",
     "uno": false
   },
@@ -1745,942 +1745,942 @@ export const world = [{
     "name": "Ōita",
     "altname": "Oita",
     "code": "jp-44",
-    "kontinent": "Asien",
-    "hauptstadt": "Ōita",
-    "althauptstadt": "Oita",
+    "continent": "Asien",
+    "capital": "Ōita",
+    "altcapital": "Oita",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Okayama",
     "code": "jp-33",
-    "kontinent": "Asien",
-    "hauptstadt": "Okayama",
+    "continent": "Asien",
+    "capital": "Okayama",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Okinawa",
     "code": "jp-47",
-    "kontinent": "Asien",
-    "hauptstadt": "Naha",
+    "continent": "Asien",
+    "capital": "Naha",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Oklahoma",
     "code": "us-ok",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Oklahoma City",
+    "continent": "Nordamerika",
+    "capital": "Oklahoma City",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Oman",
     "code": "om",
-    "kontinent": "Asien",
-    "hauptstadt": "Maskat",
+    "continent": "Asien",
+    "capital": "Maskat",
     "uno": true
   },
   {
     "name": "Oregon",
     "code": "us-or",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Salem",
+    "continent": "Nordamerika",
+    "capital": "Salem",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Osaka",
     "code": "jp-27",
-    "kontinent": "Asien",
-    "hauptstadt": "Osaka",
+    "continent": "Asien",
+    "capital": "Osaka",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Österreich",
     "code": "at",
-    "kontinent": "Europa",
-    "hauptstadt": "Wien",
+    "continent": "Europa",
+    "capital": "Wien",
     "uno": true
   },
   {
     "name": "Osttimor",
     "code": "tl",
-    "kontinent": "Asien",
-    "hauptstadt": "Dili",
+    "continent": "Asien",
+    "capital": "Dili",
     "uno": true
   },
   {
     "name": "Pakistan",
     "code": "pk",
-    "kontinent": "Asien",
-    "hauptstadt": "Islamabad",
+    "continent": "Asien",
+    "capital": "Islamabad",
     "uno": true
   },
   {
     "name": "Palästina",
     "code": "ps",
-    "kontinent": "Asien",
-    "hauptstadt": "Jerusalem",
+    "continent": "Asien",
+    "capital": "Jerusalem",
     "uno": false
   },
   {
     "name": "Palau",
     "code": "pw",
-    "kontinent": "Ozeanien",
-    "hauptstadt": "Ngerulmud",
+    "continent": "Ozeanien",
+    "capital": "Ngerulmud",
     "uno": true
   },
   {
     "name": "Panama",
     "code": "pa",
-    "kontinent": "Mittelamerika",
-    "hauptstadt": "Panamastadt",
+    "continent": "Mittelamerika",
+    "capital": "Panamastadt",
     "uno": true
   },
   {
     "name": "Papua-Neuguinea",
     "code": "pg",
-    "kontinent": "Ozeanien",
-    "hauptstadt": "Port Moresby",
+    "continent": "Ozeanien",
+    "capital": "Port Moresby",
     "uno": true
   },
   {
     "name": "Paraguay",
     "code": "py",
-    "kontinent": "Südamerika",
-    "hauptstadt": "Asunción",
-    "althauptstadt": "Asuncion",
+    "continent": "Südamerika",
+    "capital": "Asunción",
+    "altcapital": "Asuncion",
     "uno": true
   },
   {
     "name": "Pennsylvania",
     "code": "us-pa",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Harrisburg",
+    "continent": "Nordamerika",
+    "capital": "Harrisburg",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Peru",
     "code": "pe",
-    "kontinent": "Südamerika",
-    "hauptstadt": "Lima",
+    "continent": "Südamerika",
+    "capital": "Lima",
     "uno": true
   },
   {
     "name": "Philippinen",
     "code": "ph",
-    "kontinent": "Asien",
-    "hauptstadt": "Manila",
+    "continent": "Asien",
+    "capital": "Manila",
     "uno": true
   },
   {
     "name": "Pitcairninseln",
     "code": "pn",
-    "kontinent": "",
-    "hauptstadt": "",
+    "continent": "",
+    "capital": "",
     "uno": false
   },
   {
     "name": "Polen",
     "code": "pl",
-    "kontinent": "Europa",
-    "hauptstadt": "Warschau",
+    "continent": "Europa",
+    "capital": "Warschau",
     "uno": true
   },
   {
     "name": "Portugal",
     "code": "pt",
-    "kontinent": "Europa",
-    "hauptstadt": "Lissabon",
+    "continent": "Europa",
+    "capital": "Lissabon",
     "uno": true
   },
   {
     "name": "Puerto Rico",
     "code": "pr",
-    "kontinent": "Mittelamerika",
-    "hauptstadt": "San Juan",
+    "continent": "Mittelamerika",
+    "capital": "San Juan",
     "uno": false
   },
   {
     "name": "Republik Kongo",
     "code": "cg",
-    "kontinent": "Afrika",
-    "hauptstadt": "Brazzaville",
+    "continent": "Afrika",
+    "capital": "Brazzaville",
     "uno": true
   },
   {
     "name": "Réunion",
     "altname": "Reunion",
     "code": "re",
-    "kontinent": "",
-    "hauptstadt": "",
+    "continent": "",
+    "capital": "",
     "uno": false
   },
   {
     "name": "Rheinland-Pfalz",
     "code": "de-rp",
-    "kontinent": "Europa",
-    "hauptstadt": "Mainz",
+    "continent": "Europa",
+    "capital": "Mainz",
     "special": "Bundesland",
     "uno": false
   },
   {
     "name": "Rhode Island",
     "code": "us-ri",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Providence",
+    "continent": "Nordamerika",
+    "capital": "Providence",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Ruanda",
     "code": "rw",
-    "kontinent": "Afrika",
-    "hauptstadt": "Kigali",
+    "continent": "Afrika",
+    "capital": "Kigali",
     "uno": true
   },
   {
     "name": "Rumänien",
     "code": "ro",
-    "kontinent": "Europa",
-    "hauptstadt": "Bukarest",
+    "continent": "Europa",
+    "capital": "Bukarest",
     "uno": true
   },
   {
     "name": "Russland",
     "code": "ru",
-    "kontinent": "Asien",
-    "hauptstadt": "Moskau",
+    "continent": "Asien",
+    "capital": "Moskau",
     "uno": true
   },
   {
     "name": "Saarland",
     "code": "de-sl",
-    "kontinent": "Europa",
-    "hauptstadt": "Saarbrücken",
+    "continent": "Europa",
+    "capital": "Saarbrücken",
     "special": "Bundesland",
     "uno": false
   },
   {
     "name": "Sachsen",
     "code": "de-sn",
-    "kontinent": "Europa",
-    "hauptstadt": "Dresden",
+    "continent": "Europa",
+    "capital": "Dresden",
     "special": "Bundesland",
     "uno": false
   },
   {
     "name": "Sachsen-Anhalt",
     "code": "de-st",
-    "kontinent": "Europa",
-    "hauptstadt": "Magdeburg",
+    "continent": "Europa",
+    "capital": "Magdeburg",
     "special": "Bundesland",
     "uno": false
   },
   {
     "name": "Saga",
     "code": "jp-41",
-    "kontinent": "Asien",
-    "hauptstadt": "Saga",
+    "continent": "Asien",
+    "capital": "Saga",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Saitama",
     "code": "jp-11",
-    "kontinent": "Asien",
-    "hauptstadt": "Saitama",
+    "continent": "Asien",
+    "capital": "Saitama",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Salomonen",
     "code": "sb",
-    "kontinent": "Ozeanien",
-    "hauptstadt": "Honiara",
+    "continent": "Ozeanien",
+    "capital": "Honiara",
     "uno": true
   },
   {
     "name": "Saint-Barthélemy",
     "code": "bl",
-    "kontinent": "",
-    "hauptstadt": "",
+    "continent": "",
+    "capital": "",
     "uno": false
   },
   {
     "name": "Saint-Martin (französischer Teil)",
     "code": "mf",
-    "kontinent": "",
-    "hauptstadt": "",
+    "continent": "",
+    "capital": "",
     "uno": false
   },
   {
     "name": "Sambia",
     "code": "zm",
-    "kontinent": "Afrika",
-    "hauptstadt": "Lusaka",
+    "continent": "Afrika",
+    "capital": "Lusaka",
     "uno": true
   },
   {
     "name": "Samoa",
     "code": "ws",
-    "kontinent": "Ozeanien",
-    "hauptstadt": "Apia",
+    "continent": "Ozeanien",
+    "capital": "Apia",
     "uno": true
   },
   {
     "name": "San Marino",
     "code": "sm",
-    "kontinent": "Europa",
-    "hauptstadt": "San Marino",
+    "continent": "Europa",
+    "capital": "San Marino",
     "uno": true
   },
   {
     "name": "São Tomé und Príncipe",
     "code": "st",
-    "kontinent": "Afrika",
-    "hauptstadt": "São Tomé",
-    "althauptstadt": "Sao Tome",
+    "continent": "Afrika",
+    "capital": "São Tomé",
+    "altcapital": "Sao Tome",
     "uno": true
   },
   {
     "name": "Saudi-Arabien",
     "code": "sa",
-    "kontinent": "Asien",
-    "hauptstadt": "Riad",
+    "continent": "Asien",
+    "capital": "Riad",
     "uno": true
   },
   {
     "name": "Schleswig-Holstein",
     "code": "de-sh",
-    "kontinent": "Europa",
-    "hauptstadt": "Kiel",
+    "continent": "Europa",
+    "capital": "Kiel",
     "special": "Bundesland",
     "uno": false
   },
   {
     "name": "Schweden",
     "code": "se",
-    "kontinent": "Europa",
-    "hauptstadt": "Stockholm",
+    "continent": "Europa",
+    "capital": "Stockholm",
     "uno": true
   },
   {
     "name": "Schweiz",
     "code": "ch",
-    "kontinent": "Europa",
-    "hauptstadt": "Bern",
+    "continent": "Europa",
+    "capital": "Bern",
     "uno": true
   },
   {
     "name": "Senegal",
     "code": "sn",
-    "kontinent": "Afrika",
-    "hauptstadt": "Dakar",
+    "continent": "Afrika",
+    "capital": "Dakar",
     "uno": true
   },
   {
     "name": "Serbien",
     "code": "rs",
-    "kontinent": "Europa",
-    "hauptstadt": "Belgrad",
+    "continent": "Europa",
+    "capital": "Belgrad",
     "uno": true
   },
   {
     "name": "Seychellen",
     "code": "sc",
-    "kontinent": "Afrika",
-    "hauptstadt": "Victoria",
+    "continent": "Afrika",
+    "capital": "Victoria",
     "uno": true
   },
   {
     "name": "Shiga",
     "code": "jp-25",
-    "kontinent": "Asien",
-    "hauptstadt": "Ōtsu",
-    "althauptstadt": "Otsu",
+    "continent": "Asien",
+    "capital": "Ōtsu",
+    "altcapital": "Otsu",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Shimane",
     "code": "jp-32",
-    "kontinent": "Asien",
-    "hauptstadt": "Matsue",
+    "continent": "Asien",
+    "capital": "Matsue",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Shizuoka",
     "code": "jp-22",
-    "kontinent": "Asien",
-    "hauptstadt": "Shizuoka",
+    "continent": "Asien",
+    "capital": "Shizuoka",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Sierra Leone",
     "code": "sl",
-    "kontinent": "Afrika",
-    "hauptstadt": "Freetown",
+    "continent": "Afrika",
+    "capital": "Freetown",
     "uno": true
   },
   {
     "name": "Simbabwe",
     "code": "zw",
-    "kontinent": "Afrika",
-    "hauptstadt": "Harare",
+    "continent": "Afrika",
+    "capital": "Harare",
     "uno": true
   },
   {
     "name": "Singapur",
     "code": "sg",
-    "kontinent": "Asien",
-    "hauptstadt": "Singapur",
+    "continent": "Asien",
+    "capital": "Singapur",
     "uno": true
   },
   {
     "name": "Sint Maarten",
     "code": "sx",
-    "kontinent": "",
-    "hauptstadt": "",
+    "continent": "",
+    "capital": "",
     "uno": false
   },
   {
     "name": "Slowakei",
     "code": "sk",
-    "kontinent": "Europa",
-    "hauptstadt": "Bratislava",
+    "continent": "Europa",
+    "capital": "Bratislava",
     "uno": true
   },
   {
     "name": "Slowenien",
     "code": "si",
-    "kontinent": "Europa",
-    "hauptstadt": "Ljubljana",
+    "continent": "Europa",
+    "capital": "Ljubljana",
     "uno": true
   },
   {
     "name": "Somalia",
     "code": "so",
-    "kontinent": "Afrika",
-    "hauptstadt": "Mogadischu",
+    "continent": "Afrika",
+    "capital": "Mogadischu",
     "uno": true
   },
   {
     "name": "South Carolina",
     "code": "us-sc",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Columbia",
+    "continent": "Nordamerika",
+    "capital": "Columbia",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "South Dakota",
     "code": "us-sd",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Pierre",
+    "continent": "Nordamerika",
+    "capital": "Pierre",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Spanien",
     "code": "es",
-    "kontinent": "Europa",
-    "hauptstadt": "Madrid",
+    "continent": "Europa",
+    "capital": "Madrid",
     "uno": true
   },
   {
     "name": "Sri Lanka",
     "code": "lk",
-    "kontinent": "Asien",
-    "hauptstadt": "Sri Jayewardenepura Kotte",
-    "althauptstadt": "Colombo",
+    "continent": "Asien",
+    "capital": "Sri Jayewardenepura Kotte",
+    "altcapital": "Colombo",
     "uno": true
   },
   {
     "name": "St. Helena, Ascension und Tristan da Cunha",
     "code": "sh",
-    "kontinent": "",
-    "hauptstadt": "",
+    "continent": "",
+    "capital": "",
     "uno": false
   },
   {
     "name": "Sankt Kitts und Nevis",
     "altname": "St Kitts und Nevis",
     "code": "kn",
-    "kontinent": "Mittelamerika",
-    "hauptstadt": "Basseterre",
+    "continent": "Mittelamerika",
+    "capital": "Basseterre",
     "uno": true
   },
   {
     "name": "Sankt Lucia",
     "altname": "St Lucia",
     "code": "lc",
-    "kontinent": "Mittelamerika",
-    "hauptstadt": "Castries",
+    "continent": "Mittelamerika",
+    "capital": "Castries",
     "uno": true
   },
   {
     "name": "Saint-Pierre und Miquelon",
     "code": "pm",
-    "kontinent": "",
-    "hauptstadt": "",
+    "continent": "",
+    "capital": "",
     "uno": false
   },
   {
     "name": "Sankt Vincent und die Grenadinen",
     "altname": "St Vincent",
     "code": "vc",
-    "kontinent": "Mittelamerika",
-    "hauptstadt": "Kingstown",
+    "continent": "Mittelamerika",
+    "capital": "Kingstown",
     "uno": true
   },
   {
     "name": "Südafrika",
     "code": "za",
-    "kontinent": "Afrika",
-    "hauptstadt": "Pretoria",
-    "althauptstadt": "Kapstadt,Bloemfontein",
+    "continent": "Afrika",
+    "capital": "Pretoria",
+    "altcapital": "Kapstadt,Bloemfontein",
     "uno": true
   },
   {
     "name": "Sudan",
     "code": "sd",
-    "kontinent": "Afrika",
-    "hauptstadt": "Khartum",
+    "continent": "Afrika",
+    "capital": "Khartum",
     "uno": true
   },
   {
     "name": "Südgeorgien und die Südlichen Sandwichinseln",
     "code": "gs",
-    "kontinent": "",
-    "hauptstadt": "",
+    "continent": "",
+    "capital": "",
     "uno": false
   },
   {
     "name": "Südkorea",
     "code": "kr",
-    "kontinent": "Asien",
-    "hauptstadt": "Seoul",
+    "continent": "Asien",
+    "capital": "Seoul",
     "uno": true
   },
   {
     "name": "Südsudan",
     "code": "ss",
-    "kontinent": "Afrika",
-    "hauptstadt": "Juba",
+    "continent": "Afrika",
+    "capital": "Juba",
     "uno": true
   },
   {
     "name": "Suriname",
     "code": "sr",
-    "kontinent": "Südamerika",
-    "hauptstadt": "Paramaribo",
+    "continent": "Südamerika",
+    "capital": "Paramaribo",
     "uno": true
   },
   {
     "name": "Spitzbergen und Jan Mayen",
     "code": "sj",
-    "kontinent": "",
-    "hauptstadt": "",
+    "continent": "",
+    "capital": "",
     "uno": false
   },
   {
     "name": "Syrien",
     "code": "sy",
-    "kontinent": "Asien",
-    "hauptstadt": "Damaskus",
+    "continent": "Asien",
+    "capital": "Damaskus",
     "uno": true
   },
   {
     "name": "Tadschikistan",
     "code": "tj",
-    "kontinent": "Asien",
-    "hauptstadt": "Duschanbe",
+    "continent": "Asien",
+    "capital": "Duschanbe",
     "uno": true
   },
   {
     "name": "Taiwan",
     "code": "tw",
-    "kontinent": "Asien",
-    "hauptstadt": "Taipeh",
+    "continent": "Asien",
+    "capital": "Taipeh",
     "uno": true
   },
   {
     "name": "Tansania",
     "code": "tz",
-    "kontinent": "Afrika",
-    "hauptstadt": "Dodoma",
+    "continent": "Afrika",
+    "capital": "Dodoma",
     "uno": true
   },
   {
     "name": "Tennessee",
     "code": "us-tn",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Nashville",
+    "continent": "Nordamerika",
+    "capital": "Nashville",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Texas",
     "code": "us-tx",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Austin",
+    "continent": "Nordamerika",
+    "capital": "Austin",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Thailand",
     "code": "th",
-    "kontinent": "Asien",
-    "hauptstadt": "Bangkok",
+    "continent": "Asien",
+    "capital": "Bangkok",
     "uno": true
   },
   {
     "name": "Thüringen",
     "code": "de-th",
-    "kontinent": "Europa",
-    "hauptstadt": "Erfurt",
+    "continent": "Europa",
+    "capital": "Erfurt",
     "special": "Bundesland",
     "uno": false
   },
   {
     "name": "Tochigi",
     "code": "jp-09",
-    "kontinent": "Asien",
-    "hauptstadt": "Utsunomiya",
+    "continent": "Asien",
+    "capital": "Utsunomiya",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Togo",
     "code": "tg",
-    "kontinent": "Afrika",
-    "hauptstadt": "Lomé",
-    "althauptstadt": "Lome",
+    "continent": "Afrika",
+    "capital": "Lomé",
+    "altcapital": "Lome",
     "uno": true
   },
   {
     "name": "Tokelau",
     "code": "tk",
-    "kontinent": "Ozeanien",
-    "hauptstadt": "Fakaofo",
-    "althauptstadt": "Atafu,Nukunonu",
+    "continent": "Ozeanien",
+    "capital": "Fakaofo",
+    "altcapital": "Atafu,Nukunonu",
     "uno": false
   },
   {
     "name": "Tokio",
     "code": "jp-13",
-    "kontinent": "Asien",
-    "hauptstadt": "Tokio",
+    "continent": "Asien",
+    "capital": "Tokio",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Tokushima",
     "code": "jp-36",
-    "kontinent": "Asien",
-    "hauptstadt": "Tokushima",
+    "continent": "Asien",
+    "capital": "Tokushima",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Tonga",
     "code": "to",
-    "kontinent": "Ozeanien",
-    "hauptstadt": "Nuku'alofa",
-    "althauptstadt": "Nukualofa",
+    "continent": "Ozeanien",
+    "capital": "Nuku'alofa",
+    "altcapital": "Nukualofa",
     "uno": true
   },
   {
     "name": "Tottori",
     "code": "jp-31",
-    "kontinent": "Asien",
-    "hauptstadt": "Tottori",
+    "continent": "Asien",
+    "capital": "Tottori",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Toyama",
     "code": "jp-16",
-    "kontinent": "Asien",
-    "hauptstadt": "Toyama",
+    "continent": "Asien",
+    "capital": "Toyama",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Trinidad und Tobago",
     "code": "tt",
-    "kontinent": "Mittelamerika",
-    "hauptstadt": "Port of Spain",
+    "continent": "Mittelamerika",
+    "capital": "Port of Spain",
     "uno": true
   },
   {
     "name": "Tschad",
     "code": "td",
-    "kontinent": "Afrika",
-    "hauptstadt": "N’Djamena",
-    "althauptstadt": "NDjamena",
+    "continent": "Afrika",
+    "capital": "N’Djamena",
+    "altcapital": "NDjamena",
     "uno": true
   },
   {
     "name": "Tschechien",
     "code": "cz",
-    "kontinent": "Europa",
-    "hauptstadt": "Prag",
+    "continent": "Europa",
+    "capital": "Prag",
     "uno": true
   },
   {
     "name": "Tunesien",
     "code": "tn",
-    "kontinent": "Afrika",
-    "hauptstadt": "Tunis",
+    "continent": "Afrika",
+    "capital": "Tunis",
     "uno": true
   },
   {
     "name": "Türkei",
     "code": "tr",
-    "kontinent": "Asien",
-    "hauptstadt": "Ankara",
+    "continent": "Asien",
+    "capital": "Ankara",
     "uno": true
   },
   {
     "name": "Turkmenistan",
     "code": "tm",
-    "kontinent": "Asien",
-    "hauptstadt": "Aşgabat",
-    "althauptstadt": "Aschgabat",
+    "continent": "Asien",
+    "capital": "Aşgabat",
+    "altcapital": "Aschgabat",
     "uno": true
   },
   {
     "name": "Turks- und Caicosinseln",
     "code": "tc",
-    "kontinent": "",
-    "hauptstadt": "",
+    "continent": "",
+    "capital": "",
     "uno": false
   },
   {
     "name": "Tuvalu",
     "code": "tv",
-    "kontinent": "Ozeanien",
-    "hauptstadt": "Funafuti",
+    "continent": "Ozeanien",
+    "capital": "Funafuti",
     "uno": true
   },
   {
     "name": "Uganda",
     "code": "ug",
-    "kontinent": "Afrika",
-    "hauptstadt": "Kampala",
+    "continent": "Afrika",
+    "capital": "Kampala",
     "uno": true
   },
   {
     "name": "Ukraine",
     "code": "ua",
-    "kontinent": "Europa",
-    "hauptstadt": "Kiew",
+    "continent": "Europa",
+    "capital": "Kiew",
     "uno": true
   },
   {
     "name": "Ungarn",
     "code": "hu",
-    "kontinent": "Europa",
-    "hauptstadt": "Budapest",
+    "continent": "Europa",
+    "capital": "Budapest",
     "uno": true
   },
   {
     "name": "United States Minor Outlying Islands",
     "code": "um",
-    "kontinent": "",
-    "hauptstadt": "",
+    "continent": "",
+    "capital": "",
     "uno": false
   },
   {
     "name": "Uruguay",
     "code": "uy",
-    "kontinent": "Südamerika",
-    "hauptstadt": "Montevideo",
+    "continent": "Südamerika",
+    "capital": "Montevideo",
     "uno": true
   },
   {
     "name": "Usbekistan",
     "code": "uz",
-    "kontinent": "Asien",
-    "hauptstadt": "Taschkent",
+    "continent": "Asien",
+    "capital": "Taschkent",
     "uno": true
   },
   {
     "name": "Utah",
     "code": "us-ut",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Salt Lake City",
+    "continent": "Nordamerika",
+    "capital": "Salt Lake City",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Vanuatu",
     "code": "vu",
-    "kontinent": "Ozeanien",
-    "hauptstadt": "Port Vila",
+    "continent": "Ozeanien",
+    "capital": "Port Vila",
     "uno": true
   },
   {
     "name": "Vatikanstadt",
     "code": "va",
-    "kontinent": "Europa",
-    "hauptstadt": "Vatikanstadt",
+    "continent": "Europa",
+    "capital": "Vatikanstadt",
     "uno": true
   },
   {
     "name": "Venezuela",
     "code": "ve",
-    "kontinent": "Südamerika",
-    "hauptstadt": "Caracas",
+    "continent": "Südamerika",
+    "capital": "Caracas",
     "uno": true
   },
   {
     "name": "Vereinigte Arabische Emirate",
     "altname": "VAE",
     "code": "ae",
-    "kontinent": "Asien",
-    "hauptstadt": "Abu Dhabi",
+    "continent": "Asien",
+    "capital": "Abu Dhabi",
     "uno": true
   },
   {
     "name": "Vereinigte Staaten",
     "altname": "USA",
     "code": "us",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Washington, D.C.",
-    "althauptstadt": "Washington",
+    "continent": "Nordamerika",
+    "capital": "Washington, D.C.",
+    "altcapital": "Washington",
     "uno": true
   },
   {
     "name": "Vermont",
     "code": "us-vt",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Montpelier",
+    "continent": "Nordamerika",
+    "capital": "Montpelier",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Vietnam",
     "code": "vn",
-    "kontinent": "Asien",
-    "hauptstadt": "Hanoi",
+    "continent": "Asien",
+    "capital": "Hanoi",
     "uno": true
   },
   {
     "name": "Virginia",
     "code": "us-va",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Richmond",
+    "continent": "Nordamerika",
+    "capital": "Richmond",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Wakayama",
     "code": "jp-30",
-    "kontinent": "Asien",
-    "hauptstadt": "Wakayama",
+    "continent": "Asien",
+    "capital": "Wakayama",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Wallis und Futuna",
     "code": "wf",
-    "kontinent": "Ozeanien",
-    "hauptstadt": "Mata-Utu",
+    "continent": "Ozeanien",
+    "capital": "Mata-Utu",
     "uno": false
   },
   {
     "name": "Washington",
     "code": "us-wa",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Olympia",
+    "continent": "Nordamerika",
+    "capital": "Olympia",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Weihnachtsinsel",
     "code": "cx",
-    "kontinent": "Ozeanien",
-    "hauptstadt": "Flying Fish Cove",
+    "continent": "Ozeanien",
+    "capital": "Flying Fish Cove",
     "uno": false
   },
   {
     "name": "Westsahara",
     "code": "eh",
-    "kontinent": "Afrika",
-    "hauptstadt": "El Aaiún",
-    "althauptstadt": "Ajun",
+    "continent": "Afrika",
+    "capital": "El Aaiún",
+    "altcapital": "Ajun",
     "uno": true
   },
   {
     "name": "West Virginia",
     "code": "us-wv",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Charleston",
+    "continent": "Nordamerika",
+    "capital": "Charleston",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Wisconsin",
     "code": "us-wi",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Madison",
+    "continent": "Nordamerika",
+    "capital": "Madison",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Wyoming",
     "code": "us-wy",
-    "kontinent": "Nordamerika",
-    "hauptstadt": "Cheyenne",
+    "continent": "Nordamerika",
+    "capital": "Cheyenne",
     "special": "Bundesstaat",
     "uno": false
   },
   {
     "name": "Yamagata",
     "code": "jp-06",
-    "kontinent": "Asien",
-    "hauptstadt": "Yamagata",
+    "continent": "Asien",
+    "capital": "Yamagata",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Yamaguchi",
     "code": "jp-35",
-    "kontinent": "Asien",
-    "hauptstadt": "Yamaguchi",
+    "continent": "Asien",
+    "capital": "Yamaguchi",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Yamanashi",
     "code": "jp-19",
-    "kontinent": "Asien",
-    "hauptstadt": "Kōfu",
-    "althauptstadt": "Kofu",
+    "continent": "Asien",
+    "capital": "Kōfu",
+    "altcapital": "Kofu",
     "special": "Präfektur",
     "uno": false
   },
   {
     "name": "Zentralafrikanische Republik",
     "code": "cf",
-    "kontinent": "Afrika",
-    "hauptstadt": "Bangui",
+    "continent": "Afrika",
+    "capital": "Bangui",
     "uno": true
   },
   {
     "name": "Zypern",
     "code": "cy",
-    "kontinent": "Europa",
-    "hauptstadt": "Nikosia",
+    "continent": "Europa",
+    "capital": "Nikosia",
     "uno": true
   }
 ]

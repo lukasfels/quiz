@@ -2,33 +2,39 @@
 import { ref, watch } from 'vue'
 import { useQuizStore } from '@/stores/quizStore'
 
-defineProps(['answer'])
+const props = defineProps({
+    answer: String,
+    attr: {
+        type: String,
+        default: 'name'
+    }
+})
 
 const store = useQuizStore()
-const boolAnswer = ref(false)
+const boolWrong = ref(false)
 
 watch(
     () => store.objNext.name,
-    () => { boolAnswer.value = false }
+    () => { boolWrong.value = false }
 )
 
 //Wird ausgeführt um die Antwort zu prüfen
 function checkAnswer(x) {
     //Prüft, ob das Geschriebene die Antwort ist, einige Länder/Hauptstädte haben Alternative Schreibweisen unter 'altname'
-    if (x.toLowerCase() == store.objNext.name.toLowerCase()) {
+    if (x.toLowerCase() == store.objNext[props.attr].toLowerCase()) {
         //Richtige Antwort wird aus dem Array entfernt
         store.objQuestions.splice(store.intRandom, 1)
 
         store.nextQuestion(store.objQuestions)
     } else {
-        boolAnswer.value = true
+        boolWrong.value = true
     }
 }
 </script>
 
 <template>
-    <div class="answerPickOption" :class="{ wrong: boolAnswer }" @click="checkAnswer(answer)">
-        <p>{{  answer  }}</p>
+    <div class="answerPickOption" :class="{ wrong: boolWrong }" @click="checkAnswer(answer)">
+        <p>{{ answer }}</p>
     </div>
 </template>
 

@@ -17,7 +17,7 @@ store.arrSelection = []
 
 //Prüft welche Checkboxen angezeigt werden sollen
 var check = "world"
-if (store.strMode == "Pokemon") {
+if (store.strMode == "pokemon") {
     check = "pokemon"
 }
 

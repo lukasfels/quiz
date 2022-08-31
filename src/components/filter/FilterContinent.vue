@@ -5,13 +5,13 @@ import { useQuizStore } from '@/stores/quizStore'
 const store = useQuizStore()
 
 //Erstellt ein Objekt mit allen Kontinenten plus die Anzahl
-const kontinent = {};
+const continent = {};
 world.forEach(function (x) {
     if (x.uno) {
-        if (kontinent[x.kontinent]) {
-            kontinent[x.kontinent]++;
+        if (continent[x.continent]) {
+            continent[x.continent]++;
         } else {
-            kontinent[x.kontinent] = 1;
+            continent[x.continent] = 1;
         }
     }
 })
@@ -19,15 +19,15 @@ world.forEach(function (x) {
 
 <template>
     <h2>Kontinente</h2>
-    <form class="formKontinente">
-        <label v-for="q, k in kontinent">
+    <form class="formContinents">
+        <label v-for="q, k in continent">
             <input type="checkbox" :value="k" v-model="store.arrSelection">{{ k }} {{ q }}
         </label>
     </form>
 </template>
 
 <style>
-.formKontinente {
+.formContinents {
     width: 100%;
     float: left;
 }

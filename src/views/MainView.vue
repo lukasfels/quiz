@@ -4,7 +4,7 @@ import { useQuizStore } from '@/stores/quizStore'
 import ConfigView from './ConfigView.vue'
 
 //Array mit allen Modi
-const modes = ["Flaggen", "Hauptstädte", "Umrisse", "Expert", "Pokemon"]
+const modes = {"flags": "Flaggen", "capitals": "Hauptstädte", "outlines": "Umrisse", "expert": "Expert", "pokemon": "Pokemon"}
 
 const router = useRouter()
 const store = useQuizStore()
@@ -20,8 +20,8 @@ function routeMode(x) {
     <h1>Wähle einen Modus</h1>
     <br>
     <ul class="modes">
-        <a v-for="mode in modes" @click="routeMode(mode)">
-            <li class="mode">{{ mode }}</li>
+        <a v-for="name, mode in modes" @click="routeMode(mode)">
+            <li class="mode">{{ name }}</li>
         </a>
     </ul>
     <ConfigView></ConfigView>
