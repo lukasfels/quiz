@@ -17,29 +17,13 @@ function routeMode(x) {
 </script>
 
 <template>
-    <h1>Wähle einen Modus</h1>
-    <br>
-    <ul class="modes">
-        <a v-for="name, mode in modes" @click="routeMode(mode)">
-            <li class="mode">{{ name }}</li>
-        </a>
-    </ul>
+    <div class="view">
+        <div>
+            <h1>Wähle einen Modus</h1>
+            <div class="button-grid modes">
+                <a v-for="name, mode in modes" @click="routeMode(mode)">{{ name }}</a>
+            </div>
+        </div>
+    </div>
     <ConfigView></ConfigView>
 </template>
-
-<style>
-.modes {
-    list-style-type: none;
-    padding: 0;
-}
-
-.mode {
-    font-size: 16px;
-    border: 1px solid black;
-    margin: -1px 0 0 -1px;
-    float: left;
-    width: 50%;
-    padding: 25px 0;
-    text-align: center;
-}
-</style>

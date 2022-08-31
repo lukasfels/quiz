@@ -16,17 +16,14 @@ pokemon.forEach(function (x) {
 </script>
 
 <template>
-    <h2>Generationen</h2>
-    <form class="formPokemon">
-        <label v-for="value, key in generation">
-            <input type="checkbox" :value="parseInt(key)" v-model="store.arrSelection">Generation {{ key }} {{ value }}
-        </label>
+    <h3>Generationen</h3>
+    <form class="button-grid categories">
+        <div v-for="value, key in generation">
+            <input type="checkbox" :value="parseInt(key)" :id="key" v-model="store.arrSelection">
+            <label :for="key">
+                <span>{{ value }}</span>
+                <span>Generation {{ k }}</span>
+            </label>
+        </div>
     </form>
 </template>
-
-<style>
-.formPokemon {
-    width: 100%;
-    float: left;
-}
-</style>

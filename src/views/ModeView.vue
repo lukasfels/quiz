@@ -32,10 +32,14 @@ function startGame() {
 </script>
 
 <template>
-    <h1>Wähle die Themen</h1>
-    <filter.continents v-if="check == 'world'"></filter.continents>
-    <filter.special v-if="check == 'world'"></filter.special>
-    <filter.pokemon v-if="check == 'pokemon'"></filter.pokemon>
-    <button @click="startGame">Starten</button>
+    <div class="view">
+        <div>
+            <h1>Wähle die Themen</h1>
+            <filter.continents v-if="check == 'world'"></filter.continents>
+            <filter.special v-if="check == 'world'"></filter.special>
+            <filter.pokemon v-if="check == 'pokemon'"></filter.pokemon>
+            <button @click="startGame" class="button">Starten</button>
+        </div>
+    </div>
     <ConfigView></ConfigView>
 </template>
