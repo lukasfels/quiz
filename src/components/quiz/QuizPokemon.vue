@@ -22,5 +22,6 @@
         border: 1px solid black;
         max-width: 80%;
         margin: 0 10%;
+        filter: brightness(0.0)
     }
     </style>

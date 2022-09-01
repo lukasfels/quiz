@@ -5,7 +5,6 @@ import { world } from "@/assets/world.js"
 import { pokemon } from "@/assets/pokemon.js"
 import ConfigView from './ConfigView.vue'
 import router from '../router'
-import { ref } from 'vue'
 
 const store = useQuizStore()
 
