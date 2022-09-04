@@ -23,7 +23,11 @@ if (store.strMode == "pokemon") {
 
 //Funtkion für Button 'Starten'
 function startGame() {
-    router.push({ name: "quiz" })
+    if(store.arrSelection.length > 0){
+        router.push({ name: "quiz" })
+    } else {
+        //alert("Themen wählen")
+    }
 }
 </script>
 

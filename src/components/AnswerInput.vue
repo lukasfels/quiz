@@ -24,9 +24,11 @@ function checkAnswer(x) {
 
         //Richtige Antwort wird aus dem Array entfernt
         store.objQuestions.splice(store.intRandom, 1)
-
+        store.arrScore[1]++
         //Nächste Frage laden
-        store.nextQuestion(store.objQuestions)
+        store.nextQuestion()
+    } else {
+        store.arrScore[0]++
     }
 }
 

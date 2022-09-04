@@ -24,10 +24,11 @@ function checkAnswer(x) {
     if (x.toLowerCase() == store.objNext[props.attr].toLowerCase()) {
         //Richtige Antwort wird aus dem Array entfernt
         store.objQuestions.splice(store.intRandom, 1)
-
-        store.nextQuestion(store.objQuestions)
+        store.arrScore[1]++
+        store.nextQuestion()
     } else {
         boolWrong.value = true
+        store.arrScore[0]++
     }
 }
 </script>

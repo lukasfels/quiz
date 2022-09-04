@@ -1,12 +1,17 @@
 <script setup>
 import quiz from '@/components/quiz'
+import timer from '@/components/Timer.vue'
+import counter from '@/components/Counter.vue'
+import score from '@/components/ScorePercent.vue'
 import { useQuizStore } from '@/stores/quizStore'
 import { world } from "@/assets/world.js"
 import { pokemon } from "@/assets/pokemon.js"
 import ConfigView from './ConfigView.vue'
 import router from '../router'
+import { ref } from 'vue'
 
 const store = useQuizStore()
+const refTimer = ref(null)
 
 //Wenn die Seite neugeladen wird oder die Auswahl leer ist
 if (store.arrSelection.length == 0) {
@@ -25,18 +30,35 @@ function winGame() {
     console.log("Win")
 }
 
-//Filter der Daten nach Auswahl
-if (store.strMode == "pokemon") {
-    store.objQuestions = pokemon.filter(x => store.arrSelection.includes(x.generation))
-} else {
-    store.objQuestions = world.filter(filterWorld)
+//Zum starten und neustarten des Spiels
+function startGame() {
+    //Filter der Daten nach Auswahl
+    if (store.strMode == "pokemon") {
+        store.objQuestions = pokemon.filter(x => store.arrSelection.includes(x.generation))
+    } else {
+        store.objQuestions = world.filter(filterWorld)
+    }
+    store.nextQuestion()
+
+    //Setzt den Timer zurück
+    if(refTimer.value != null){
+        refTimer.value.reset()
+    }
+
+    //Setzt die Prozentanzeige zurück
+    store.arrScore = [0, 0]
 }
 
-store.nextQuestion(store.objQuestions)
+startGame()
 </script>
 
 <template>
-    <ConfigView></ConfigView>
-    <component :is="quiz[store.strMode]"></component>
-    <button @click="store.nextQuestion(store.objQuestions)">Skip</button>
+    <ConfigView />
+    <component :is="quiz[store.strMode]" />
+    <br />
+    <button @click="store.nextQuestion">Skip</button>
+    <button @click="startGame">Restart</button>
+    <counter />
+    <timer ref="refTimer" />
+    <score />
 </template>
