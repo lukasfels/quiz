@@ -15,21 +15,26 @@ const strInput = ref('')
 var arrAutocomplete = []
 
 //Wird ausgeführt um die Antwort für die Frage zu prüfen
-function checkAnswer(x) {
-    strInput.value = x
-    //Prüft, ob das Geschriebene die Antwort ist, einige Länder/Hauptstädte haben Alternative Schreibweisen unter 'altname'
-    if (x.toLowerCase() == store.objNext[props.attr].toLowerCase()) {
-        //Input löschen für nächste Frage
-        strInput.value = ""
+function checkAnswer(answer) {
+    strInput.value = answer
+    if (arrAutocomplete.some(x => x.toLowerCase() == answer.toLowerCase())) {
+        //Prüft, ob das Geschriebene die Antwort ist, einige Länder/Hauptstädte haben Alternative Schreibweisen unter 'altname'
+        if (answer.toLowerCase() == store.objNext[props.attr].toLowerCase()) {
+            //Input löschen für nächste Frage
+            strInput.value = ""
 
-        //Richtige Antwort wird aus dem Array entfernt
-        store.objQuestions.splice(store.intRandom, 1)
-        store.arrScore[1]++
-        //Nächste Frage laden
-        store.nextQuestion()
+            //Richtige Antwort wird aus dem Array entfernt
+            store.objQuestions.splice(store.intRandom, 1)
+            store.arrScore[1]++
+            //Nächste Frage laden
+            store.nextQuestion()
+        } else {
+            store.arrScore[0]++
+        }
     } else {
-        store.arrScore[0]++
+        console.log('Falsch')
     }
+
 }
 
 //Gibt das Attribut zurück, das abgefragt wird
@@ -40,7 +45,7 @@ function getAttribute(obj) {
 //Funktion die prüft, ob das einegebene Wort zu einer Antwort passt
 function filterAutocomplete(obj) {
     if (strInput.value.length >= 3) {
-        return obj.toLowerCase().includes(strInput.value)
+        return obj.toLowerCase().includes(strInput.value.toLowerCase())
     } else {
         return false
     }
@@ -51,7 +56,7 @@ arrAutocomplete = store.objQuestions.map(getAttribute)
 
 //Erstellt eine Referenz zum gefilterten 'arrAutocomplete'
 const arrFiltered = computed(() => {
-    if(store.intConfigAnswer == 1){
+    if (store.intConfigAnswer == 1) {
         return arrAutocomplete.filter(filterAutocomplete)
     }
     else {
