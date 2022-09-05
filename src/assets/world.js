@@ -17,7 +17,7 @@ export const world = [{
     "code": "jp-05",
     "continent": "Asien",
     "capital": "Nagoya",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -25,7 +25,7 @@ export const world = [{
     "code": "jp-23",
     "continent": "Asien",
     "capital": "Akita",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -33,7 +33,7 @@ export const world = [{
     "code": "us-al",
     "continent": "Nordamerika",
     "capital": "Montgomery",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -48,7 +48,7 @@ export const world = [{
     "code": "us-ak",
     "continent": "Nordamerika",
     "capital": "Juneau",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -113,7 +113,7 @@ export const world = [{
     "code": "jp-02",
     "continent": "Asien",
     "capital": "Aomori",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -135,7 +135,7 @@ export const world = [{
     "code": "us-az",
     "continent": "Nordamerika",
     "capital": "Phoenix",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -143,7 +143,7 @@ export const world = [{
     "code": "us-ar",
     "continent": "Nordamerika",
     "capital": "Little Rock",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -380,7 +380,7 @@ export const world = [{
     "code": "jp-12",
     "continent": "Asien",
     "capital": "Chiba",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -402,7 +402,7 @@ export const world = [{
     "code": "us-co",
     "continent": "Nordamerika",
     "capital": "Denver",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -410,7 +410,7 @@ export const world = [{
     "code": "us-ct",
     "continent": "Nordamerika",
     "capital": "Hartford",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -448,7 +448,7 @@ export const world = [{
     "code": "us-de",
     "continent": "Nordamerika",
     "capital": "Dover",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -499,7 +499,7 @@ export const world = [{
     "code": "jp-38",
     "continent": "Asien",
     "capital": "Matsuyama",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -571,7 +571,7 @@ export const world = [{
     "code": "us-fl",
     "continent": "Nordamerika",
     "capital": "Tallahassee",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -607,7 +607,7 @@ export const world = [{
     "code": "jp-18",
     "continent": "Asien",
     "capital": "Fukui",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -615,7 +615,7 @@ export const world = [{
     "code": "jp-40",
     "continent": "Asien",
     "capital": "Fukuoka",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -623,7 +623,7 @@ export const world = [{
     "code": "jp-07",
     "continent": "Asien",
     "capital": "Fukushima",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -645,7 +645,7 @@ export const world = [{
     "code": "us-ga",
     "continent": "Nordamerika",
     "capital": "Atlanta",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -674,7 +674,7 @@ export const world = [{
     "code": "jp-21",
     "continent": "Asien",
     "capital": "Gifu",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -752,7 +752,7 @@ export const world = [{
     "code": "jp-10",
     "continent": "Asien",
     "capital": "Maebashi",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -783,7 +783,7 @@ export const world = [{
     "code": "us-hi",
     "continent": "Nordamerika",
     "capital": "Honolulu",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -806,7 +806,7 @@ export const world = [{
     "code": "jp-34",
     "continent": "Asien",
     "capital": "Hiroshima",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -815,7 +815,7 @@ export const world = [{
     "code": "jp-01",
     "continent": "Asien",
     "capital": "Sapporo",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -839,7 +839,7 @@ export const world = [{
     "continent": "Asien",
     "capital": "Kōbe",
     "altcapital": "Kobe",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -847,7 +847,7 @@ export const world = [{
     "code": "jp-08",
     "continent": "Asien",
     "capital": "Mito",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -855,7 +855,7 @@ export const world = [{
     "code": "us-id",
     "continent": "Nordamerika",
     "capital": "Boise",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -863,7 +863,7 @@ export const world = [{
     "code": "us-il",
     "continent": "Nordamerika",
     "capital": "Springfield",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -871,7 +871,7 @@ export const world = [{
     "code": "us-in",
     "continent": "Nordamerika",
     "capital": "Indianapolis",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -893,7 +893,7 @@ export const world = [{
     "code": "us-ia",
     "continent": "Nordamerika",
     "capital": "Des Moines",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -901,7 +901,7 @@ export const world = [{
     "code": "jp-17",
     "continent": "Asien",
     "capital": "Kanazawa",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -958,7 +958,7 @@ export const world = [{
     "code": "jp-03",
     "continent": "Asien",
     "capital": "Morioka",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -1002,7 +1002,7 @@ export const world = [{
     "code": "jp-37",
     "continent": "Asien",
     "capital": "Takamatsu",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -1010,7 +1010,7 @@ export const world = [{
     "code": "jp-46",
     "continent": "Asien",
     "capital": "Kagoshima",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -1025,7 +1025,7 @@ export const world = [{
     "code": "us-ca",
     "continent": "Nordamerika",
     "capital": "Sacramento",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -1054,7 +1054,7 @@ export const world = [{
     "code": "jp-14",
     "continent": "Asien",
     "capital": "Yokohama",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -1062,7 +1062,7 @@ export const world = [{
     "code": "us-ks",
     "continent": "Nordamerika",
     "capital": "Topeka",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -1099,7 +1099,7 @@ export const world = [{
     "code": "us-ky",
     "continent": "Nordamerika",
     "capital": "Frankfort",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -1123,7 +1123,7 @@ export const world = [{
     "continent": "Asien",
     "capital": "Kōchi",
     "altcapital": "Kochi",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -1173,7 +1173,7 @@ export const world = [{
     "code": "jp-43",
     "continent": "Asien",
     "capital": "Kumamoto",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -1190,7 +1190,7 @@ export const world = [{
     "continent": "Asien",
     "capital": "Kyōto",
     "altcapital": "Kyoto",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -1254,7 +1254,7 @@ export const world = [{
     "code": "us-la",
     "continent": "Nordamerika",
     "capital": "Baton Rouge",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -1283,7 +1283,7 @@ export const world = [{
     "code": "us-me",
     "continent": "Nordamerika",
     "capital": "Augusta",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -1347,7 +1347,7 @@ export const world = [{
     "code": "us-md",
     "continent": "Nordamerika",
     "capital": "Annapolis",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -1355,7 +1355,7 @@ export const world = [{
     "code": "us-ma",
     "continent": "Nordamerika",
     "capital": "Boston",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -1399,7 +1399,7 @@ export const world = [{
     "code": "us-mi",
     "continent": "Nordamerika",
     "capital": "Lansing",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -1407,7 +1407,7 @@ export const world = [{
     "code": "jp-24",
     "continent": "Asien",
     "capital": "Tsu",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -1422,7 +1422,7 @@ export const world = [{
     "code": "us-mn",
     "continent": "Nordamerika",
     "capital": "Saint Paul",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -1430,7 +1430,7 @@ export const world = [{
     "code": "us-ms",
     "continent": "Nordamerika",
     "capital": "Jackson",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -1438,7 +1438,7 @@ export const world = [{
     "code": "us-mo",
     "continent": "Nordamerika",
     "capital": "Jefferson City",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -1446,7 +1446,7 @@ export const world = [{
     "code": "jp-04",
     "continent": "Asien",
     "capital": "Sendai",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -1454,7 +1454,7 @@ export const world = [{
     "code": "jp-45",
     "continent": "Asien",
     "capital": "Miyazaki",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -1485,7 +1485,7 @@ export const world = [{
     "code": "us-mt",
     "continent": "Nordamerika",
     "capital": "Helena",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -1521,7 +1521,7 @@ export const world = [{
     "code": "jp-20",
     "continent": "Asien",
     "capital": "Nagano",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -1529,7 +1529,7 @@ export const world = [{
     "code": "jp-42",
     "continent": "Asien",
     "capital": "Nagasaki",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -1544,7 +1544,7 @@ export const world = [{
     "code": "jp-29",
     "continent": "Asien",
     "capital": "Nara",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -1559,7 +1559,7 @@ export const world = [{
     "code": "us-ne",
     "continent": "Nordamerika",
     "capital": "Lincoln",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -1588,7 +1588,7 @@ export const world = [{
     "code": "us-nv",
     "continent": "Nordamerika",
     "capital": "Carson City",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -1596,7 +1596,7 @@ export const world = [{
     "code": "us-nh",
     "continent": "Nordamerika",
     "capital": "Concord",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -1604,7 +1604,7 @@ export const world = [{
     "code": "us-nj",
     "continent": "Nordamerika",
     "capital": "Trenton",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -1612,7 +1612,7 @@ export const world = [{
     "code": "us-nm",
     "continent": "Nordamerika",
     "capital": "Santa Fe",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -1620,7 +1620,7 @@ export const world = [{
     "code": "us-ny",
     "continent": "Nordamerika",
     "capital": "Albany",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -1664,7 +1664,7 @@ export const world = [{
     "code": "jp-15",
     "continent": "Asien",
     "capital": "Niigata",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -1715,7 +1715,7 @@ export const world = [{
     "code": "us-nc",
     "continent": "Nordamerika",
     "capital": "Raleigh",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -1723,7 +1723,7 @@ export const world = [{
     "code": "us-nd",
     "continent": "Nordamerika",
     "capital": "Bismarck",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -1738,7 +1738,7 @@ export const world = [{
     "code": "us-oh",
     "continent": "Nordamerika",
     "capital": "Columbus",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -1748,7 +1748,7 @@ export const world = [{
     "continent": "Asien",
     "capital": "Ōita",
     "altcapital": "Oita",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -1756,7 +1756,7 @@ export const world = [{
     "code": "jp-33",
     "continent": "Asien",
     "capital": "Okayama",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -1764,7 +1764,7 @@ export const world = [{
     "code": "jp-47",
     "continent": "Asien",
     "capital": "Naha",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -1772,7 +1772,7 @@ export const world = [{
     "code": "us-ok",
     "continent": "Nordamerika",
     "capital": "Oklahoma City",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -1787,7 +1787,7 @@ export const world = [{
     "code": "us-or",
     "continent": "Nordamerika",
     "capital": "Salem",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -1795,7 +1795,7 @@ export const world = [{
     "code": "jp-27",
     "continent": "Asien",
     "capital": "Osaka",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -1860,7 +1860,7 @@ export const world = [{
     "code": "us-pa",
     "continent": "Nordamerika",
     "capital": "Harrisburg",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -1933,7 +1933,7 @@ export const world = [{
     "code": "us-ri",
     "continent": "Nordamerika",
     "capital": "Providence",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -1986,7 +1986,7 @@ export const world = [{
     "code": "jp-41",
     "continent": "Asien",
     "capital": "Saga",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -1994,7 +1994,7 @@ export const world = [{
     "code": "jp-11",
     "continent": "Asien",
     "capital": "Saitama",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -2103,7 +2103,7 @@ export const world = [{
     "continent": "Asien",
     "capital": "Ōtsu",
     "altcapital": "Otsu",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -2111,7 +2111,7 @@ export const world = [{
     "code": "jp-32",
     "continent": "Asien",
     "capital": "Matsue",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -2119,7 +2119,7 @@ export const world = [{
     "code": "jp-22",
     "continent": "Asien",
     "capital": "Shizuoka",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -2176,7 +2176,7 @@ export const world = [{
     "code": "us-sc",
     "continent": "Nordamerika",
     "capital": "Columbia",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -2184,7 +2184,7 @@ export const world = [{
     "code": "us-sd",
     "continent": "Nordamerika",
     "capital": "Pierre",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -2323,7 +2323,7 @@ export const world = [{
     "code": "us-tn",
     "continent": "Nordamerika",
     "capital": "Nashville",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -2331,7 +2331,7 @@ export const world = [{
     "code": "us-tx",
     "continent": "Nordamerika",
     "capital": "Austin",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -2354,7 +2354,7 @@ export const world = [{
     "code": "jp-09",
     "continent": "Asien",
     "capital": "Utsunomiya",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -2378,7 +2378,7 @@ export const world = [{
     "code": "jp-13",
     "continent": "Asien",
     "capital": "Tokio",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -2386,7 +2386,7 @@ export const world = [{
     "code": "jp-36",
     "continent": "Asien",
     "capital": "Tokushima",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -2402,7 +2402,7 @@ export const world = [{
     "code": "jp-31",
     "continent": "Asien",
     "capital": "Tottori",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -2410,7 +2410,7 @@ export const world = [{
     "code": "jp-16",
     "continent": "Asien",
     "capital": "Toyama",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -2518,7 +2518,7 @@ export const world = [{
     "code": "us-ut",
     "continent": "Nordamerika",
     "capital": "Salt Lake City",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -2564,7 +2564,7 @@ export const world = [{
     "code": "us-vt",
     "continent": "Nordamerika",
     "capital": "Montpelier",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -2579,7 +2579,7 @@ export const world = [{
     "code": "us-va",
     "continent": "Nordamerika",
     "capital": "Richmond",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -2587,7 +2587,7 @@ export const world = [{
     "code": "jp-30",
     "continent": "Asien",
     "capital": "Wakayama",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -2602,7 +2602,7 @@ export const world = [{
     "code": "us-wa",
     "continent": "Nordamerika",
     "capital": "Olympia",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -2625,7 +2625,7 @@ export const world = [{
     "code": "us-wv",
     "continent": "Nordamerika",
     "capital": "Charleston",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -2633,7 +2633,7 @@ export const world = [{
     "code": "us-wi",
     "continent": "Nordamerika",
     "capital": "Madison",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -2641,7 +2641,7 @@ export const world = [{
     "code": "us-wy",
     "continent": "Nordamerika",
     "capital": "Cheyenne",
-    "special": "Bundesstaat",
+    "special": "US Bundesstaat",
     "uno": false
   },
   {
@@ -2649,7 +2649,7 @@ export const world = [{
     "code": "jp-06",
     "continent": "Asien",
     "capital": "Yamagata",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -2657,7 +2657,7 @@ export const world = [{
     "code": "jp-35",
     "continent": "Asien",
     "capital": "Yamaguchi",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
@@ -2666,7 +2666,7 @@ export const world = [{
     "continent": "Asien",
     "capital": "Kōfu",
     "altcapital": "Kofu",
-    "special": "Präfektur",
+    "special": "Jap. Präfektur",
     "uno": false
   },
   {
