@@ -18,17 +18,14 @@ world.forEach(function (x) {
 </script>
 
 <template>
-    <h2>Spezial</h2>
-    <form class="formSpecial">
-        <label v-for="q, k in special">
-            <input type="checkbox" :value="k" v-model="store.arrSelection">{{ k }} {{ q }}
-        </label>
+    <h3>Spezial</h3>
+    <form class="button-grid categories">
+        <div v-for="q, k in special">
+            <input type="checkbox" :value="k" :id="k" v-model="store.arrSelection">
+            <label :for="k">
+                <span>{{ q }}</span>
+                <span>{{ k }}</span>
+            </label>
+        </div>
     </form>
 </template>
-
-<style>
-.formSpecial {
-    width: 100%;
-    float: left;
-}
-</style>

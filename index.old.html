@@ -10,128 +10,190 @@
   <script src="JS/jquery-3.6.0.min.js"></script>
   <script src="JS/jquery-ui.min.js"></script>
   <link rel="stylesheet" href="CSS/main.css">
-  <link rel="stylesheet" href="CSS/jquery-ui.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>Quiz</title>
 </head>
 
 <body onload="init()">
   <div id="startPage">
-    <h1>Wähle dein Quiz</h1>
-
-    <form class="form-control" action="javascript:startGame()">
-      <div id="checkMode">
-        <h3>Modus</h3>
-        <label>
-          <input type="radio" id="hauptstadt" class="radioMode" name="modus" value="hauptstadt">
-          Hauptstädte
-        </label>
-        <label>
-          <input type="radio" id="umriss" class="radioMode" name="modus" value="umriss">
-          Umrisse
-        </label>
-        <label>
-          <input type="radio" id="flaggen" class="radioMode" name="modus" value="flaggen">
-          Flaggen
-        </label>
-        <h3 class="padTop">Spezial - Modus</h3>
-        <label>
-          <input type="radio" id="expert" class="radioMode" name="modus" value="expert">
-          Expert
-        </label>
-        <label>
-          <input type="radio" id="pokemon" class="radioMode" name="modus" value="pokemon">
-          Pokemon
-        </label>
+    <form action="javascript:startGame()">
+      <div id="checkMode" class="view">
+        <div>
+          <h1>Wähle einen Modus</h1>
+          <div class="button-grid modes">
+            <div>
+              <input type="radio" id="hauptstadt" class="radioMode" name="modus" value="hauptstadt">
+              <label for="hauptstadt">Hauptstädte</label>
+            </div>
+            <div>
+              <input type="radio" id="umriss" class="radioMode" name="modus" value="umriss">
+              <label for="umriss">Umrisse</label>
+            </div>
+            <div>
+              <input type="radio" id="flaggen" class="radioMode" name="modus" value="flaggen">
+              <label for="flaggen">Flaggen</label>
+            </div>
+            <div>
+              <input type="radio" id="expert" class="radioMode" name="modus" value="expert">
+              <label for="expert">Expert</label>
+            </div>
+            <div>
+              <input type="radio" id="pokemon" class="radioMode" name="modus" value="pokemon">
+              <label for="pokemon">Pokemon</label>
+            </div>
+          </div>
+        </div>
       </div>
-      <div id="checkLand">
-        <h3>Kontinente</h3>
-        <label>
-          <input type="checkbox" id="europa" name="land" value="europa">
-          Europa (45)
-        </label>
-        <label>
-          <input type="checkbox" id="asien" name="land" value="asien">
-          Asien (48)
-        </label>
-        <label>
-          <input type="checkbox" id="afrika" name="land" value="afrika">
-          Afrika (55)
-        </label>
-        <label>
-          <input type="checkbox" id="nordamerika" name="land" value="nordamerika">
-          Nordamerika (2)
-        </label>
-        <label>
-          <input type="checkbox" id="mittelamerika" name="land" value="mittelamerika">
-          Mittelamerika (21)
-        </label>
-        <label>
-          <input type="checkbox" id="südamerika" name="land" value="südamerika">
-          Südamerika (12)
-        </label>
-        <label>
-          <input type="checkbox" id="ozeanien" name="land" value="ozeanien">
-          Ozeanien (14)
-        </label>
-        <h3 class="padTop">Spezial - Themen</h3>
-        <label>
-          <input type="checkbox" id="bundesland" name="land" value="bundesland">
-          Bundesländer (16)
-        </label>
-        <label>
-          <input type="checkbox" id="präfektur" name="land" value="präfektur">
-          Jap. Präfekturen (47)
-        </label>
-        <label>
-          <input type="checkbox" id="bundesstaat" name="land" value="bundesstaat">
-          US Bundesstaaten (50)
-        </label>
+      <div id="checkLand" class="view">
+        <div>
+          <h1>Wähle die Kontinente</h1>
+          <div class="button-grid categories">
+            <div>
+              <input type="checkbox" id="europa" name="land" value="europa">
+              <label for="europa">
+                <span>45</span>
+                <span>Europa</span>
+              </label>
+            </div>
+            <div>
+              <input type="checkbox" id="asien" name="land" value="asien">
+              <label for="asien">
+                <span>48</span>
+                <span>Asien</span>
+              </label>
+            </div>
+            <div>
+              <input type="checkbox" id="afrika" name="land" value="afrika">
+              <label for="afrika">
+                <span>55</span>
+                <span>Afrika</span>
+              </label>
+            </div>
+            <div>
+              <input type="checkbox" id="nordamerika" name="land" value="nordamerika">
+              <label for="nordamerika">
+                <span>02</span>
+                <span>Nordamerika</span>
+              </label>
+            </div>
+            <div>
+              <input type="checkbox" id="mittelamerika" name="land" value="mittelamerika">
+              <label for="mittelamerika">
+                <span>21</span>
+                <span>Mittelamerika</span>
+              </label>
+            </div>
+            <div>
+              <input type="checkbox" id="südamerika" name="land" value="südamerika">
+              <label for="südamerika">
+                <span>12</span>
+                <span>Südamerika</span>
+              </label>
+            </div>
+            <div>
+              <input type="checkbox" id="ozeanien" name="land" value="ozeanien">
+              <label for="ozeanien">
+                <span>14</span>
+                <span>Ozeanien</span>
+              </label>
+            </div>
+          </div>
+          <h3>Spezialthemen</h3>
+          <div class="button-grid categories special">
+            <div>
+              <input type="checkbox" id="bundesland" name="land" value="bundesland">
+              <label for="bundesland">
+                <span>16</span>
+                <span>Bundesländer</span>
+              </label>
+            </div>
+            <div>
+              <input type="checkbox" id="präfektur" name="land" value="präfektur">
+              <label for="präfektur">
+                <span>47</span>
+                <span>Jap. Präfekturen</span>
+              </label>
+            </div>
+            <div>
+              <input type="checkbox" id="bundesstaat" name="land" value="bundesstaat">
+              <label for="bundesstaat">
+                <span>50</span>
+                <span>US Bundesstaaten</span>
+              </label>
+            </div>
+          </div>
+        </div>
       </div>
-      <div id="checkGens">
-        <h3>Generationen wählen</h3>
-        <label>
-          <input type="checkbox" id="gen1" name="generations" value="gen1">
-          Gen. I (151)
-        </label>
-        <label>
-          <input type="checkbox" id="gen2" name="generations" value="gen2">
-          Gen. II (100)
-        </label>
-        <label>
-          <input type="checkbox" id="gen3" name="generations" value="gen3">
-          Gen. III (135)
-        </label>
-        <label>
-          <input type="checkbox" id="gen4" name="generations" value="gen4">
-          Gen. IV (107)
-        </label>
-        <label>
-          <input type="checkbox" id="gen5" name="generations" value="gen5">
-          Gen. V (156)
-        </label>
-        <label>
-          <input type="checkbox" id="gen6" name="generations" value="gen6">
-          Gen. VI (72)
-        </label>
-        <label>
-          <input type="checkbox" id="gen7" name="generations" value="gen7">
-          Gen. VII (88)
-        </label>
-        <label>
-          <input type="checkbox" id="gen8" name="generations" value="gen8">
-          Gen. VIII (108)
-        </label>
+      <div id="checkGens" class="view">
+        <div>
+          <h1>Generationen wählen</h1>
+          <div class="button-grid categories">
+            <div>
+              <input type="checkbox" id="gen1" name="generations" value="gen1">
+              <label for="gen1">
+                <span>151</span>
+                <span>Gen. I</span>
+              </label>
+            </div>
+            <div>
+              <input type="checkbox" id="gen2" name="generations" value="gen2">
+              <label for="gen2">
+                <span>100</span>
+                <span>Gen. II</span>
+              </label>
+            </div>
+            <div>
+              <input type="checkbox" id="gen3" name="generations" value="gen3">
+              <label for="gen3">
+                <span>135</span>
+                <span>Gen. III</span>
+              </label>
+            </div>
+            <div>
+              <input type="checkbox" id="gen4" name="generations" value="gen4">
+              <label for="gen4">
+                <span>107</span>
+                <span>Gen. IV</span>
+              </label>
+            </div>
+            <div>
+              <input type="checkbox" id="gen5" name="generations" value="gen5">
+              <label for="gen5">
+                <span>156</span>
+                <span>Gen. V</span>
+              </label>
+            </div>
+            <div>
+              <input type="checkbox" id="gen6" name="generations" value="gen6">
+              <label for="gen6">
+                <span>72</span>
+                <span>Gen. VI</span>
+              </label>
+            </div>
+            <div>
+              <input type="checkbox" id="gen7" name="generations" value="gen7">
+              <label for="gen7">
+                <span>88</span>
+                <span>Gen. VII</span>
+              </label>
+            </div>
+            <div>
+              <input type="checkbox" id="gen8" name="generations" value="gen8">
+              <label for="gen8">
+                <span>108</span>
+                <span>Gen. VIII</span>
+              </label>
+            </div>
+          </div>
+        </div>
       </div>
-      <br><br>
-      <input name="reset" class="button" type="reset" value="Zurücksetzen" />
-      <input name="submit" class="button" type="submit" value="Starte Spiel" />
+      <div class="button-grid buttons">
+        <input name="reset" class="button" type="reset" value="Zurücksetzen" />
+        <input name="submit" class="button" type="submit" value="Starte Spiel" />
+      </div>
     </form>
-    <br>
     <form>
       <div id="checkOptions">
-        <h3>Optionen</h3>
+        <h1>Optionen</h1>
         <label>
           <input type="range" min="0" max="1" class="slider" id="configOV" name="config" value="0">
           <span id="configOVLabel">Keine Übersicht</span>

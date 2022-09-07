@@ -10,16 +10,23 @@ const nextURL = computed(() => "./src/assets/Flaggen/" + store.objNext.code + ".
 
 <template>
     <h1>Flaggenquiz</h1>
-    <h3>Zu welchem Land gehört diese Flagge: </h3>
-    <img class="flagMax" :src="nextURL">
+    <div class="flagMax">
+        <img :src="nextURL">
+    </div>
     <AnswerInput v-if="store.intConfigAnswer != 2"></AnswerInput>
     <AnswerPick v-if="store.intConfigAnswer == 2"></AnswerPick>
 </template>
 
 <style>
 .flagMax {
-    border: 1px solid black;
-    max-width: 80%;
-    margin: 0 10%;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    aspect-ratio: 1 / 1;
+}
+.flagMax img {
+    width: 100%;
 }
 </style>

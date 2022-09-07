@@ -54,11 +54,17 @@ startGame()
 
 <template>
     <ConfigView />
-    <component :is="quiz[store.strMode]" />
-    <br />
-    <button @click="store.nextQuestion">Skip</button>
-    <button @click="startGame">Restart</button>
-    <counter />
-    <timer ref="refTimer" />
-    <score />
+    <div class="view">
+        <div>
+            <component :is="quiz[store.strMode]" />
+            <br />
+            <div class="buttons">
+                <button @click="store.nextQuestion" class="button">Skip</button>
+                <button @click="startGame" class="button">Restart</button>
+            </div>
+            <counter />
+            <timer ref="refTimer" />
+            <score />
+        </div>
+    </div>
 </template>

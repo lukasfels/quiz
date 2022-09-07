@@ -10,16 +10,17 @@ const nextCapital = computed(() => store.objNext.name)
     
 <template>
     <h1>Hauptstadtquiz</h1>
-    <h3>Wie heißt die Hauptstadt von: </h3>
-    <p>{{  nextCapital  }}</p>
+    <h3>Wie heißt die Hauptstadt von</h3>
+    <p class="capital">{{  nextCapital  }}</p>
     <AnswerInput v-if="store.intConfigAnswer != 2" attr="capital"></AnswerInput>
     <AnswerPick v-if="store.intConfigAnswer == 2" attr="capital"></AnswerPick>
 </template>
-    
+
 <style>
-.flagMax {
-    border: 1px solid black;
-    max-width: 80%;
-    margin: 0 10%;
+.capital {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #1FFFA9;
 }
 </style>

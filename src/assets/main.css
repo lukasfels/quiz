@@ -1,49 +1,140 @@
-@import "./base.css";
+@font-face {
+  font-family: ConcertOne-Regular;
+  src: url('../fonts/ConcertOne-Regular.ttf');
+}
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+*, ::after, ::before {
+  box-sizing: border-box;
+}
 
-  font-weight: normal;
+/* Default Font Size */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'ConcertOne-Regular';
+  margin: 0;
+  padding: 0;
+  color: #FCFCFC;
+  background-color: #2F2F2F;
+}
+
+h1, h3 {
+  font-size: 1.8rem;
+  text-align: center;
 }
 
 h1 {
-  border-bottom: 3px solid black;
+  margin-top: 0;
+  font-size: 2.2rem;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  display: none;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.button-grid.buttons {
+  grid-template-columns: 1fr 1fr;
+}
+
+.button-grid label, .categories label span, .button-grid a, .categories a span {
+  transition-property: background-color;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+
+.button-grid label, .button-grid a {
+  background-color: #7C7C7C;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.button-grid.modes label, .button-grid.modes a {
+  display: block;
   text-align: center;
-  margin: 10px 0;
+  padding: 15px 0px;
+  font-size: 1.2rem;
 }
 
-h2 {
-  clear: both;
+.button-grid.categories label, .button-grid.categories a {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  overflow: hidden;
 }
 
-form label {
-  width: 50%;
-  padding: 7px;
-  border: 1px solid black;
-  float: left;
-  margin: -1px 0 0 -1px;
+.categories label span, .categories a span {
+  display: block;
+  margin-right: 10px;
+  font-size: 1.2rem;
+  padding: 15px 0;
 }
 
-button {
-  padding: 5px;
-  font-size: 20px;
-  font-weight: bold;
-  color: #000;
-  background-color: gold;
-  border-radius: 3px;
+.categories label span:first-child {
+  background-color: #969696;
+  margin-right: 10px;
+  width: 40px;
+  font-size: 1rem;
+  text-align: center;
+  padding: 15px 0;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
+input:checked~label, a:hover {
+  background-color: #1FFFA9;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+input:checked~label>span:first-child {
+  background-color: #8EFED3;
+}
+
+.view>div {
+  width: 100%;
+}
+
+.view {
+  height: 100vh;
+  display: flex;
+  place-items: center;
+}
+
+.button {
+  background-color: #969696;
+  border: none;
+  font-size: 1.2rem;
+  font-family: inherit;
+  border-radius: 5px;
+  padding: 12px 20px 12px 20px;
+  color: inherit;
+  margin: 20px 8px 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 500px) {
+  .button-grid {
+    grid-template-columns: 1fr 1fr;
   }
+
+  .button-grid.special {
+    grid-template-columns: 1fr;
+  }
+
+  .button-grid {
+    width: 95%;
+  }
+
+  #checkLand {
+    height: 80vh;
+  }  
 }
