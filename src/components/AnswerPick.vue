@@ -84,7 +84,9 @@ randomAnswers()
     
 <style>
 .answerPick {
-    float: left;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8px;
+    margin: 8px;
 }
 </style>

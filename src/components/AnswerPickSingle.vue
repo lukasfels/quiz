@@ -34,38 +34,21 @@ function checkAnswer(x) {
 </script>
 
 <template>
-    <div class="answerPickOption" :class="{ wrong: boolWrong }" @click="checkAnswer(answer)">
-        <p>{{ answer }}</p>
-    </div>
+    <div class="answerPickOption" :class="{ wrong: boolWrong }" @click="checkAnswer(answer)">{{ answer }}</div>
 </template>
 
 <style>
 .answerPickOption {
-    float: left;
-    margin: 2px;
-    font-weight: bold;
-    width: 45%;
-    border: 2px solid black;
-    border-radius: 3px;
-}
-
-.answerPickOption * {
-    float: left;
-    margin: 0;
-    padding: 15px 10px;
-}
-
-.answerPickOption p {
-    font-size: 16px;
-    height: 58px;
-    width: 70%;
-    line-break: auto;
-    padding: 0;
-    text-overflow: ellipsis;
-    overflow: hidden;
+    font-size: 1.5rem;
+    padding: 14px 0 24px 0;
+    text-align: center;
+    background-color: #969696;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .wrong {
     background-color: red;
+    cursor: not-allowed;
 }
 </style>

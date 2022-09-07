@@ -15,11 +15,3 @@ const nextCapital = computed(() => store.objNext.name)
     <AnswerInput v-if="store.intConfigAnswer != 2" attr="capital"></AnswerInput>
     <AnswerPick v-if="store.intConfigAnswer == 2" attr="capital"></AnswerPick>
 </template>
-    
-<style>
-.flagMax {
-    border: 1px solid black;
-    max-width: 80%;
-    margin: 0 10%;
-}
-</style>
