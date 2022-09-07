@@ -39,8 +39,8 @@ function checkAnswer(x) {
 
 <style>
 .answerPickOption {
-    font-size: 1.5rem;
-    padding: 14px 0 24px 0;
+    font-size: 1.3rem;
+    padding: 12px 0 12px 0;
     text-align: center;
     background-color: #969696;
     border-radius: 5px;

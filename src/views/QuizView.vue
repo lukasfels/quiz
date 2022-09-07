@@ -58,8 +58,10 @@ startGame()
         <div>
             <component :is="quiz[store.strMode]" />
             <br />
-            <button @click="store.nextQuestion" class="button">Skip</button>
-            <button @click="startGame" class="button">Restart</button>
+            <div class="buttons">
+                <button @click="store.nextQuestion" class="button">Skip</button>
+                <button @click="startGame" class="button">Restart</button>
+            </div>
             <counter />
             <timer ref="refTimer" />
             <score />

@@ -10,7 +10,6 @@ const nextURL = computed(() => "./src/assets/Flaggen/" + store.objNext.code + ".
 
 <template>
     <h1>Flaggenquiz</h1>
-    <h3>Zu welchem Land gehört diese Flagge: </h3>
     <div class="flagMax">
         <img :src="nextURL">
     </div>
@@ -20,7 +19,8 @@ const nextURL = computed(() => "./src/assets/Flaggen/" + store.objNext.code + ".
 
 <style>
 .flagMax {
-    height: 30vw;
+    height: 300px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
