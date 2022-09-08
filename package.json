@@ -1,9 +1,9 @@
 {
   "name": "vuequiz",
-  "version": "0.2.0",
+  "version": "0.5.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=/quiz/",
     "preview": "vite preview --port 4173",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },

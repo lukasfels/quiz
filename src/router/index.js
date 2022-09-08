@@ -12,12 +12,12 @@ const router = createRouter({
     {
       path: "/mode",
       name: "mode",
-      component: () => import("../views/ModeView.vue"),
+      component: () => import("@/views/ModeView.vue"),
     },
     {
       path: "/quiz",
       name: "quiz",
-      component: () => import("../views/QuizView.vue"),
+      component: () => import("@/views/QuizView.vue"),
     },
   ],
 });

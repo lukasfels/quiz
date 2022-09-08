@@ -1,11 +1,11 @@
 <script setup>
-import { computed } from '@vue/reactivity';
 import { ref } from 'vue'
 
-const timer = ref('00:00:00')
+const strTimer = ref('00:00')
 let seconds = 0
 let minutes = 0
 let hours = 0
+let intervalID = 0
 
 function setTime() {
     if ((seconds += 1) >= 60) {
@@ -15,20 +15,37 @@ function setTime() {
             hours++
         }
     }
-    timer.value = ("" + hours).padStart(2, "0") + ":" + ("" + minutes).padStart(2, "0") + ":" + ("" + seconds).padStart(2, "0")
+    let tHours = hours != 0 ? ("" + hours).padStart(2, "0") + ":" : ""
+    let tMinutes = ("" + minutes).padStart(2, "0") + ":"
+    strTimer.value = tHours + tMinutes + ("" + seconds).padStart(2, "0")
 }
 
-const reset = () => {
-    timer.value = '00:00:00'
+const getTime = () => {
+    return strTimer.value
+}
+
+const resetTime = () => {
+    strTimer.value = '00:00'
     seconds = 0
     minutes = 0
     hours = 0
 }
 
-defineExpose({ reset })
-setInterval(setTime, 1000)
+const startTime = () => {
+    if (intervalID == 0) {
+        intervalID = setInterval(setTime, 1000)
+    }
+}
+
+const stopTime = () => {
+    clearInterval(intervalID)
+    intervalID = 0
+}
+
+startTime()
+defineExpose({ resetTime, getTime, startTime, stopTime, strTimer })
 </script>
 
 <template>
-    <p> {{  timer  }} </p>
+    <p>Zeit: {{ strTimer }} </p>
 </template>

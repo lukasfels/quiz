@@ -5,8 +5,7 @@
     import AnswerPick from '../AnswerPick.vue'
     
     const store = useQuizStore()
-    const nextURL = computed(() => "./src/assets/Pokemon/" + store.objNext.generation + "Generation/" + ('000' + store.objNext.id).slice(-3) + ".png")
-    console.log(nextURL)
+    const nextURL = computed(() => new URL(import.meta.env.BASE_URL + "Pokemon/" + store.objNext.generation + "Generation/" + ('000' + store.objNext.id).slice(-3) + ".png", import.meta.url).href)
     </script>
     
     <template>

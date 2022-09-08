@@ -5,7 +5,7 @@ import AnswerInput from '../AnswerInput.vue'
 import AnswerPick from '../AnswerPick.vue'
 
 const store = useQuizStore()
-const nextURL = computed(() => "./src/assets/Flaggen/" + store.objNext.code + ".svg")
+const nextURL = computed(() => new URL(import.meta.env.BASE_URL + "Flaggen/" + store.objNext.code + ".svg", import.meta.url).href)
 </script>
 
 <template>
