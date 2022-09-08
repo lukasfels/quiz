@@ -79,9 +79,9 @@ startGame()
             <component :is="quiz[store.strMode]" />
             <br />
             <div class="buttons">
-                <button @click="store.nextQuestion">Nächste</button>
-                <button @click="startGame">Neustart</button>
-                <button @click="endGame">Ende</button>
+                <button class="button" @click="store.nextQuestion">Nächste</button>
+                <button class="button" @click="startGame">Neustart</button>
+                <button class="button" @click="endGame">Ende</button>
             </div>
             <counter ref="refCounter" />
             <timer ref="refTimer" />
@@ -94,8 +94,8 @@ startGame()
             <p>Fragen: {{refCounter != null ? refCounter.strCount : '0'}}</p>
             <p>Zeit: {{refTimer != null ? refTimer.strTimer : '0'}}</p>
             <p>Punktzahl: {{refScore != null ? refScore.strScore : '0'}}%</p>
-            <button @click="startGame">Neustart</button>
-            <button @click="routeHome">Home</button>
+            <button class="button" @click="startGame">Neustart</button>
+            <button class="button" @click="routeHome">Home</button>
         </div>
     </div>
 </template>
@@ -113,7 +113,7 @@ startGame()
 }
 
 .modalStats {
-    background-color: yellow;
+    background-color: #2F2F2F;
     margin: auto;
     width: 250px;
     height: 250px;
