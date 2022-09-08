@@ -74,14 +74,20 @@ startGame()
 
 <template>
     <ConfigView />
-    <component :is="quiz[store.strMode]" />
-    <br />
-    <button @click="store.nextQuestion">Nächste</button>
-    <button @click="startGame">Neustart</button>
-    <button @click="endGame">Ende</button>
-    <counter ref="refCounter" />
-    <timer ref="refTimer" />
-    <score ref="refScore" />
+    <div class="view">
+        <div>
+            <component :is="quiz[store.strMode]" />
+            <br />
+            <div class="buttons">
+                <button @click="store.nextQuestion">Nächste</button>
+                <button @click="startGame">Neustart</button>
+                <button @click="endGame">Ende</button>
+            </div>
+            <counter ref="refCounter" />
+            <timer ref="refTimer" />
+            <score ref="refScore" />
+        </div>
+    </div>
     <div class="modalWin" :class="{showModal: !showModal}">
         <div class="modalStats">
             <h1>Ergebnis</h1>

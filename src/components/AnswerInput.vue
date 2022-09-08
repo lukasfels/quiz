@@ -74,8 +74,21 @@ const arrFiltered = computed(() => {
 </template>
 
 <style>
+input.answerInput {
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: inherit;
+}
+
+input.answerInput:focus {
+    border: none;
+}
+
 .answerInput {
-    width: 300px;
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
 }
 
 .autocomplete {
@@ -84,11 +97,11 @@ const arrFiltered = computed(() => {
     z-index: 99;
     background-color: white;
     border: 1px solid black;
+    color: black;
 }
 
 .autocomplete div {
     cursor: pointer;
-    border-bottom: 1px solid black;
     padding: 5px;
 }
 
