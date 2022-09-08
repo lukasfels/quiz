@@ -4,6 +4,7 @@
 set -e
 
 # build
+# base url setzen, falls andere --base=/quiz/
 npm run build
 
 # delete old dist and copy new
