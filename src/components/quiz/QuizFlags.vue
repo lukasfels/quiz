@@ -28,5 +28,6 @@ const nextURL = computed(() => new URL(import.meta.env.BASE_URL + "Flaggen/" + s
 }
 .flagMax img {
     width: 100%;
+    max-height: 300px;
 }
 </style>

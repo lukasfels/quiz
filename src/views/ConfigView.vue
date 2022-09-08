@@ -34,7 +34,7 @@ function toggleHide() {
                 <input type="range" min="0" max="1" v-model="store.intConfigDelay">
             </label>
             <br>
-            <button @click="toggleHide">Speichern</button>
+            <button class="button" @click="toggleHide">Speichern</button>
         </div>
     </div>
 </template>

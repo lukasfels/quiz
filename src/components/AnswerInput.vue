@@ -13,6 +13,7 @@ const props = defineProps({
 const store = useQuizStore()
 const strInput = ref('')
 var arrAutocomplete = []
+const focus = ref(2)
 
 //Wird ausgeführt um die Antwort für die Frage zu prüfen
 function checkAnswer(answer) {
@@ -32,6 +33,26 @@ function checkAnswer(answer) {
         store.arrScore[0]++
     } else {
         //console.log('Falsch')
+    }
+}
+
+function adjustFocus(event) {
+    if (event.key == "ArrowUp") {
+        if (focus.value > 0) {
+            focus.value--
+        } else {
+            focus.value = arrFiltered.value.length - 1
+        }
+    } else if (event.key == "ArrowDown") {
+        if (focus.value < arrFiltered.value.length - 1) {
+            focus.value++
+        } else {
+            focus.value = 0
+        }
+    } else if (event.key == "Enter") {
+        checkAnswer(arrFiltered.value[focus.value])
+    } else {
+        focus.value = 0
     }
 }
 
@@ -64,36 +85,53 @@ const arrFiltered = computed(() => {
 </script>
 
 <template>
-    <div class="answerInput">
+    <div class="answerDiv">
         <p>Antwort:</p>
-        <input type="text" class="answerInput" v-model="strInput" @input="checkAnswer($event.target.value)">
-        <div class="autocomplete" v-if="arrFiltered.length > 0">
-            <div v-for="item in arrFiltered" @click="checkAnswer(item)">{{ item }}</div>
+        <input type="text" class="answerInput" spellcheck="false" v-model="strInput" @keydown="adjustFocus"
+            @input="checkAnswer($event.target.value)">
+        <div class="autocompleteWrapper">
+            <div class="autocomplete" v-if="arrFiltered.length > 0">
+                <div v-for="(item, index) in arrFiltered" @click="checkAnswer(item)"
+                    :class="[focus == index ? 'focus' : '']">{{ item }}</div>
+            </div>
         </div>
     </div>
 </template>
 
 <style>
-input.answerInput {
-    font-size: 1rem;
-    font-weight: bold;
-    font-family: inherit;
+.answerDiv {
+    display: flex;
+    flex-direction: column;
 }
 
-input.answerInput:focus {
-    border: none;
+.answerDiv p {
+    margin: auto;
+    width: 75%;
+    padding: 10px 5px;
 }
 
 .answerInput {
-    width: 100%;
-    padding: 20px;
+    font-size: 1rem;
+    font-family: inherit;
+    margin: auto;
+    width: 75%;
+    padding: 10px 5px;
     border: none;
     border-radius: 5px;
 }
 
+.answerInput:focus {
+    border: none;
+}
+
+.autocompleteWrapper {
+    width: 75%;
+    margin: auto;
+}
+
 .autocomplete {
     position: absolute;
-    width: 100%;
+    width: 75%;
     z-index: 99;
     background-color: white;
     border: 1px solid black;
@@ -103,9 +141,14 @@ input.answerInput:focus {
 .autocomplete div {
     cursor: pointer;
     padding: 5px;
+    border-bottom: 1px solid black;
 }
 
 .autocomplete div:hover {
     background-color: green;
+}
+
+.focus {
+    background-color: aqua;
 }
 </style>
