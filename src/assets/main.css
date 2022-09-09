@@ -26,9 +26,20 @@ h1, h3 {
 }
 
 h1 {
-  margin-top: 0;
   font-size: 2.2rem;
 }
+
+.p0 { padding: 0; }
+.pt0 { padding-top: 0; }
+.pb0 { padding-bottom: 0; }
+
+.m0 { margin: 0; }
+.mt0 { margin-top: 0; }
+.mb0 { margin-bottom: 0; }
+
+.m1 { margin: 1rem; }
+.mt1 { margin-top: 1rem; }
+.mb1 { margin-bottom: 1rem; }
 
 input[type="checkbox"], input[type="radio"] {
   display: none;
@@ -57,6 +68,26 @@ input[type="checkbox"], input[type="radio"] {
   margin: 5px;
 }
 
+.button-grid.categories label {
+  background-color: #7C7C7C;
+  border-radius: 0px;
+  margin: 0px;
+  margin-bottom: 4px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.button-grid.categories div:last-child label {
+  margin-bottom: 0;
+}
+
+.button-grid.categories {
+  border-radius: 5px;
+  overflow: hidden;
+}
+
 .button-grid.modes label, .button-grid.modes a {
   display: block;
   text-align: center;
@@ -64,34 +95,24 @@ input[type="checkbox"], input[type="radio"] {
   font-size: 1.2rem;
 }
 
-.button-grid.categories label, .button-grid.categories a {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  overflow: hidden;
-}
-
-.categories label span, .categories a span {
+.categories label span {
   display: block;
   margin-right: 10px;
   font-size: 1.2rem;
-  padding: 15px 0;
+  padding: 10px 0;
 }
 
 .categories label span:first-child {
   background-color: #969696;
-  margin-right: 10px;
   width: 40px;
-  font-size: 1rem;
   text-align: center;
-  padding: 15px 0;
 }
 
-input:checked~label, a:hover {
+.button-grid>div>input:checked~label, a:hover {
   background-color: #1FFFA9;
 }
 
-input:checked~label>span:first-child {
+.button-grid>div>input:checked~label>span:first-child {
   background-color: #8EFED3;
 }
 
@@ -108,7 +129,7 @@ input:checked~label>span:first-child {
 .button {
   background-color: #969696;
   border: none;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-family: inherit;
   border-radius: 5px;
   padding: 12px 20px 12px 20px;
@@ -126,15 +147,11 @@ input:checked~label>span:first-child {
     grid-template-columns: 1fr 1fr;
   }
 
-  .button-grid.special {
+  .button-grid.special, .button-grid.categories {
     grid-template-columns: 1fr;
   }
 
   .button-grid {
     width: 95%;
   }
-
-  #checkLand {
-    height: 80vh;
-  }  
 }

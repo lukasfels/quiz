@@ -46,7 +46,8 @@ function toggleHide() {
     top: 0;
     right: 0;
     background-color: darkcyan;
-    padding: 5px;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
 }
 
 .optionTab {

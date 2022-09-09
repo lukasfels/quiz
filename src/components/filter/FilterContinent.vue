@@ -18,7 +18,7 @@ world.forEach(function (x) {
 </script>
 
 <template>
-    <h3>Kontinente</h3>
+    <h3 class="m1">Kontinente</h3>
     <form class="button-grid categories">
         <div v-for="q, k in continent">
             <input type="checkbox" :value="k" :id="k" v-model="store.arrSelection">

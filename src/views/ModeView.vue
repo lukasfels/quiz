@@ -32,14 +32,34 @@ function startGame() {
 </script>
 
 <template>
-    <div class="view">
+    <div class="mode-view">
         <div>
-            <h1>Wähle die Themen</h1>
+            <h1 class="m0">Wähle die Themen</h1>
             <filter.continents v-if="check == 'world'"></filter.continents>
             <filter.special v-if="check == 'world'"></filter.special>
             <filter.pokemon v-if="check == 'pokemon'"></filter.pokemon>
-            <button @click="startGame" class="button">Starten</button>
         </div>
+    </div>
+    <div class="footer-menu">
+        <button @click="startGame" class="button">Starten</button>
     </div>
     <ConfigView></ConfigView>
 </template>
+<style>
+.mode-view {
+    padding: 60px 0 90px;
+}
+
+.footer-menu {
+    background-color: #2F2F2F;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-menu .button {
+    float: right;
+    margin: 10px;
+}
+</style>

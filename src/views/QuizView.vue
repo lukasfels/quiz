@@ -74,7 +74,7 @@ startGame()
 
 <template>
     <ConfigView />
-    <div class="view">
+    <div>
         <div>
             <component :is="quiz[store.strMode]" />
             <br />
