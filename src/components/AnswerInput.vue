@@ -37,20 +37,22 @@ function checkAnswer(answer) {
 }
 
 function adjustFocus(event) {
-    if (event.key == "ArrowUp") {
-        if (focus.value > 0) {
-            focus.value--
-        } else {
-            focus.value = arrFiltered.value.length - 1
+    if (arrFiltered.value.length > 0) {
+        if (event.key == "ArrowUp") {
+            if (focus.value > 0) {
+                focus.value--
+            } else {
+                focus.value = arrFiltered.value.length - 1
+            }
+        } else if (event.key == "ArrowDown") {
+            if (focus.value < arrFiltered.value.length - 1) {
+                focus.value++
+            } else {
+                focus.value = 0
+            }
+        } else if (event.key == "Enter") {
+            checkAnswer(arrFiltered.value[focus.value])
         }
-    } else if (event.key == "ArrowDown") {
-        if (focus.value < arrFiltered.value.length - 1) {
-            focus.value++
-        } else {
-            focus.value = 0
-        }
-    } else if (event.key == "Enter") {
-        checkAnswer(arrFiltered.value[focus.value])
     } else {
         focus.value = 0
     }
@@ -87,7 +89,7 @@ const arrFiltered = computed(() => {
 <template>
     <div class="answerDiv">
         <p>Antwort:</p>
-        <input type="text" class="answerInput" spellcheck="false" v-model="strInput" @keydown="adjustFocus"
+        <input type="text" class="answerInput" spellcheck="false" v-model="strInput" @keyup="adjustFocus"
             @input="checkAnswer($event.target.value)">
         <div class="autocompleteWrapper">
             <div class="autocomplete" v-if="arrFiltered.length > 0">
