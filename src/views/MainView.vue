@@ -25,5 +25,5 @@ function routeMode(x) {
             </div>
         </div>
     </div>
-    <ConfigView></ConfigView>
+    <ConfigView />
 </template>

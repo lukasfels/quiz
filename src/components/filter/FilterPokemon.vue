@@ -22,7 +22,7 @@ pokemon.forEach(function (x) {
             <input type="checkbox" :value="parseInt(key)" :id="key" v-model="store.arrSelection">
             <label :for="key">
                 <span>{{ value }}</span>
-                <span>Generation {{ k }}</span>
+                <span>Generation {{ key }}</span>
             </label>
         </div>
     </form>

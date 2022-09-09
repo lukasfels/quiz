@@ -13,7 +13,10 @@ const props = defineProps({
 const store = useQuizStore()
 const strInput = ref('')
 var arrAutocomplete = []
-const focus = ref(2)
+//Index wo der Fokus gerade ist
+const intFocus = ref(2)
+//Bool ob der Input für die Antwort im Fokus ist
+const boolFocus = ref(false)
 
 //Wird ausgeführt um die Antwort für die Frage zu prüfen
 function checkAnswer(answer) {
@@ -36,25 +39,32 @@ function checkAnswer(answer) {
     }
 }
 
+//Funktion für die Autocomplete Liste
 function adjustFocus(event) {
+    //Wenn es Einträge in der Liste gibt
     if (arrFiltered.value.length > 0) {
+        //Pfeiltaste oben zum 'scrollen'
         if (event.key == "ArrowUp") {
-            if (focus.value > 0) {
-                focus.value--
+            if (intFocus.value > 0) {
+                intFocus.value--
             } else {
-                focus.value = arrFiltered.value.length - 1
+                intFocus.value = arrFiltered.value.length - 1
             }
-        } else if (event.key == "ArrowDown") {
-            if (focus.value < arrFiltered.value.length - 1) {
-                focus.value++
+        }
+        //Pfeiltaste unten zum 'scrollen'
+        else if (event.key == "ArrowDown") {
+            if (intFocus.value < arrFiltered.value.length - 1) {
+                intFocus.value++
             } else {
-                focus.value = 0
+                intFocus.value = 0
             }
-        } else if (event.key == "Enter") {
-            checkAnswer(arrFiltered.value[focus.value])
+        }
+        //Taste enter zum Bestätigen
+        else if (event.key == "Enter") {
+            checkAnswer(arrFiltered.value[intFocus.value])
         }
     } else {
-        focus.value = 0
+        intFocus.value = 0
     }
 }
 
@@ -65,7 +75,7 @@ function getAttribute(obj) {
 
 //Funktion die prüft, ob das einegebene Wort zu einer Antwort passt
 function filterAutocomplete(obj) {
-    if (strInput.value.length >= 3) {
+    if (strInput.value.length >= 3 && boolFocus.value) {
         return obj.toLowerCase().includes(strInput.value.toLowerCase())
     } else {
         return false
@@ -90,11 +100,11 @@ const arrFiltered = computed(() => {
     <div class="answerDiv">
         <p>Antwort:</p>
         <input type="text" class="answerInput" spellcheck="false" v-model="strInput" @keyup="adjustFocus"
-            @input="checkAnswer($event.target.value)">
+            @input="checkAnswer($event.target.value)" @focus="boolFocus = true" @blur="boolFocus = false">
         <div class="autocompleteWrapper">
             <div class="autocomplete" v-if="arrFiltered.length > 0">
                 <div v-for="(item, index) in arrFiltered" @click="checkAnswer(item)"
-                    :class="[focus == index ? 'focus' : '']">{{ item }}</div>
+                    :class="[intFocus == index ? 'focus' : '']">{{ item }}</div>
             </div>
         </div>
     </div>

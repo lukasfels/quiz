@@ -18,7 +18,7 @@ const showModal = ref(false)
 
 //Wenn die Seite neugeladen wird oder die Auswahl leer ist
 if (store.arrSelection.length == 0) {
-    router.push({ name: "mode" })
+    router.push({ name: "home" })
 }
 
 //Filter Funktion für die Weltdaten
