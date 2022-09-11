@@ -31,11 +31,12 @@ function filterWorld(x) {
 
 //Zum starten und neustarten des Spiels
 function startGame() {
+    store.objQuestions = {}
     //Filter der Daten nach Auswahl
     if (store.strMode == "pokemon") {
         store.objQuestions = pokemon.filter(x => store.arrSelection.includes(x.generation))
     } else {
-        store.objQuestions = world.filter(filterWorld)
+        store.objQuestions = world.filter(filterWorld).map((x) => { x.tip = ['', 0]; return x })
     }
     store.nextQuestion()
 

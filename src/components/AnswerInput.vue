@@ -14,7 +14,7 @@ const store = useQuizStore()
 const strInput = ref('')
 var arrAutocomplete = []
 //Index wo der Fokus gerade ist
-const intFocus = ref(2)
+const intFocus = ref(0)
 //Bool ob der Input für die Antwort im Fokus ist
 const boolFocus = ref(false)
 
@@ -36,6 +36,40 @@ function checkAnswer(answer) {
         store.arrScore[0]++
     } else {
         //console.log('Falsch')
+    }
+}
+
+//Funktion um einen Tipp anzuzeigen
+function getTip() {
+    let tempAns = store.objNext[props.attr].split(' ')
+    let tempTip = store.objNext.tip
+    switch (tempTip[1]) {
+        case 0:
+            store.objNext.tip[0] = tempAns.join(' ').replace(/\S/g, '_')
+            tempTip[1]++
+            store.arrScore[0]++
+            break
+        case 1:
+            for (let i = 0; i < tempAns.length; i++) {
+                tempAns[i] = tempAns[i].charAt(0) + tempAns[i].substring(1).replace(/\S/g, '_')
+            }
+            store.objNext.tip[0] = tempAns.join(' ')
+            tempTip[1]++
+            store.arrScore[0]++
+            break
+        case 2:
+            for (let i = 0; i < tempAns.length; i++) {
+                tempAns[i] = tempAns[i].substring(0, 2) + tempAns[i].substring(2).replace(/\S/g, '_')
+            }
+            store.objNext.tip[0] = tempAns.join(' ')
+            tempTip[1]++
+            store.arrScore[0]++
+            break
+        case 3:
+            store.objNext.tip[0] = tempAns.join(' ')
+            tempTip[1]++
+            store.arrScore[0]++
+            break
     }
 }
 
@@ -94,10 +128,16 @@ const arrFiltered = computed(() => {
         return false
     }
 })
+
+const strTip = computed(() => store.objNext.tip[0])
 </script>
 
 <template>
     <div class="answerDiv">
+        <div class="tipp">
+            <button class="button" @click="getTip">Tipp</button>
+            <span>{{ strTip }}</span>
+        </div>
         <p>Antwort:</p>
         <input type="text" class="answerInput" spellcheck="false" v-model="strInput" @keyup="adjustFocus"
             @input="checkAnswer($event.target.value)" @focus="boolFocus = true" @blur="boolFocus = false">

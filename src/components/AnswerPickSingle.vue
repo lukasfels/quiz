@@ -26,7 +26,7 @@ function checkAnswer(x) {
         store.objQuestions.splice(store.intRandom, 1)
         store.arrScore[1]++
         store.nextQuestion()
-    } else {
+    } else if(!boolWrong.value) {
         boolWrong.value = true
         store.arrScore[0]++
     }
