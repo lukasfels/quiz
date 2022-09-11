@@ -80,6 +80,14 @@ export const world = [{
     "uno": false
   },
   {
+    "name": "Andalusien",
+    "code": "es-an",
+    "continent": "Europa",
+    "capital": "Sevilla",
+    "special": "Span. Provinz",
+    "uno": false
+  },
+  {
     "name": "Andorra",
     "code": "ad",
     "continent": "Europa",
@@ -122,6 +130,14 @@ export const world = [{
     "continent": "Afrika",
     "capital": "Malabo",
     "uno": true
+  },
+  {
+    "name": "Aragonien",
+    "code": "es-ar",
+    "continent": "Europa",
+    "capital": "Saragossa",
+    "special": "Span. Provinz",
+    "uno": false
   },
   {
     "name": "Argentinien",
@@ -168,6 +184,14 @@ export const world = [{
     "uno": true
   },
   {
+    "name": "Asturien",
+    "code": "es-as",
+    "continent": "Europa",
+    "capital": "Oviedo",
+    "special": "Span. Provinz",
+    "uno": false
+  },
+  {
     "name": "Äthiopien",
     "code": "et",
     "continent": "Afrika",
@@ -204,6 +228,14 @@ export const world = [{
     "uno": true
   },
   {
+    "name": "Balearen",
+    "code": "es-ib",
+    "continent": "Europa",
+    "capital": "Palma",
+    "special": "Span. Provinz",
+    "uno": false
+  },
+  {
     "name": "Bangladesch",
     "code": "bd",
     "continent": "Asien",
@@ -216,6 +248,14 @@ export const world = [{
     "continent": "Mittelamerika",
     "capital": "Bridgetown",
     "uno": true
+  },
+  {
+    "name": "Baskenland",
+    "code": "es-pv",
+    "continent": "Europa",
+    "capital": "Vitoria-Gasteiz",
+    "special": "Span. Provinz",
+    "uno": false
   },
   {
     "name": "Bayern",
@@ -374,6 +414,14 @@ export const world = [{
     "continent": "Afrika",
     "capital": "Gitega",
     "uno": true
+  },
+  {
+    "name": "Ceuta",
+    "code": "es-ce",
+    "continent": "Europa",
+    "capital": "Ceuta",
+    "special": "Span. Provinz",
+    "uno": false
   },
   {
     "name": "Chiba",
@@ -538,6 +586,15 @@ export const world = [{
     "uno": true
   },
   {
+    "name": "Extremadura",
+    "code": "es-ex",
+    "continent": "Europa",
+    "capital": "Mérida",
+    "altcapital": "Merida",
+    "special": "Span. Provinz",
+    "uno": false
+  },
+  {
     "name": "Falklandinseln",
     "code": "fk",
     "continent": "Südamerika",
@@ -632,6 +689,14 @@ export const world = [{
     "continent": "Afrika",
     "capital": "Libreville",
     "uno": true
+  },
+  {
+    "name": "Galicien",
+    "code": "es-ga",
+    "continent": "Europa",
+    "capital": "Santiago de Compostela",
+    "special": "Span. Provinz",
+    "uno": false
   },
   {
     "name": "Gambia",
@@ -1058,11 +1123,28 @@ export const world = [{
     "uno": false
   },
   {
+    "name": "Kanaren",
+    "code": "es-cn",
+    "continent": "Europa",
+    "capital": "Las Palmas",
+    "capital": "Santa Cruz de Tenerife",
+    "special": "Span. Provinz",
+    "uno": false
+  },
+  {
     "name": "Kansas",
     "code": "us-ks",
     "continent": "Nordamerika",
     "capital": "Topeka",
     "special": "US Bundesstaat",
+    "uno": false
+  },
+  {
+    "name": "Kantabrien",
+    "code": "es-cb",
+    "continent": "Europa",
+    "capital": "Santander",
+    "special": "Span. Provinz",
     "uno": false
   },
   {
@@ -1079,6 +1161,31 @@ export const world = [{
     "capital": "Nur-Sultan",
     "altcapital": "Nursultan",
     "uno": true
+  },
+  {
+    "name": "Kastilien und León",
+    "altname": "Kastilien und Leon",
+    "code": "es-cl",
+    "continent": "Europa",
+    "capital": "Valladolid",
+    "special": "Span. Provinz",
+    "uno": false
+  },
+  {
+    "name": "Kastilien-La Mancha",
+    "code": "es-cm",
+    "continent": "Europa",
+    "capital": "Toledo",
+    "special": "Span. Provinz",
+    "uno": false
+  },
+  {
+    "name": "Katalonien",
+    "code": "es-ct",
+    "continent": "Europa",
+    "capital": "Barcelona",
+    "special": "Span. Provinz",
+    "uno": false
   },
   {
     "name": "Katar",
@@ -1201,6 +1308,15 @@ export const world = [{
     "uno": true
   },
   {
+    "name": "La Rioja",
+    "code": "es-ri",
+    "continent": "Europa",
+    "capital": " Logroño",
+    "altcapital": " Logrono",
+    "special": "Span. Provinz",
+    "uno": false
+  },
+  {
     "name": "Lesotho",
     "code": "ls",
     "continent": "Afrika",
@@ -1277,6 +1393,14 @@ export const world = [{
     "continent": "Afrika",
     "capital": "Antananarivo",
     "uno": true
+  },
+  {
+    "name": "Madrid",
+    "code": "es-md",
+    "continent": "Europa",
+    "capital": "Madrid",
+    "special": "Span. Provinz",
+    "uno": false
   },
   {
     "name": "Maine",
@@ -1385,6 +1509,14 @@ export const world = [{
     "continent": "Europa",
     "capital": "Schwerin",
     "special": "Bundesland",
+    "uno": false
+  },
+  {
+    "name": "Melilla",
+    "code": "es-ml",
+    "continent": "Europa",
+    "capital": "Melilla",
+    "special": "Span. Provinz",
     "uno": false
   },
   {
@@ -1510,6 +1642,14 @@ export const world = [{
     "uno": true
   },
   {
+    "name": "Murcia",
+    "code": "es-mc",
+    "continent": "Europa",
+    "capital": "Murcia",
+    "special": "Span. Provinz",
+    "uno": false
+  },
+  {
     "name": "Myanmar",
     "code": "mm",
     "continent": "Asien",
@@ -1553,6 +1693,14 @@ export const world = [{
     "continent": "Ozeanien",
     "capital": "Yaren",
     "uno": true
+  },
+  {
+    "name": "Navarra",
+    "code": "es-nc",
+    "continent": "Europa",
+    "capital": "Pamplona",
+    "special": "Span. Provinz",
+    "uno": false
   },
   {
     "name": "Nebraska",
@@ -2519,6 +2667,14 @@ export const world = [{
     "continent": "Nordamerika",
     "capital": "Salt Lake City",
     "special": "US Bundesstaat",
+    "uno": false
+  },
+  {
+    "name": "Valencia",
+    "code": "es-vc",
+    "continent": "Europa",
+    "capital": "Valencia",
+    "special": "Span. Provinz",
     "uno": false
   },
   {

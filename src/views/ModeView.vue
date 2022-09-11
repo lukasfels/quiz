@@ -19,6 +19,8 @@ store.arrSelection = []
 var check = "world"
 if (store.strMode == "pokemon") {
     check = "pokemon"
+} else if (store.strMode == "outlines") {
+    check = "outlines"
 }
 
 //Funtkion für Button 'Starten'
@@ -35,7 +37,7 @@ function startGame() {
     <div class="mode-view">
         <div>
             <h1 class="m0">Wähle die Themen</h1>
-            <filter.continents v-if="check == 'world'"></filter.continents>
+            <filter.continents v-if="check == 'world' || check == 'outlines'"></filter.continents>
             <filter.special v-if="check == 'world'"></filter.special>
             <filter.pokemon v-if="check == 'pokemon'"></filter.pokemon>
         </div>
