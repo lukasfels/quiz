@@ -52,8 +52,8 @@ function learnGame() {
         </div>
     </div>
     <div class="footer-menu">
-        <button @click="startGame" class="button">Spielen</button>
-        <button @click="learnGame" class="button" v-if="check != 'expert'">Lernen</button>
+        <button @click="startGame" class="button" :disabled="store.arrSelection.length <= 0">Spielen</button>
+        <button @click="learnGame" class="button" v-if="check != 'expert'" :disabled="store.arrSelection.length <= 0">Lernen</button>
     </div>
     <ConfigView></ConfigView>
 </template>
@@ -73,5 +73,10 @@ function learnGame() {
 .footer-menu .button {
     float: right;
     margin: 10px;
+}
+
+button:disabled {
+    background: #525252;
+    color: #818181;
 }
 </style>
