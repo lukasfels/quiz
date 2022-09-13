@@ -34,19 +34,26 @@ const install = async () => {
 
 <template>
     <div class="pwa" :class="{ hidePWA: hide }">
-        <div class="buttons">
-            <button class="button" @click="install">Als App installieren</button>
-        </div>
+            <button @click="install">Als App installieren</button>
     </div>
 </template>
 
 <style>
 .pwa {
-    position: absolute;
+    width: 100%;
+    position: fixed;
     bottom: 0;
     left: 0;
-    right: 0;
-    margin-bottom: 10px;
+}
+
+.pwa button {
+    width: 100%;
+    font: inherit;
+    font-size: 1.5rem;
+    border: 0;
+    background-color: #1FFFA9;
+    padding: 20px;
+
 }
 
 .hidePWA {
