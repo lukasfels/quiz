@@ -11,12 +11,24 @@ export const useQuizStore = defineStore('quizStore', () => {
     const intConfigAnswer = ref(2)
     const intConfigDelay = ref(0)
     const arrScore = ref([0, 0])
+    const boolLearn = ref(false)
 
     function nextQuestion() {
         if (objQuestions.value.length > 0) {
-            intRandom.value = Math.floor(Math.random() * objQuestions.value.length);
+            if(objQuestions.value.length > 10 && !boolLearn) {
+                let t = Math.floor(Math.random() * objQuestions.value.length)
+                while(t == intRandom.value) {
+                    t = Math.floor(Math.random() * objQuestions.value.length)
+                }
+                intRandom.value = t
+            } else if (intRandom.value < objQuestions.value.length-1){
+                intRandom.value++
+            } else {
+                intRandom.value = 0
+            }
             objNext.value = objQuestions.value[intRandom.value];
         }
     }
-    return { strMode, arrSelection, objQuestions, objNext, intRandom, intConfigOV, intConfigAnswer, intConfigDelay, arrScore, nextQuestion }
+
+    return { strMode, arrSelection, objQuestions, objNext, intRandom, intConfigOV, intConfigAnswer, intConfigDelay, arrScore, boolLearn, nextQuestion }
 })

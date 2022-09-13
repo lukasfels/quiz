@@ -2,6 +2,7 @@
 import { useRouter } from 'vue-router'
 import { useQuizStore } from '@/stores/quizStore'
 import ConfigView from './ConfigView.vue'
+import InstallPWA from '@/components/InstallPWA.vue'
 
 //Array mit allen Modi
 const modes = {"flags": "Flaggen", "capitals": "Hauptstädte", "outlines": "Umrisse", "expert": "Expert", "pokemon": "Pokemon"}
@@ -26,4 +27,5 @@ function routeMode(x) {
         </div>
     </div>
     <ConfigView />
+    <InstallPWA />
 </template>

@@ -21,14 +21,23 @@ if (store.strMode == "pokemon") {
     check = "pokemon"
 } else if (store.strMode == "outlines") {
     check = "outlines"
+}  else if (store.strMode == "expert") {
+    check = "expert"
 }
 
-//Funtkion für Button 'Starten'
+//Funtkion für Button 'Spielen'
 function startGame() {
+    store.boolLearn = false
     if(store.arrSelection.length > 0){
         router.push({ name: "quiz" })
-    } else {
-        //alert("Themen wählen")
+    }
+}
+
+//Funtkion für Button 'Lernen'
+function learnGame() {
+    store.boolLearn = true
+    if(store.arrSelection.length > 0){
+        router.push({ name: "learn" })
     }
 }
 </script>
@@ -37,13 +46,14 @@ function startGame() {
     <div class="mode-view">
         <div>
             <h1 class="m0">Wähle die Themen</h1>
-            <filter.continents v-if="check == 'world' || check == 'outlines'"></filter.continents>
+            <filter.continents v-if="['world','outlines','expert'].includes(check)"></filter.continents>
             <filter.special v-if="check == 'world'"></filter.special>
             <filter.pokemon v-if="check == 'pokemon'"></filter.pokemon>
         </div>
     </div>
     <div class="footer-menu">
-        <button @click="startGame" class="button">Starten</button>
+        <button @click="startGame" class="button">Spielen</button>
+        <button @click="learnGame" class="button" v-if="check != 'expert'">Lernen</button>
     </div>
     <ConfigView></ConfigView>
 </template>

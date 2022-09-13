@@ -16,10 +16,10 @@ function toggleHide() {
 
 <template>
     <div class="options">
-        <div :class="{ hide: !hide }" @click="toggleHide">
+        <div :class="{ hideConfig: !hide }" @click="toggleHide">
             Optionen
         </div>
-        <div class="optionTab" :class="{ hide: hide }">
+        <div class="optionTab" :class="{ hideConfig: hide }">
             <h3>Optionen</h3>
             <label>
                 <p>{{  overview[store.intConfigOV] }}</p>
@@ -54,7 +54,7 @@ function toggleHide() {
     width: 300px;
 }
 
-.hide {
+.hideConfig {
     display: none;
 }
 </style>
