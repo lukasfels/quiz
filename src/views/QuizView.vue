@@ -116,8 +116,13 @@ startGame()
 .modalStats {
     background-color: #2F2F2F;
     margin: auto;
-    width: 250px;
-    height: 250px;
+    width: 80vw;
+    height: 50vh;
+    padding: 25px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .showModal {
