@@ -49,6 +49,8 @@ function getURL(mode, item) {
         return new URL(import.meta.env.BASE_URL + "Umrisse/" + item.continent + "/" + item.code + ".svg", import.meta.url).href
     } else if (mode == 'pokemon') {
         return new URL(import.meta.env.BASE_URL + "Pokemon/" + item.generation + "Generation/" + ('000' + item.id).slice(-3) + ".png", import.meta.url).href
+    } else if (mode == 'pokemon_type') {
+        return new URL(import.meta.env.BASE_URL + "Pokemon/Types/" + item.toLowerCase() + ".svg", import.meta.url).href
     }
 }
 
@@ -60,18 +62,25 @@ startGame()
     <h1>Lernmodus</h1>
     <div class="learnItems">
         <div class="learnItem" @click="showInfo(index)" v-for="item, index in store.objQuestions">
-            <span v-if="store.strMode == 'capitals'">{{item.name}}</span>
+            <span class="capital" v-if="store.strMode == 'capitals'">{{item.name}}</span>
             <img v-if="store.strMode == 'flags'" :src="getURL('flags',item)" height="50">
-            <img v-if="store.strMode == 'outlines'" :src="getURL('outlines',item)" height="50">
+            <img v-if="store.strMode == 'outlines'" :src="getURL('outlines',item)" height="100">
             <img v-if="store.strMode == 'pokemon'" :src="getURL('pokemon',item)" height="50">
         </div>
     </div>
     <div class="modalView" :class="{showModal: !showModal}" @click="showModal = !showModal" v-if="showModal">
-        <div class="modalInfos" @click="showModal = true">
+        <div class="modalInfos" @click="showModal = true" v-if="store.strMode != 'pokemon'">
             <h1>{{store.objNext.name}}</h1>
             <p>Hauptstadt: {{store.objNext.capital}}</p>
-            <img :src="getURL('flags',store.objNext)">
-            <img :src="getURL('outlines',store.objNext)">
+            <img class="main-img" :src="getURL('flags',store.objNext)">
+            <img class="main-img mt1" :src="getURL('outlines',store.objNext)">
+        </div>
+        <div class="modalInfos" @click="showModal = true" v-if="store.strMode == 'pokemon'">
+            <h1>{{store.objNext.name}}</h1>
+            <div class="types">
+                <img v-for="ptype in store.objNext.typeList" :src="getURL('pokemon_type', ptype)">
+            </div>
+            <img class="main-img" :src="getURL('pokemon',store.objNext)">
         </div>
     </div>
 </template>
@@ -84,13 +93,21 @@ startGame()
 }
 
 .learnItem {
-    margin: 2px;
-    padding: 5px;
+    margin: 4px;
+}
+
+.learnItem .capital {
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 400;
+    background-color: #494949;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
 
 .modalView {
     background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
+    position: fixed;
     z-index: 98;
     top: 0;
     left: 0;
@@ -103,18 +120,48 @@ startGame()
     background-color: #2F2F2F;
     z-index: 99;
     margin: auto;
-    width: 80%;
-    height: 80%;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 90%;
+}
+
+.modalInfos h1 {
+    color: #1FFFA9;
+    font-size: 3rem;
+    padding: 10px;
+    margin: 0;
+    background-color: #494949;
+    border-radius: 5px;
+}
+
+.modalInfos p {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 10px;
+}
+
+.modalInfos .types {
     display: flex;
-    flex-flow: column;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.types img {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
 }
 
 .showModal {
     display: none;
 }
 
-.modalInfos img {
+.modalInfos .main-img {
     width: 100%;
     max-height: 300px;
+    padding: 20px;
+    background-color: #494949;
+    border-radius: 5px;
 }
 </style>

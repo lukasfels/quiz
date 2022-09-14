@@ -116,14 +116,13 @@ input[type="checkbox"], input[type="radio"] {
   background-color: #8EFED3;
 }
 
-.view>div {
-  width: 100%;
-}
-
 .view {
   height: 100vh;
   display: flex;
   place-items: center;
+  >div {
+    width: 100%;
+  }
 }
 
 .button {
