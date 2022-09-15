@@ -73,7 +73,7 @@ startGame()
             <h1>{{store.objNext.name}}</h1>
             <p>Hauptstadt: {{store.objNext.capital}}</p>
             <img class="main-img" :src="getURL('flags',store.objNext)">
-            <img class="main-img mt1" :src="getURL('outlines',store.objNext)">
+            <img class="main-img mt1" :src="getURL('outlines',store.objNext)" @error="$event.target.style.display='none'">
         </div>
         <div class="modalInfos" @click="showModal = true" v-if="store.strMode == 'pokemon'">
             <h1>{{store.objNext.name}}</h1>

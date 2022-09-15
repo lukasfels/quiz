@@ -19,7 +19,7 @@ export default defineConfig({
       name: 'Quiz App',
       short_name: 'MyQuiz',
       description: 'Meine Quiz App',
-      theme_color: '#ffffff',
+      theme_color: '#2F2F2F',
       icons: [
         {
           src: 'pwa-192x192.png',

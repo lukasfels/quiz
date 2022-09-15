@@ -34,7 +34,7 @@ function startGame() {
     store.objQuestions = {}
     //Filter der Daten nach Auswahl
     if (store.strMode == "pokemon") {
-        store.objQuestions = pokemon.filter(x => store.arrSelection.includes(x.generation))
+        store.objQuestions = pokemon.filter(x => store.arrSelection.includes(x.generation)).map((x) => { x.tip = ['', 0]; return x })
     } else {
         store.objQuestions = world.filter(filterWorld).map((x) => { x.tip = ['', 0]; return x })
     }

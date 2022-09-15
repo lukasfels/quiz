@@ -15,7 +15,7 @@ export const useQuizStore = defineStore('quizStore', () => {
 
     function nextQuestion() {
         if (objQuestions.value.length > 0) {
-            if(objQuestions.value.length > 10 && !boolLearn) {
+            if(objQuestions.value.length > 10 && !boolLearn.value) {
                 let t = Math.floor(Math.random() * objQuestions.value.length)
                 while(t == intRandom.value) {
                     t = Math.floor(Math.random() * objQuestions.value.length)
