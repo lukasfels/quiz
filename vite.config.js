@@ -12,7 +12,7 @@ export default defineConfig({
       enabled: true
     },
     workbox: {
-      globPatterns: ['**/*.{js,css,html,ico,png,svg,ttf}']
+      globPatterns: ['**/*.{js,css,html}']
     },
     includeAssets: ['favicon.ico', 'apple-touch-icon.png'],
     manifest: {
