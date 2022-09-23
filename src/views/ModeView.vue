@@ -21,14 +21,15 @@ if (store.strMode == "pokemon") {
     check = "pokemon"
 } else if (store.strMode == "outlines") {
     check = "outlines"
-}  else if (store.strMode == "expert") {
+} else if (store.strMode == "expert") {
     check = "expert"
 }
 
 //Funtkion für Button 'Spielen'
 function startGame() {
     store.boolLearn = false
-    if(store.arrSelection.length > 0){
+    store.boolNewGame = true
+    if (store.arrSelection.length > 0) {
         router.push({ name: "quiz" })
     }
 }
@@ -36,7 +37,7 @@ function startGame() {
 //Funtkion für Button 'Lernen'
 function learnGame() {
     store.boolLearn = true
-    if(store.arrSelection.length > 0){
+    if (store.arrSelection.length > 0) {
         router.push({ name: "learn" })
     }
 }
@@ -53,10 +54,12 @@ function learnGame() {
     </div>
     <div class="footer-menu">
         <button @click="startGame" class="button" :disabled="store.arrSelection.length <= 0">Spielen</button>
-        <button @click="learnGame" class="button" v-if="check != 'expert'" :disabled="store.arrSelection.length <= 0">Lernen</button>
+        <button @click="learnGame" class="button" v-if="check != 'expert'"
+            :disabled="store.arrSelection.length <= 0">Lernen</button>
     </div>
     <ConfigView></ConfigView>
 </template>
+
 <style>
 .mode-view {
     padding: 60px 0 90px;

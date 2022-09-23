@@ -13,7 +13,18 @@ const props = defineProps({
 
 const store = useQuizStore()
 const arrPicked = reactive([])
-var arrAnswers = store.objQuestions.map(getAttribute)
+
+if (store.arrAnswers.length == 0) {
+    store.arrAnswers = store.objQuestions.map(getAttribute)
+}
+
+watch(
+    () => store.arrAnswers.length, (newLength) => {
+        if (newLength == 0) {
+            store.arrAnswers = store.objQuestions.map(getAttribute)
+        }
+    }
+)
 
 watch(
     () => store.objNext.name,
@@ -31,22 +42,22 @@ function randomAnswers() {
     //Richtige Antwort pushen
     arrPicked.push(store.objNext[props.attr])
 
-    let rightAnswer = arrAnswers.indexOf(arrPicked[0])
-    let i = arrAnswers.length - 1
+    let rightAnswer = store.arrAnswers.indexOf(arrPicked[0])
+    let i = store.arrAnswers.length - 1
 
-    let temp = arrAnswers[i]
-    arrAnswers[i] = arrAnswers[rightAnswer]
-    arrAnswers[rightAnswer] = temp
+    let temp = store.arrAnswers[i]
+    store.arrAnswers[i] = store.arrAnswers[rightAnswer]
+    store.arrAnswers[rightAnswer] = temp
 
     let j = 3
     while (j > 0 && i > 0) {
         let r = Math.floor(Math.random() * i)
-        arrPicked.push(arrAnswers[r])
+        arrPicked.push(store.arrAnswers[r])
         i--
 
-        let temp = arrAnswers[i]
-        arrAnswers[i] = arrAnswers[r]
-        arrAnswers[r] = temp
+        let temp = store.arrAnswers[i]
+        store.arrAnswers[i] = store.arrAnswers[r]
+        store.arrAnswers[r] = temp
         j--
     }
 

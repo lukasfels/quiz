@@ -29,21 +29,20 @@ function filterWorld(x) {
     }
 }
 
-//Zum starten und neustarten des Spiels
-function startGame() {
+function restartGame() {
     store.objQuestions = {}
+    store.arrAnswers = []
     //Filter der Daten nach Auswahl
     if (store.strMode == "pokemon") {
         store.objQuestions = pokemon.filter(x => store.arrSelection.includes(x.generation)).map((x) => { x.tip = ['', 0]; return x })
     } else {
         store.objQuestions = world.filter(filterWorld).map((x) => { x.tip = ['', 0]; return x })
     }
-    store.nextQuestion()
 
     //Setzt den Timer zurück und startet den Timer
+    store.strTime = "00:00"
     if (refTimer.value != null) {
         refTimer.value.resetTime()
-        refTimer.value.startTime()
     }
 
     //Setzt die Prozentanzeige zurück
@@ -51,6 +50,19 @@ function startGame() {
 
     //Schliesst das Fenster für das Ergbnis
     showModal.value = false
+
+    startGame()
+}
+
+//Zum starten und neustarten des Spiels
+function startGame() {
+    store.boolNewGame = false
+    store.nextQuestion()
+
+    //Startet den Timer
+    if (refTimer.value != null) {
+        refTimer.value.startTime()
+    }
 }
 
 function endGame() {
@@ -70,7 +82,11 @@ watch(() => store.objQuestions.length, (newLength, oldLength) => {
     }
 })
 
-startGame()
+if (store.boolNewGame) {
+    restartGame()
+} else {
+    startGame()
+}
 </script>
 
 <template>
@@ -81,7 +97,7 @@ startGame()
             <br />
             <div class="buttons">
                 <button class="button" @click="store.nextQuestion">Nächste</button>
-                <button class="button" @click="startGame">Neustart</button>
+                <button class="button" @click="restartGame">Neustart</button>
                 <button class="button" @click="endGame">Ende</button>
             </div>
             <counter ref="refCounter" />
@@ -93,9 +109,9 @@ startGame()
         <div class="modalStats">
             <h1>Ergebnis</h1>
             <p>Fragen: {{refCounter != null ? refCounter.strCount : '0'}}</p>
-            <p>Zeit: {{refTimer != null ? refTimer.strTimer : '0'}}</p>
+            <p>Zeit: {{ store.strTime }}</p>
             <p>Punktzahl: {{refScore != null ? refScore.strScore : '0'}}%</p>
-            <button class="button" @click="startGame">Neustart</button>
+            <button class="button" @click="restartGame">Neustart</button>
             <button class="button" @click="routeHome">Home</button>
         </div>
     </div>

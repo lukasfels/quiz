@@ -1,5 +1,5 @@
 <script setup>
-import { auth, signIn } from '@/firebase.js'
+import { auth, signIn } from '@/api/firebase.js'
 import { onAuthStateChanged, signOut } from '@firebase/auth'
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
@@ -50,5 +50,6 @@ function routeProfile() {
 .sidebar {
     position: fixed;
     background-color: rgba(0.8, 0.8, 0.8, 0.5);
+    display: none;
 }
 </style>

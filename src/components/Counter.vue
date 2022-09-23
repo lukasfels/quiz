@@ -3,7 +3,7 @@ import { useQuizStore } from '@/stores/quizStore'
 import { computed } from '@vue/reactivity';
 
 const store = useQuizStore()
-let count = store.objQuestions.length
+let count = store.arrAnswers.length
 
 const strCount = computed(() => {
     if (store.objQuestions.length == 0) {

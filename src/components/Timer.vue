@@ -1,13 +1,20 @@
 <script setup>
-import { ref } from 'vue'
+import { useQuizStore } from '@/stores/quizStore'
+import { onBeforeUnmount } from 'vue';
 
-const strTimer = ref('00:00')
+const store = useQuizStore()
 let seconds = 0
 let minutes = 0
 let hours = 0
 let intervalID = 0
 
+let arrTimer = store.strTime.split(':').reverse()
+if (arrTimer[0]) seconds = parseInt(arrTimer[0])
+if (arrTimer[1]) minutes = parseInt(arrTimer[1])
+if (arrTimer[2]) hours = parseInt(arrTimer[2])
+
 function setTime() {
+    console.log(intervalID)
     if ((seconds += 1) >= 60) {
         seconds = 0
         if ((minutes += 1) >= 60) {
@@ -17,15 +24,11 @@ function setTime() {
     }
     let tHours = hours != 0 ? ("" + hours).padStart(2, "0") + ":" : ""
     let tMinutes = ("" + minutes).padStart(2, "0") + ":"
-    strTimer.value = tHours + tMinutes + ("" + seconds).padStart(2, "0")
-}
-
-const getTime = () => {
-    return strTimer.value
+    store.strTime = tHours + tMinutes + ("" + seconds).padStart(2, "0")
 }
 
 const resetTime = () => {
-    strTimer.value = '00:00'
+    store.strTime = "00:00"
     seconds = 0
     minutes = 0
     hours = 0
@@ -42,10 +45,14 @@ const stopTime = () => {
     intervalID = 0
 }
 
+onBeforeUnmount(() => {
+  stopTime()
+})
+
 startTime()
-defineExpose({ resetTime, getTime, startTime, stopTime, strTimer })
+defineExpose({ resetTime, startTime, stopTime })
 </script>
 
 <template>
-    <p>Zeit: {{ strTimer }} </p>
+    <p>Zeit: {{ store.strTime }} </p>
 </template>

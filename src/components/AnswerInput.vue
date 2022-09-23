@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from "vue"
+import { ref, watch } from "vue"
 import { useQuizStore } from '@/stores/quizStore'
 import { computed } from "@vue/reactivity";
 
@@ -12,7 +12,20 @@ const props = defineProps({
 
 const store = useQuizStore()
 const strInput = ref('')
-var arrAutocomplete = []
+
+if (store.arrAnswers.length == 0) {
+    store.arrAnswers = store.objQuestions.map(getAttribute)
+}
+
+watch(
+    () => store.arrAnswers.length, (newLength) => {
+        if (newLength == 0) {
+            store.arrAnswers = store.objQuestions.map(getAttribute)
+        }
+    }
+)
+
+
 //Index wo der Fokus gerade ist
 const intFocus = ref(0)
 //Bool ob der Input für die Antwort im Fokus ist
@@ -32,7 +45,7 @@ function checkAnswer(answer) {
         store.arrScore[1]++
         //Nächste Frage laden
         store.nextQuestion()
-    } else if (arrAutocomplete.some(x => x.toLowerCase() == answer.toLowerCase())) {
+    } else if (store.arrAnswers.some(x => x.toLowerCase() == answer.toLowerCase())) {
         store.arrScore[0]++
     } else {
         //console.log('Falsch')
@@ -116,13 +129,10 @@ function filterAutocomplete(obj) {
     }
 }
 
-//Erstellt ein Array mit dem Attribut, das abgefragt wird
-arrAutocomplete = store.objQuestions.map(getAttribute)
-
-//Erstellt eine Referenz zum gefilterten 'arrAutocomplete'
+//Filtert die Antworten
 const arrFiltered = computed(() => {
     if (store.intConfigAnswer == 1) {
-        return arrAutocomplete.filter(filterAutocomplete)
+        return store.arrAnswers.filter(filterAutocomplete)
     }
     else {
         return false

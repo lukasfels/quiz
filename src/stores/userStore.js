@@ -6,6 +6,8 @@ export const useUserStore = defineStore('userStore', () => {
     const strUserMail = ref("")
     const strUserUID = ref("")
     const strUserPhoto = ref("")
+    const strUserPlaytime = ref(0)
+    const strUserWins = ref(0)
 
-    return { strUserName, strUserMail, strUserUID, strUserPhoto }
+    return { strUserName, strUserMail, strUserUID, strUserPhoto, strUserPlaytime, strUserWins }
 })
