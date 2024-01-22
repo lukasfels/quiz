@@ -1,31 +1,26 @@
-# vueQuiz
+# Quiz-App built with [Vue.js](https://vuejs.org/) & [Tailwind CSS](https://tailwindcss.com/)
 
-This template should help get you started developing with Vue 3 in Vite.
+## Local Setup
 
-## Customize configuration
+### Using Docker
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Docker Setup
+Run the following command:
 
 ```sh
 docker-compose up
 ```
 
-## Project Setup
+The app will be available at: [localhost:3000](http://localhost:3000)
+
+### Using local npm
 
 ```sh
+# install modules
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
+# compile & run hot-reload dev-server
 npm run dev
 ```
 
-### Compile and Minify for Production
+## Deployment
 
-```sh
-npm run build
-```
+Just commit/merge your changes into main. Every commit into the main-branch will trigger the automatic deployment.
