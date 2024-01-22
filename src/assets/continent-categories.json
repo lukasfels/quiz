@@ -1,0 +1,40 @@
+{
+    "title": "Kontinente",
+    "categories": [
+        {
+            "text": "Asien",
+            "count": 48,
+            "category": "Asien"
+        },
+        {
+            "text": "Afrika",
+            "count": 55,
+            "category": "Afrika"
+        },
+        {
+            "text": "Europa",
+            "count": 45,
+            "category": "Europa"
+        },
+        {
+            "text": "Mittelamerika",
+            "count": 21,
+            "category": "Mittelamerika"
+        },
+        {
+            "text": "Südamerika",
+            "count": 12,
+            "category": "Südamerika"
+        },
+        {
+            "text": "Ozeanien",
+            "count": 14,
+            "category": "Ozeanien"
+        },
+        {
+            "text": "Nordamerika",
+            "count": 2,
+            "category": "Nordamerika"
+        }
+    ]
+}

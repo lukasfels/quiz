@@ -1,82 +1,44 @@
 <script setup>
 import { watch } from 'vue'
-import { useQuizStore } from '@/stores/quizStore'
-import pickSingle from './AnswerPickSingle.vue'
-import { reactive } from "@vue/reactivity";
+import PickSingle from '@/components/AnswerPickSingle.vue'
+import { reactive } from '@vue/reactivity';
 
-const props = defineProps({
-    attr: {
-        type: String,
-        default: 'name'
-    }
-})
-
-const store = useQuizStore()
-const arrPicked = reactive([])
-
-if (store.arrAnswers.length == 0) {
-    store.arrAnswers = store.objQuestions.map(getAttribute)
-}
+const props = defineProps(['game'])
+const possibleAnswers = reactive([])
 
 watch(
-    () => store.arrAnswers.length, (newLength) => {
-        if (newLength == 0) {
-            store.arrAnswers = store.objQuestions.map(getAttribute)
-        }
-    }
+    () => props.game.objNext.name,
+    () => { generateRandomAnswers() }
 )
 
-watch(
-    () => store.objNext.name,
-    () => { randomAnswers() }
-)
+// Generiert die Antwortmöglichkeiten
+function generateRandomAnswers() {
+    possibleAnswers.splice(0) // possibleAnswers leeren
+    possibleAnswers.push(props.game.correctAnswerString()) // richtige Antwort hinzufügen
 
-function getAttribute(obj) {
-    return obj[props.attr]
-}
+    let currentIndex = props.game.arrAnswers.indexOf(props.game.correctAnswerString())
+    let randomIndex;
+    let randomIndexes = [];
+    let numberOfRandomAnswers = Math.min(props.game.arrAnswers.length, 4) - 1
 
-//Wird ausgeführt, wenn Antwortmöglichkeiten angezeigt werden sollen
-function randomAnswers() {
-    arrPicked.length = 0
-
-    //Richtige Antwort pushen
-    arrPicked.push(store.objNext[props.attr])
-
-    let rightAnswer = store.arrAnswers.indexOf(arrPicked[0])
-    let i = store.arrAnswers.length - 1
-
-    let temp = store.arrAnswers[i]
-    store.arrAnswers[i] = store.arrAnswers[rightAnswer]
-    store.arrAnswers[rightAnswer] = temp
-
-    let j = 3
-    while (j > 0 && i > 0) {
-        let r = Math.floor(Math.random() * i)
-        arrPicked.push(store.arrAnswers[r])
-        i--
-
-        let temp = store.arrAnswers[i]
-        store.arrAnswers[i] = store.arrAnswers[r]
-        store.arrAnswers[r] = temp
-        j--
+    while(randomIndexes.length < numberOfRandomAnswers) { // Indexe die sich nicht gegenseitig oder mit der richtigen Antwort überschneiden
+        do {
+            randomIndex = Math.floor(Math.random() * props.game.arrAnswers.length)
+        } while(randomIndex == currentIndex || randomIndexes.includes(randomIndex))
+        randomIndexes.push(randomIndex)
     }
 
-    //Antworten mischen
-    shuffle(arrPicked)
+    randomIndexes.forEach(function(randomIndex) { possibleAnswers.push(props.game.arrAnswers[randomIndex]) })
+
+    shuffle(possibleAnswers) //Antworten mischen
 }
 
-//Fisher–Yates shuffle
-//Zufälliges Element wird an das Ende des Arrays gepackt und die Länge (m) um eins verringert
+//Fisher–Yates shuffle (Zufälliges Element wird an das Ende des Arrays gepackt und die Länge (m) um eins verringert)
 function shuffle(array) {
     var m = array.length, t, i;
 
-    // While there remain elements to shuffle…
     while (m) {
-
-        // Pick a remaining element…
         i = Math.floor(Math.random() * m--);
-
-        // And swap it with the current element.
         t = array[m];
         array[m] = array[i];
         array[i] = t;
@@ -84,20 +46,11 @@ function shuffle(array) {
     return array;
 }
 
-randomAnswers()
+generateRandomAnswers()
 </script>
-    
+
 <template>
-    <div class="answerPick">
-        <pickSingle v-for="i in arrPicked" :key="i" :answer="i" :attr="attr"></pickSingle>
+    <div class="grid grid-cols-2 gap-2">
+        <PickSingle v-for="answer in possibleAnswers" :answer="answer" :game="game" />
     </div>
 </template>
-    
-<style>
-.answerPick {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 8px;
-    margin: 8px;
-}
-</style>

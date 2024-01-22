@@ -1,10 +1,12 @@
 {
   "name": "vuequiz",
   "version": "0.5.0",
+  "main": "tailwiwnd.config.js",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
-    "preview": "vite preview --port 4173",
+    "preview": "vite preview --port 4173 --host",
+    "tailwind": "npx tailwindcss -i ./src/assets/main.scss -o ./src/assets/style.css --minify --watch",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
@@ -23,6 +25,7 @@
     "prettier": "^2.7.1",
     "sass": "^1.54.9",
     "vite": "^3.0.4",
-    "vite-plugin-pwa": "^0.12.7"
+    "vite-plugin-pwa": "^0.12.7",
+    "tailwindcss": "^3.3.3"
   }
 }

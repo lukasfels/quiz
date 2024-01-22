@@ -1,147 +1,90 @@
 <script setup>
-import quiz from '@/components/quiz'
-import timer from '@/components/Timer.vue'
-import counter from '@/components/Counter.vue'
-import score from '@/components/ScorePercent.vue'
-import { useQuizStore } from '@/stores/quizStore'
-import { world } from "@/assets/world.js"
-import { pokemon } from "@/assets/pokemon.js"
-import ConfigView from './ConfigView.vue'
-import router from '../router'
-import { ref, watch } from 'vue'
+    import { useRoute } from 'vue-router'
+    import { ref, watch } from 'vue'
+    import { Game } from '@/game'
+    import AnswerInput from '@/components/AnswerInput.vue'
+    import AnswerPick from '@/components/AnswerPick.vue'
+    import { assetUrl } from '@/data_provider'
 
-const store = useQuizStore()
-const refTimer = ref(null)
-const refScore = ref(null)
-const refCounter = ref(null)
-const showModal = ref(false)
+    const route = useRoute()
+    const currentMode = ref(route.params.mode)
+    const currentCategory = ref(route.params.category)
+    const game = ref(new Game(currentMode.value, currentCategory.value))
 
-//Wenn die Seite neugeladen wird oder die Auswahl leer ist
-if (store.arrSelection.length == 0) {
-    router.push({ name: "home" })
-}
-
-//Filter Funktion für die Weltdaten
-function filterWorld(x) {
-    if ((x.uno && store.arrSelection.includes(x.continent))
-        || (x.special && store.arrSelection.includes(x.special))) {
-        return true
-    }
-}
-
-function restartGame() {
-    store.objQuestions = {}
-    store.arrAnswers = []
-    //Filter der Daten nach Auswahl
-    if (store.strMode == "pokemon") {
-        store.objQuestions = pokemon.filter(x => store.arrSelection.includes(x.generation)).map((x) => { x.tip = ['', 0]; return x })
-    } else {
-        store.objQuestions = world.filter(filterWorld).map((x) => { x.tip = ['', 0]; return x })
+    function restartGame() {
+        game.value = new Game(currentMode.value, currentCategory.value)
+        startGame()
     }
 
-    //Setzt den Timer zurück und startet den Timer
-    store.strTime = "00:00"
-    if (refTimer.value != null) {
-        refTimer.value.resetTime()
+    //Zum starten und neustarten des Spiels
+    function startGame() {
+        game.value.nextQuestion()
+        game.value.startTimer()
     }
 
-    //Setzt die Prozentanzeige zurück
-    store.arrScore = [0, 0]
-
-    //Schliesst das Fenster für das Ergbnis
-    showModal.value = false
-
-    startGame()
-}
-
-//Zum starten und neustarten des Spiels
-function startGame() {
-    store.boolNewGame = false
-    store.nextQuestion()
-
-    //Startet den Timer
-    if (refTimer.value != null) {
-        refTimer.value.startTime()
+    function endGame() {
+        game.value.stopTimer()
+        game.value.ended = true
     }
-}
 
-function endGame() {
-    refTimer.value.stopTime()
-    showModal.value = true
-}
+    //Beobachten, ob das Spiel gewonnen wurde
+    watch(() => game.value.ended, (gameHasEnded) => {
+        if (gameHasEnded) {
+            endGame()
+        }
+    })
 
-function routeHome() {
-    router.push({ name: "home" })
-}
-
-//Beobachten, ob das Spiel gewonnen wurde
-watch(() => store.objQuestions.length, (newLength, oldLength) => {
-    if (oldLength == 1 && newLength == 0) {
-        refTimer.value.stopTime()
-        showModal.value = true
+    const headlines = {
+        'flags': "Flaggenquiz",
+        'outlines': "Umrissquiz",
+        'pokemon': "Pokemonquiz",
+        'capitals': "Hauptstadtquiz",
     }
-})
 
-if (store.boolNewGame) {
+    const quizMode = {
+        "imageMode": ['flags', 'outlines', 'pokemon'],
+        "textMode": ['capitals']
+    }
+
     restartGame()
-} else {
-    startGame()
-}
 </script>
 
 <template>
-    <ConfigView />
-    <div>
+    <div class="grid grid-cols-3 gap-2 text-center py-4">
+        <div class="w-full">Progress<br>{{ game.questionProgress }}</div>
         <div>
-            <component :is="quiz[store.strMode]" />
-            <br />
-            <div class="buttons">
-                <button class="button" @click="store.nextQuestion">Nächste</button>
-                <button class="button" @click="restartGame">Neustart</button>
-                <button class="button" @click="endGame">Ende</button>
-            </div>
-            <counter ref="refCounter" />
-            <timer ref="refTimer" />
-            <score ref="refScore" />
+            <div>Timer</div>
+            <div class="w-full font-mono">{{ game.displayGameTime() }}</div>
         </div>
+        <div class="w-full">Score<br>{{ game.scorePercent() }}%</div>
     </div>
-    <div class="modalWin" :class="{showModal: !showModal}">
-        <div class="modalStats">
-            <h1>Ergebnis</h1>
-            <p>Fragen: {{refCounter != null ? refCounter.strCount : '0'}}</p>
-            <p>Zeit: {{ store.strTime }}</p>
-            <p>Punktzahl: {{refScore != null ? refScore.strScore : '0'}}%</p>
-            <button class="button" @click="restartGame">Neustart</button>
-            <button class="button" @click="routeHome">Home</button>
+    <h1 class="text-center text-xl font-sans-bold">{{ headlines[currentMode] }}</h1>
+    <div v-if="quizMode['imageMode'].includes(currentMode)" class="w-full">
+        <img class="mx-auto my-4 border max-h-52 md:max-h-72" :src="assetUrl(currentMode, game.objNext)">
+    </div>
+    <p v-if="quizMode['textMode'].includes(currentMode)" class="text-center font-sans-bold text-2xl my-4">
+        <span class="text-teal-300">{{ game.objNext.name }}</span>
+    </p>
+    <AnswerInput v-if="game.difficulty != 2" :game="game" :attr="currentMode" />
+    <AnswerPick v-if="game.difficulty == 2" :game="game" />
+    <div class="grid grid-cols-3 gap-2 text-center my-5">
+        <div class="w-full cursor-pointer border border-white py-4" @click="game.nextQuestion">Nächste</div>
+        <div class="w-full cursor-pointer border border-white py-4" @click="restartGame">Neustart</div>
+        <div class="w-full cursor-pointer border border-white py-4" @click="endGame">Ende</div>
+    </div>
+    {{ game.ended }}
+    <div :class="{ hidden: !game.ended }" class="fixed top-0 left-0 bg-dark/70 w-full h-full">
+        <div class="align-middle table-cell w-screen h-screen">
+            <div class="ml-auto mr-auto w-64 bg-dark/70 border border-white flex flex-col gap-1 px-4 py-2">
+                <div class="text-xl text-center pb-2">Ergebnis</div>
+                <div>Fragen: {{ game.questionProgress }}</div>
+                <div>Zeit: {{ game.displayGameTime() }}</div>
+                <div>Score: {{ game.scorePercent() }}%</div>
+                <div class="flex justify-between mt-2">
+                    <div @click="restartGame" class="py-1 px-2 border border-white">Neustart</div>
+                    <router-link to="/" class="py-1 px-2 border border-white">Hauptmenü</router-link>
+                </div>
+            </div>
         </div>
     </div>
 </template>
-
-<style>
-.modalWin {
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    z-index: 99;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-}
-
-.modalStats {
-    background-color: #2F2F2F;
-    margin: auto;
-    width: 80vw;
-    height: 50vh;
-    padding: 25px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.showModal {
-    display: none;
-}
-</style>

@@ -1,37 +1,39 @@
 <script setup>
-import { useRouter } from 'vue-router'
-import { useQuizStore } from '@/stores/quizStore'
 import ConfigView from './ConfigView.vue'
 import InstallPWA from '@/components/InstallPWA.vue'
 
 //Array mit allen Modi
-const modes = { "flags": "Flaggen", "capitals": "Hauptstädte", "outlines": "Umrisse", "expert": "Expert", "pokemon": "Pokemon" }
-const router = useRouter()
-const store = useQuizStore()
-
-let oldGame = store.objQuestions.length > 0 ? true : false
-
-//Ruft den ModusView auf und übergibt den Modus als Parameter
-function routeMode(x) {
-    store.strMode = x
-    router.push({ name: "mode" })
+const modes = {
+    "flags": {
+        name: "Flaggen",
+    },
+    "capitals": { 
+        name: "Hauptstädte",
+    },
+    "outlines": { 
+        name: "Umrisse",
+    },
+    "expert": { 
+        name: "Expert",
+    },
+    "pokemon": { 
+        name: "Pokemon",
+    },
 }
 
-function resumeGame() {
-    console.log('test')
-    router.push({ name: "quiz" })
-}
+let oldGame = false // store.objQuestions.length > 0 ? true : false
 </script>
 
 <template>
-    <div class="view">
-        <div>
-            <h1>Wähle deinen Modus</h1>
-            <div class="button-grid modes">
-                <a v-for="name, mode in modes" @click="routeMode(mode)">{{ name }}</a>
-            </div>
-            <button class="button" v-if="oldGame" @click="resumeGame">Resume</button>
+    <div class="mx-9">
+        <div class="text-4xl mt-64 font-sans-bold text-lime-400 mb-5">Quizzes.</div>
+        <div v-for="category, mode in modes">
+            <hr class="border-neutral-500/20">
+            <router-link :to="'/mode/' + mode" class="no-underline text-white block py-5 uppercase">{{ category.name }}</router-link>
         </div>
+        <hr class="border-neutral-500/20">
+        <router-link v-if="oldGame" to="/quiz" class="no-underline text-white block py-5 uppercase">Continue last game</router-link>
+        <hr class="border-neutral-500/20">
     </div>
     <ConfigView />
     <InstallPWA />

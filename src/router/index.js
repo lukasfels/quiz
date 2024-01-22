@@ -1,26 +1,25 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Main from "../views/MainView.vue"
 
-const router = createRouter({
+export default createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: "/",
       name: "home",
-      component: Main,
+      component: () => import("@/views/MainView.vue"),
     },
     {
-      path: "/mode",
+      path: "/mode/:name",
       name: "mode",
       component: () => import("@/views/ModeView.vue"),
     },
     {
-      path: "/quiz",
+      path: "/quiz/:mode/:category",
       name: "quiz",
       component: () => import("@/views/QuizView.vue"),
     },
     {
-      path: "/learn",
+      path: "/learn/:mode/:category",
       name: "learn",
       component: () => import("@/views/LearnView.vue"),
     },
@@ -31,5 +30,3 @@ const router = createRouter({
     },
   ],
 });
-
-export default router
