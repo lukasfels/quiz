@@ -8,13 +8,15 @@ export class Game {
         }
         this.objQuestions = dataProvider(mode, category).map((x) => { x.tips = 0; return x })
         this.arrAnswers = this.objQuestions.map(x => x[this.answerFilter])
-        this.arrScore = [0, 0]
+        this.correctAnswers = 0
+        this.wrongAnswers = 0
         this.gameTime = 0
         this.timerUpdateRate = 100
         this.isTimerRunning = true
         this.startTime = Date.now()
         this.ended = false
         this.difficulty = 2
+        this.nextQuestion()
     }
 
     get answeredQuestions() {
@@ -26,11 +28,11 @@ export class Game {
     }
 
     scorePercent() {
-        if (this.arrScore[1] <= 0 && this.arrScore[0] <= 0) {
-            return 0.0
+        if (this.correctAnswers <= 0 && this.wrongAnswers <= 0) {
+            return 0
         }
         
-        return ((this.arrScore[1] / (this.arrScore[0] + this.arrScore[1])) * 100).toFixed(1)
+        return ((this.correctAnswers / (this.wrongAnswers + this.correctAnswers)) * 100)
     }
 
     nextQuestion() {
@@ -51,25 +53,39 @@ export class Game {
         return this.objNext[this.answerFilter]
     }
 
-    checkAnswer(answer, alreadyClicked) {
+    checkAnswer(answer, alreadyClicked = false) {
         if(this.ended) {
             return
         }
 
         if (answer == this.correctAnswerString()) {
             this.objQuestions.splice(this.currentIndex, 1)
-            this.arrScore[1]++
+            this.correctAnswers++
             this.nextQuestion()
             return true
-        } else if(!alreadyClicked) {
-            this.arrScore[0]++
         }
+
+        if(!alreadyClicked) {
+            this.wrongAnswers++
+        }
+
         return false
+    }
+
+    checkTypedAnswer(answer) {
+        if (answer.toLowerCase() == this.correctAnswerString().toLowerCase() || (this.objNext['alt' + this.answerFilter] && answer.toLowerCase() == this.objNext['alt' + this.answerFilter].toLowerCase())) {
+            this.objQuestions.splice(this.currentIndex, 1)
+            this.correctAnswers++
+            this.nextQuestion()
+            return true
+        } else if (this.arrAnswers.some(x => x.toLowerCase() == answer.toLowerCase())) {
+            this.wrongAnswers++
+        }
     }
 
     getTip() {
         this.objNext.tips++
-        this.arrScore[0]++
+        this.wrongAnswers++
 
         return this.correctAnswerString()
                     .substring(0, this.objNext.tips)

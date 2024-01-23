@@ -7,7 +7,8 @@
     "build": "vite build",
     "preview": "vite preview --port 4173 --host",
     "tailwind": "npx tailwindcss -i ./src/assets/main.scss -o ./src/assets/style.css --minify --watch",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "test": "vitest"
   },
   "dependencies": {
     "firebase": "^9.10.0",

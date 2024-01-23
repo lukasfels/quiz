@@ -12,21 +12,7 @@ const focusIndex = ref(0)
 
 //Wird ausgeführt um die Antwort für die Frage zu prüfen
 function checkAnswer(answer) {
-    strInput.value = answer
-    //Prüft, ob das Geschriebene die Antwort ist, einige Länder/Hauptstädte haben Alternative Schreibweisen unter 'altname'
-    if (answer.toLowerCase() == props.game.objNext[answerKey].toLowerCase()
-        || (props.game.objNext['alt' + answerKey] && answer.toLowerCase() == props.game.objNext['alt' + answerKey].toLowerCase())) {
-        //Input löschen für nächste Frage
-        strInput.value = ""
-
-        //Richtige Antwort wird aus dem Array entfernt
-        props.game.objQuestions.splice(props.game.currentIndex, 1)
-        props.game.arrScore[1]++
-        //Nächste Frage laden
-        props.game.nextQuestion()
-    } else if (props.game.arrAnswers.some(x => x.toLowerCase() == answer.toLowerCase())) {
-        props.game.arrScore[0]++
-    }
+    strInput.value = props.game.checkTypedAnswer(answer) ? "" : answer
 }
 
 //Funktion für die Autocomplete Liste

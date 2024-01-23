@@ -56,7 +56,7 @@
             <div>Timer</div>
             <div class="w-full font-mono">{{ game.displayGameTime() }}</div>
         </div>
-        <div class="w-full">Score<br>{{ game.scorePercent() }}%</div>
+        <div class="w-full">Score<br>{{ game.scorePercent().toFixed(1) }}%</div>
     </div>
     <h1 class="text-center text-xl font-sans-bold">{{ headlines[currentMode] }}</h1>
     <div v-if="quizMode['imageMode'].includes(currentMode)" class="w-full">
@@ -79,7 +79,7 @@
                 <div class="text-xl text-center pb-2">Ergebnis</div>
                 <div>Fragen: {{ game.questionProgress }}</div>
                 <div>Zeit: {{ game.displayGameTime() }}</div>
-                <div>Score: {{ game.scorePercent() }}%</div>
+                <div>Score: {{ game.scorePercent().toFixed(1) }}%</div>
                 <div class="flex justify-between mt-2">
                     <div @click="restartGame" class="py-1 px-2 border border-white">Neustart</div>
                     <router-link to="/" class="py-1 px-2 border border-white">Hauptmenü</router-link>
