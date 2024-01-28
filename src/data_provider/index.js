@@ -11,7 +11,7 @@ function dataProvider(mode, category) {
     if (mode == "pokemon") {
         return pokemonList.filter(pokemon => pokemon.generation == category)
     } else {
-        return world.filter(item => (item.uno && category == item.continent) || (item.special && category == item.special))
+        return world.filter(item => (item.uno && category == item.continent) || (item.special && category == item.special) || (item.uno && category == 'Welt'))
     }
 }
 
@@ -24,7 +24,9 @@ function filterProvider(mode) {
             break
         case 'capitals':
         case 'flags':
+            data.push(setupData(continentCategories))
             data.push(setupData(specialCategories))
+            break
         case 'outlines':
         case 'expert':
             data.push(setupData(continentCategories))

@@ -2,6 +2,10 @@
     "title": "Kontinente",
     "categories": [
         {
+            "text": "Welt",
+            "count": 197,
+            "category": "Welt"
+        },{
             "text": "Asien",
             "count": 48,
             "category": "Asien"
@@ -17,6 +21,11 @@
             "category": "Europa"
         },
         {
+            "text": "Nordamerika",
+            "count": 2,
+            "category": "Nordamerika"
+        },
+        {
             "text": "Mittelamerika",
             "count": 21,
             "category": "Mittelamerika"
@@ -30,11 +39,6 @@
             "text": "Ozeanien",
             "count": 14,
             "category": "Ozeanien"
-        },
-        {
-            "text": "Nordamerika",
-            "count": 2,
-            "category": "Nordamerika"
         }
     ]
 }
