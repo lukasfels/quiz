@@ -1,5 +1,5 @@
 <script setup>
-    const props = defineProps(['filter', 'mode', 'index'])
+    const props = defineProps(['filter', 'mode', 'index', 'difficulty'])
 </script>
 
 <template>
@@ -10,7 +10,7 @@
             <div class="text-xs pt-1 font-bold">{{ props.filter.count }}</div>
         </div>
         <div class="pt-2 gap-2" :class="{ hidden: props.filter.collapsed, flex: !props.filter.collapsed }">
-            <router-link :to="'/quiz/' + props.mode + '/' + props.filter.category" class="px-2 py-1 border">Spielen</router-link>
+            <router-link :to="'/quiz/' + props.mode + '/' + props.filter.category  + '/' + props.difficulty" class="px-2 py-1 border">Spielen</router-link>
             <router-link :to="'/learn/' + props.mode + '/' + props.filter.category" class="px-2 py-1 border">Lernen</router-link>
         </div>
     </div>

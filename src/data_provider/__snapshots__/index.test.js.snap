@@ -1,0 +1,60 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`filterProvider: return hash of categories for specific mode 1`] = `
+[
+  {
+    "categories": [
+      {
+        "category": "1",
+        "collapsed": true,
+        "count": 151,
+        "index": 0,
+        "text": "1. Generation",
+      },
+      {
+        "category": "2",
+        "collapsed": true,
+        "count": 100,
+        "index": 1,
+        "text": "2. Generation",
+      },
+      {
+        "category": "3",
+        "collapsed": true,
+        "count": 135,
+        "index": 2,
+        "text": "3. Generation",
+      },
+      {
+        "category": "4",
+        "collapsed": true,
+        "count": 107,
+        "index": 3,
+        "text": "4. Generation",
+      },
+      {
+        "category": "5",
+        "collapsed": true,
+        "count": 156,
+        "index": 4,
+        "text": "5. Generation",
+      },
+      {
+        "category": "6",
+        "collapsed": true,
+        "count": 72,
+        "index": 5,
+        "text": "6. Generation",
+      },
+      {
+        "category": "7",
+        "collapsed": true,
+        "count": 88,
+        "index": 6,
+        "text": "7. Generation",
+      },
+    ],
+    "title": "Pokémon-Generationen",
+  },
+]
+`;

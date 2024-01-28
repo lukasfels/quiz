@@ -1,5 +1,4 @@
 <script setup>
-import ConfigView from './ConfigView.vue'
 import InstallPWA from '@/components/InstallPWA.vue'
 
 //Array mit allen Modi
@@ -35,6 +34,5 @@ let oldGame = false // store.objQuestions.length > 0 ? true : false
         <router-link v-if="oldGame" to="/quiz" class="no-underline text-white block py-5 uppercase">Continue last game</router-link>
         <hr class="border-neutral-500/20">
     </div>
-    <ConfigView />
     <InstallPWA />
 </template>

@@ -1,12 +1,16 @@
-import { dataProvider } from '@/data_provider'
+import { dataProvider, assetUrl } from '@/data_provider'
 
 export class Game {
-    constructor(mode, category) {
+    constructor(mode, category, difficulty) {
         this.answerFilter = 'name'
         if (mode == 'capitals') {
             this.answerFilter = 'capital'
         }
-        this.objQuestions = dataProvider(mode, category).map((x) => { x.tips = 0; return x })
+        this.objQuestions = dataProvider(mode, category).map((question) => {
+            question.tips = 0
+            question.assetUrl = assetUrl(mode, question)
+            return question
+        })
         this.arrAnswers = this.objQuestions.map(x => x[this.answerFilter])
         this.correctAnswers = 0
         this.wrongAnswers = 0
@@ -15,7 +19,9 @@ export class Game {
         this.isTimerRunning = true
         this.startTime = Date.now()
         this.ended = false
-        this.difficulty = 2
+        this.difficulty = difficulty
+        this.mode = mode
+        this.category = category
         this.nextQuestion()
     }
 
@@ -25,6 +31,17 @@ export class Game {
 
     get questionProgress() {
         return this.answeredQuestions + " / " + this.arrAnswers.length
+    }
+
+    get saveSate() {
+        return {
+            playtime: this.gameTime,
+            // alreadyAnsweredQuestionIds": [],
+            difficulty: this.difficulty,
+            category: this.category,
+            mode: this.mode,
+            score: [this.correctAnswers, this.wrongAnswers],
+        }
     }
 
     scorePercent() {
@@ -38,6 +55,7 @@ export class Game {
     nextQuestion() {
         if(this.objQuestions.length <= 0) {
             this.ended = true
+            this.stopTimer()
             return
         }
 
@@ -109,6 +127,11 @@ export class Game {
         this.isTimerRunning = false
     }
 
+    cancelGame() {
+        this.ended = true
+        this.stopTimer()
+    }
+
     updateGameTime() {
         this.gameTime = Date.now() - this.startTime
 
@@ -128,5 +151,9 @@ export class Game {
         let minutes = (totalMinutes - totalHours * 60).toString().padStart(2, '0')
 
         return `${minutes}:${seconds}.${deciseconds}`
+    }
+
+    saveToCookie() {
+
     }
 }

@@ -1,0 +1,112 @@
+{
+    "special": {
+        "title": "Spezial-Kategorien",
+        "categories": [
+            {
+                "text": "Japanische Präfekturen",
+                "count": 47,
+                "category": "Jap. Präfektur"
+            },
+            {
+                "text": "US Bundestaaten",
+                "count": 50,
+                "category": "US Bundesstaat"
+            },
+            {
+                "text": "Spanische Provinzen",
+                "count": 19,
+                "category": "Span. Provinz"
+            },
+            {
+                "text": "Deutsche Bundesländer",
+                "count": 16,
+                "category": "Bundesland"
+            }
+        ]
+    },
+    "pokemon": {
+        "title": "Pokémon-Generationen",
+        "categories": [
+            {
+                "text": "1. Generation",
+                "count": 151,
+                "category": "1"
+            },
+            {
+                "text": "2. Generation",
+                "count": 100,
+                "category": "2"
+            },
+            {
+                "text": "3. Generation",
+                "count": 135,
+                "category": "3"
+            },
+            {
+                "text": "4. Generation",
+                "count": 107,
+                "category": "4"
+            },
+            {
+                "text": "5. Generation",
+                "count": 156,
+                "category": "5"
+            },
+            {
+                "text": "6. Generation",
+                "count": 72,
+                "category": "6"
+            },
+            {
+                "text": "7. Generation",
+                "count": 88,
+                "category": "7"
+            }
+        ]
+    },
+    "continent": {
+        "title": "Kontinente",
+        "categories": [
+            {
+                "text": "Welt",
+                "count": 197,
+                "category": "Welt"
+            },
+            {
+                "text": "Asien",
+                "count": 48,
+                "category": "Asien"
+            },
+            {
+                "text": "Afrika",
+                "count": 55,
+                "category": "Afrika"
+            },
+            {
+                "text": "Europa",
+                "count": 45,
+                "category": "Europa"
+            },
+            {
+                "text": "Mittelamerika",
+                "count": 21,
+                "category": "Mittelamerika"
+            },
+            {
+                "text": "Südamerika",
+                "count": 12,
+                "category": "Südamerika"
+            },
+            {
+                "text": "Ozeanien",
+                "count": 14,
+                "category": "Ozeanien"
+            },
+            {
+                "text": "Nordamerika",
+                "count": 2,
+                "category": "Nordamerika"
+            }
+        ]
+    }
+}

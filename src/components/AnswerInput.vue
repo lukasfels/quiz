@@ -3,8 +3,7 @@ import { ref } from "vue"
 import { computed } from "@vue/reactivity"
 
 const strInput = ref('')
-const props = defineProps(['attr', 'game'])
-const answerKey = props.attr != 'capitals' ? 'name' : 'capital'
+const props = defineProps(['game'])
 const currentTip = ref('')
 
 //Index wo der Fokus gerade ist

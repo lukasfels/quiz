@@ -14,7 +14,7 @@ export default createRouter({
       component: () => import("@/views/ModeView.vue"),
     },
     {
-      path: "/quiz/:mode/:category",
+      path: "/quiz/:mode/:category/:difficulty",
       name: "quiz",
       component: () => import("@/views/QuizView.vue"),
     },

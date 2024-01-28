@@ -3,7 +3,7 @@
     import FilterItem from '@/components/FilterItem.vue'
     import { ref } from 'vue'
 
-    const props = defineProps(['mode'])
+    const props = defineProps(['mode', 'difficulty'])
     const categoryGroups = ref(filterProvider(props.mode))
 
     function uncollapseFilter(index, id) {
@@ -22,7 +22,7 @@
     <form>
         <div v-for="(categoryGroup, index) in categoryGroups">
             <h2 class="uppercase border-t border-neutral-500/20 mb-5 pt-5">{{ categoryGroup.title }}</h2>
-            <FilterItem v-for="category in categoryGroup.categories" :filter="category" :mode="props.mode" :index="index" @uncollapse="uncollapseFilter" />
+            <FilterItem v-for="category in categoryGroup.categories" :filter="category" :mode="props.mode" :index="index" :difficulty="props.difficulty" @uncollapse="uncollapseFilter" />
         </div>
     </form>
 </template>

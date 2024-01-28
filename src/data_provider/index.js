@@ -1,9 +1,11 @@
-import { world } from '@/assets/world.js'
+import world from '@/assets/world.json'
 import pokemonList from '@/assets/pokemon.json'
-import pokemonCategories from '@/assets/pokemon-categories.json'
-import specialCategories from '@/assets/special-categories.json'
-import continentCategories from '@/assets/continent-categories.json'
+import categories from '@/assets/categories.json'
 
+/**
+ * @param {string} mode
+ * @param {string} category
+ */
 function dataProvider(mode, category) {
     if(category == null || mode == null)
         return
@@ -15,29 +17,34 @@ function dataProvider(mode, category) {
     }
 }
 
+/**
+ * @param {string} mode
+ */
 function filterProvider(mode) {
     let data = []
 
     switch(mode) {
         case 'pokemon':
-            data.push(setupData(pokemonCategories))
+            data.push(setupData('pokemon'))
             break
         case 'capitals':
         case 'flags':
-            data.push(setupData(continentCategories))
-            data.push(setupData(specialCategories))
+            data.push(setupData('continent'))
+            data.push(setupData('special'))
             break
         case 'outlines':
         case 'expert':
-            data.push(setupData(continentCategories))
+            data.push(setupData('continent'))
             break
-        default:
-            return
     }
 
     return data
 }
 
+/**
+ * @param {string} mode
+ * @param {string} item
+ */
 function assetUrl(mode, item) {
     if(item === null) {
         return null 
@@ -63,9 +70,12 @@ function assetUrl(mode, item) {
     return new URL(url, import.meta.url).href
 }
 
-function setupData(data) {
+/**
+ * @param {string} category
+ */
+function setupData(category) {
     let arrayIndex = 0
-
+    let data = categories[category]
     data.categories = data.categories.map((category) => ({ ...category, collapsed: true, index: arrayIndex++ }))
 
     return data

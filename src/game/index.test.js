@@ -22,7 +22,7 @@ test('scorePercent: new game has 0% score percent', () => {
   expect(game.scorePercent()).toBe(0)
 })
 
-test('scorePercent: new game with two correct answers and three wrong has 40% score percent', () => {
+test('scorePercent: new game with three wrong and two correct answers has 40% score percent', () => {
   let game = initializeGame()
   
   game.checkAnswer('wrong answer', false)
